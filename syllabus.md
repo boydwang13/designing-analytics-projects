@@ -385,7 +385,7 @@ Use these examples as reference when completing your scenario Brief.
 - **Zoom Interventions:** Available for urgent strategic discussions
 
 ### Important Links
-- Course Repository: [TBD]
+- Course Repository: https://github.com/earino/designing-analytics-projects
 - Schedule Signup: https://t.ly/ueahm
 
 ---
