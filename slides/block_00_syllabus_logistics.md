@@ -134,7 +134,7 @@ These prepare you for your actual capstone project.
 
 ---
 
-## Required Reading
+## Suggested Reading
 
 Complete **before Day 1** (today):
 

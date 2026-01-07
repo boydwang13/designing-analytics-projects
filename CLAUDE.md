@@ -134,7 +134,7 @@ Students also identify Champions (advocates) and Blockers (potential opponents) 
 2. All dates reference January 2026 (Day 1: Jan 8, Day 2: Jan 12)
 3. Keep 6 blocks × 100 minutes structure (3 blocks per day)
 4. This is a **Python-only** program - never reference R or other languages
-5. Total required pre-Day 1 reading should remain ~27 minutes (2 articles)
+5. Total suggested pre-Day 1 reading should remain ~27 minutes (2 articles)
 
 ### notes.md Structure
 
@@ -168,11 +168,11 @@ Key messages to preserve in all materials:
 
 From `readings/counter_metrics_and_stakeholder_management.md`:
 
-- **Required** (pre-Day 1): 2 articles, ~27 minutes total
+- **Suggested** (pre-Day 1): 2 articles, ~27 minutes total
 - **Strongly Recommended**: 5 articles with clear "read when relevant" guidance
 - **Optional/Reference**: 10+ articles for deep dives
 
-**Do not add to Required readings without removing something else** - reading equity is a design constraint.
+**Do not add to Suggested readings without removing something else** - reading equity is a design constraint.
 
 ---
 

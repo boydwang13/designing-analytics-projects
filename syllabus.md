@@ -338,7 +338,7 @@ You'll submit 6 weekly write-ups from February 10 through March 17. These are pr
 
 ## Reading List
 
-### Required (Complete before Day 1)
+### Suggested Reading
 
 | Reading | Time | Purpose |
 |---------|------|---------|
