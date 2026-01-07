@@ -24,9 +24,9 @@ January 8, 2026
 
 **Eduardo Arino de la Rubia** (rubiae@ceu.edu)
 
+- Senior Director of Data Science, Meta
 - Chief Data Scientist, Domino Data Lab (pre-seed → Series B, Sequoia)
-- Principal Data Scientist, Ingram (10 years)
-- MS in Negotiation, Conflict Resolution, and Peacebuilding
+- Principal Data Scientist, Ingram
 
 Based in southern Spain.
 

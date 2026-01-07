@@ -393,7 +393,7 @@ Use these examples as reference when completing your scenario Brief.
 
 ## About the Instructor
 
-Eduardo Arino de la Rubia (rubiae@ceu.edu) is a data science leader based in southern Spain. He was previously Chief Data Scientist at Domino Data Lab (pre-seed through Series B led by Sequoia Capital) and spent 10 years as Principal Data Scientist at Ingram. He holds an MS in Negotiation, Conflict Resolution, and Peacebuilding from California State University, Dominguez Hills.
+Eduardo Arino de la Rubia (rubiae@ceu.edu) is a data science leader based in southern Spain. He was most recently Senior Director of Data Science at Meta, previously Chief Data Scientist at Domino Data Lab (pre-seed through Series B led by Sequoia Capital), and Principal Data Scientist at Ingram. He holds an MS in Negotiation, Conflict Resolution, and Peacebuilding from California State University, Dominguez Hills.
 
 ---
 
