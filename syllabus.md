@@ -345,7 +345,7 @@ You'll submit 6 weekly write-ups from February 10 through March 17. These are pr
 | **Designing Experimentation Guardrails** — Airbnb Engineering | ~15 min | Counter-metrics framework |
 | **Data Analyst Guide to Stakeholder Management** — Towards Data Science | ~12 min | Stakeholder mapping |
 
-**Total pre-reading: ~27 minutes**
+**Total suggested-reading: ~27 minutes**
 
 ### Recommended
 
