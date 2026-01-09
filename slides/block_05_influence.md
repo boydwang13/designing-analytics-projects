@@ -952,6 +952,32 @@ CFOs often respond to data and financial alignment more than authority.
 
 **Know your audience.** The wrong strategy is worse than no strategy.
 
+<!--
+INSTRUCTOR NOTE:
+
+**Background:** This slide shows mismatches between stakeholder type and influence strategy. Students need to see that picking the wrong strategy actively hurts their case.
+
+**Key point:** Wrong strategy isn't neutral — it's negative. It signals you don't understand your audience.
+
+**Say something like:**
+"Let me show you what happens when you pick the wrong strategy.
+
+Technical expert plus Authority: 'The VP wants this.' Their response? 'Show me the math.' They don't care who wants it. They care if it's correct. You've now signaled you don't have the analysis to back it up.
+
+Senior executive plus Excessive detail: You walk in with 47 slides of methodology. Their response? 'I don't have time for this.' You've wasted their attention. They wanted the answer, not the journey.
+
+Risk-averse PM plus Novelty framing: 'This is a cutting-edge approach no one's tried before!' Their response? 'Too risky.' You just triggered their fear instead of addressing it.
+
+Data-driven leader plus Anecdotes only: 'I talked to three customers who loved it.' Their response? 'Where's the evidence?' Anecdotes aren't data to them.
+
+The wrong strategy is worse than no strategy. It signals that you don't understand your audience. And if you don't understand them, why should they trust your recommendation?"
+
+**If asked:** "What if I'm not sure what type of stakeholder they are?"
+A: Ask around. Watch them in meetings. See what questions they ask. Do they want to know who supports it (authority), how you did the analysis (credibility), what others are doing (social proof), or how it fits the strategy (consistency)?
+
+**Transition:** "Now let's connect stakeholder mapping with influence strategy..."
+-->
+
 ---
 
 <!-- _class: lead -->
@@ -1016,6 +1042,34 @@ Champions advocate for you in rooms you're not in.
 3. **Anticipated objections + responses** — So they can defend
 4. **Your recommendation clearly** — So they don't misrepresent
 
+<!--
+INSTRUCTOR NOTE:
+
+**Background:** Champions are stakeholders who will advocate for your recommendation in meetings you're not in. Most analytics work gets decided in rooms you don't enter. Arming champions is how you extend your influence.
+
+**Key point:** Champions can only help if you equip them. Don't assume they'll know what to say.
+
+**Say something like:**
+"Champions advocate for you in rooms you're not in. This is critical. Most decisions get made in executive meetings, hallway conversations, Slack threads you're not part of. Your champion is your voice when you're not there.
+
+But here's what people miss: champions can only help if you arm them. You can't just say 'hey, can you support this in the leadership meeting?' You need to give them ammunition.
+
+Four things to give your champion:
+
+First, the one-sentence summary. When someone asks 'what's this about?' — what do they say? Write it for them. 'We're recommending shifting $200K from paid social to referral because referral has 3x better unit economics.'
+
+Second, the killer stat. The one number that makes the case. 'Referral CAC is $12 versus $45 for paid social.' Give them the number that wins.
+
+Third, anticipated objections plus responses. Someone's going to push back. What will they say? 'But paid social has broader reach.' And the response? 'True, but we're optimizing for profitability, not awareness.' Arm your champion with the counterarguments.
+
+Fourth, your recommendation clearly. Don't let them misrepresent you accidentally. 'We're recommending a 6-month pilot shifting $200K.' Not 'they want to kill paid social.' Precision matters."
+
+**If asked:** "What if my champion doesn't have time for all this?"
+A: Send them a one-pager. Literally one page: summary, killer stat, top 3 objections with responses, specific recommendation. Make it easy for them to skim 2 minutes before the meeting.
+
+**Transition:** "Now let's talk about the opposite — blockers..."
+-->
+
 ---
 
 ## Blockers: How to Neutralize Them
@@ -1030,6 +1084,34 @@ Blockers resist. Understand why:
 | **Past bad experience** | Acknowledge history, show what's different |
 
 **Pre-brief blockers privately.** Never surprise them in a meeting.
+
+<!--
+INSTRUCTOR NOTE:
+
+**Background:** Blockers are stakeholders who will resist your recommendation. Understanding why they resist is the key to neutralizing them. Most resistance isn't irrational — it's rational self-interest that you can work with.
+
+**Key point:** Every blocker has a reason. Diagnose the motivation, then apply the right strategy.
+
+**Say something like:**
+"Blockers resist. But resistance is rarely irrational. There's usually a reason, and if you understand it, you can address it.
+
+Let me walk through the four common motivations:
+
+Threatens their budget: Your recommendation takes money from their team. This is existential for them. Strategy: show mutual benefit if possible — 'this frees up budget for your higher-priority initiative.' Or acknowledge the tradeoff honestly — 'yes, this shifts resources, and here's why we think it's right for the company.' Don't pretend it doesn't hurt them.
+
+Threatens their credibility: Your finding implies their past decision was wrong. This is personal. Strategy: private conversation, not public. And collaborative framing — 'we learned something new' not 'you were wrong.' Let them save face.
+
+Creates work for them: Your recommendation means they have more to do. Strategy: offer to help — 'we'll handle the implementation.' Or phase the approach — 'we can start small so it doesn't overwhelm your team.'
+
+Past bad experience: They tried something like this before and it failed. Strategy: acknowledge the history — 'I know we tried X in 2019 and it didn't work.' Then show what's different — 'here's why this time is different: we have better data, a smaller scope, lessons learned.'
+
+The bottom line: Pre-brief blockers privately. Never surprise them in a meeting. That's when they dig in. Give them time to process privately."
+
+**If asked:** "What if I can't neutralize them?"
+A: You might not. But you've reduced their opposition and shown respect. Even if they still disagree, they're less likely to actively sabotage. And leadership sees you as someone who handles stakeholders professionally.
+
+**Transition:** "Let me show you exactly how to do a pre-brief..."
+-->
 
 ---
 
@@ -1094,6 +1176,38 @@ A: Better to know now than in the meeting. If they're hostile privately, you hav
 - Incorporate valid points
 - In meeting: "As [name] and I discussed, there are tradeoffs here..."
 
+<!--
+INSTRUCTOR NOTE:
+
+**Background:** This is a concrete example of a pre-brief in action. The DataDash scenario shows how to handle a blocker whose budget (and career) is threatened by your recommendation.
+
+**Key point:** The key phrase is "As [name] and I discussed..." — it signals you respected them, you incorporated their input, and this isn't a surprise attack.
+
+**Say something like:**
+"Let me walk through this example. You're recommending a $600K shift from Paid Search to LinkedIn. That's a significant budget move.
+
+Who's your blocker? The Paid Search manager. Why? Budget cut equals career threat. Their team shrinks. Their influence shrinks. Their job security is at risk. This is rational resistance.
+
+How do you handle it? Pre-brief.
+
+Meet privately before the presentation. Don't ambush them in the meeting.
+
+Frame it as 'I want to understand your perspective.' Not 'I need to warn you I'm about to cut your budget.' You're seeking input, not delivering bad news.
+
+Share your findings early. No surprises. Let them react privately. Let them be angry if they need to be — better now than in front of their boss.
+
+Ask: 'What am I missing about how Search contributes?' This is genuine. Maybe they know something about assisted conversions you didn't model. Maybe there's brand value you didn't capture. Listen.
+
+Incorporate valid points. If they have a good point, adjust your recommendation or acknowledge the tradeoff explicitly.
+
+Then in the meeting, you say: 'As [name] and I discussed, there are tradeoffs here...' This single phrase does several things: it signals you respected them enough to talk privately; it shows leadership you handle stakeholders professionally; and it takes the edge off because they're not surprised."
+
+**If asked:** "What if they're still hostile after the pre-brief?"
+A: At least they're prepared. And you can adjust — maybe recommend a smaller pilot, phase the shift, or acknowledge their concerns explicitly in the presentation. You've also protected yourself: if they attack, you can say 'as we discussed...'
+
+**Transition:** "Now let's practice this ourselves..."
+-->
+
 ---
 
 <!-- _class: lead -->
@@ -1141,6 +1255,33 @@ This is realistic. Analytics findings often imply someone was wrong. How you han
 
 Write down your answers.
 
+<!--
+INSTRUCTOR NOTE:
+
+**Background:** This is the individual thinking phase. Students should write down answers to all four questions before discussing. Enforce the writing — verbal thinking isn't as rigorous.
+
+**Key point:** The four questions mirror the Message Theory framework plus stakeholder handling.
+
+**Say something like:**
+"Take 3 minutes to think through this scenario individually. Write down your answers — don't just think, write.
+
+Four questions:
+
+One, what's your topic in 10 words? Remember the test from earlier — can you say it in 10 words? 'Why D7 retention dropped and how to fix it.' Something like that.
+
+Two, what's your specific recommendation? Not 'we should look at onboarding.' A specific action. 'Remove the mandatory friend-adding step and A/B test a simplified flow.'
+
+Three, what influence strategies will you use? Think about who's in the room. The Growth PM is there — they're data-driven, they care about metrics. What works for them?
+
+Four, how will you handle the Growth PM? They're your blocker. Their promotion case cited this launch. Your finding says it failed. What's your pre-brief approach?
+
+Write it down. I'll give you 3 minutes."
+
+**Facilitation:** Walk around the room. Glance at what people are writing. Note if anyone is struggling with the blocker question — that's the hardest part.
+
+**Transition:** "Okay, pair up with someone nearby..."
+-->
+
 ---
 
 ## Pair (5 min)
@@ -1152,6 +1293,34 @@ Write down your answers.
 > - Will the influence strategy work for this audience?
 > - Is the blocker mitigation realistic?
 
+<!--
+INSTRUCTOR NOTE:
+
+**Background:** Pair discussion forces students to articulate and defend their approach. The challenge questions are designed to stress-test weak spots.
+
+**Key point:** Partners should push back. Easy agreement doesn't help.
+
+**Say something like:**
+"Pair up with someone near you. Share your approach — all four answers.
+
+Your job isn't to agree with each other. Your job is to challenge each other. Three challenge questions:
+
+Is the recommendation specific enough? 'Simplify onboarding' is too vague. 'Remove the mandatory friend-adding step' is specific. Push your partner to be precise.
+
+Will the influence strategy work for this audience? If they said 'authority' — will the Growth PM care that leadership wants this? Maybe. Maybe not. What would actually persuade them?
+
+Is the blocker mitigation realistic? If their plan is 'I'll just explain the data and they'll understand' — push back. The Growth PM's promotion cited this launch. They're not going to 'just understand.' What's the actual conversation?
+
+Five minutes. Challenge each other."
+
+**Facilitation:** Walk around and listen. Eavesdrop on 2-3 pairs. Look for:
+- Pairs that are just agreeing politely (interrupt with a challenge)
+- Pairs stuck on the blocker question (that's normal, it's hard)
+- Creative approaches you can highlight during Share
+
+**Transition:** "Okay, let's hear from a few groups..."
+-->
+
 ---
 
 ## Share (10 min)
@@ -1162,13 +1331,47 @@ Write down your answers.
 
 <!--
 INSTRUCTOR NOTE:
-Looking for:
-- Topic: "Why retention dropped and how to fix it"
-- Recommendation: "Remove mandatory friend-adding, A/B test simplified flow"
-- Strategies: Credibility (data), Social Proof (correlation with retention drop), Consistency (retention is company priority)
-- Blocker: Pre-brief, frame as "learning" not "failure", acknowledge their other contributions
 
-Push back on weak approaches. Ask "What if the Growth PM pushes back with...?"
+**Background:** This is the group discussion phase where you call on 3-4 groups to share their approaches. The goal is to surface different strategies and push back on weak ones.
+
+**Key point:** Highlight variety in approaches and stress-test the blocker mitigation. That's where most students struggle.
+
+**Strong answers to look for:**
+- Topic: "Why D7 retention dropped and how to fix it" (or similar, under 10 words)
+- Recommendation: "Remove mandatory friend-adding step, A/B test simplified flow" (specific action)
+- Strategies: Credibility (the data is clear), Social Proof (industry benchmarks on onboarding length), Consistency (retention is a company priority)
+- Blocker handling: Pre-brief privately, frame as "learning" not "failure", acknowledge their other contributions, suggest they lead the fix
+
+**Say something like:**
+"Let's hear from a few groups. Who wants to share their approach?
+
+[Call on first group]
+
+Good. Let me push on the blocker piece. You said you'd 'explain the data.' But the Growth PM's promotion case cited this launch. What happens when you tell them their promoted work failed?
+
+[Let them respond, then push back or affirm]
+
+Who had a different approach to the blocker?
+
+[Call on second group with a different strategy]
+
+I like that — framing it as 'we learned something new' instead of 'you were wrong.' That lets them save face.
+
+One more. Anyone suggest pre-briefing the PM before the meeting?
+
+[Discuss the pre-brief approach if raised, or introduce it if not]"
+
+**Common weak answers to push back on:**
+- "I'll just present the data objectively" — The data implies their work failed. Objectivity doesn't solve the political problem.
+- "They'll understand because they're data-driven" — Being data-driven doesn't mean they'll accept data that hurts their career.
+- "I'll let leadership handle it" — You're passing the hard conversation to someone else. What's your approach?
+
+**Push-back prompts:**
+- "What if the Growth PM says 'but activation improved'?"
+- "What if they challenge your methodology?"
+- "What if they say 'we should wait for more data'?"
+
+**Transition:** "Let me pull together what we learned..."
 -->
 
 ---
