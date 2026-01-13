@@ -34,7 +34,7 @@ The course is built around a single artifact: the **Analytics Project Brief**. T
 │   ├── analytics_project_brief.md    # Blank template
 │   └── examples/              # 9 worked examples
 │
-├── scenarios/                 # 12 company case studies for practice
+├── scenarios/                 # 18 company case studies for practice
 ├── figures/                   # Slide images and visuals
 ├── weekly_writeups/           # Student assignment prompts
 ├── syllabus.md               # Full course syllabus
@@ -136,6 +136,10 @@ python scripts/check_overflow.py
 |---------|------|---------|
 | [Designing Experimentation Guardrails](https://medium.com/airbnb-engineering/designing-experimentation-guardrails-ed6a976ec669) — Airbnb Engineering | ~15 min | Counter-metrics framework |
 | [Data Analyst Guide to Stakeholder Management](https://towardsdatascience.com/data-analyst-guide-to-stakeholder-management-728413c19449/) — Towards Data Science | ~12 min | Stakeholder mapping |
+
+**Recommended Books:**
+- *Getting to Yes* (Chapters 1-3) — Fisher, Ury, Patton — Read before the influence and negotiation content
+- *Click Here: The Art and Science of Digital Marketing and Advertising* — Alex Schultz — Meta's CMO on digital marketing fundamentals, incrementality measurement, and attribution
 
 ---
 
