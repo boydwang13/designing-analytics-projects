@@ -101,16 +101,16 @@ Match each business problem (left) with the most appropriate foundational analys
 
 ## Part C: Applied (45 minutes, 55 points)
 
-### Scenario: TuneIn
+### Scenario: BeatStream
 
-**TuneIn** is a music streaming app with 8 million monthly active users. They offer both a free ad-supported tier and a Premium tier at $9.99/month.
+**BeatStream** is a music streaming app with 8 million monthly active users. They offer both a free ad-supported tier and a Premium tier at $9.99/month.
 
 **Business Model:**
 - Free tier: Ad-supported, shuffle-only listening, limited skips
 - Premium: Ad-free, on-demand listening, offline downloads, high-quality audio
 
 **Current Situation:**
-TuneIn has 8 million MAU but only 420,000 Premium subscribers (5.25% conversion). The industry benchmark is 8-12%. The CEO believes this represents a major revenue opportunity.
+BeatStream has 8 million MAU but only 420,000 Premium subscribers (5.25% conversion). The industry benchmark is 8-12%. The CEO believes this represents a major revenue opportunity.
 
 Two teams are debating the solution:
 
