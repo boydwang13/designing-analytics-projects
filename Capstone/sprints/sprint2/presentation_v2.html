@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sprint 2 Presentation V2 | Social Telemetry</title>
+  <style>
+    :root {
+      --bg: #f3f6fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --line: #dbe3ef;
+      --primary: #1d4ed8;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 15px;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 18px 64px; }
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a, #1d4ed8, #0f766e);
+      color: #fff;
+      border-radius: 14px;
+      padding: 28px 24px;
+      margin-bottom: 18px;
+    }
+    .hero h1 { margin: 0 0 6px; font-size: 26px; }
+    .hero p { margin: 0; opacity: 0.92; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 8;
+      background: rgba(243, 246, 251, 0.95);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px 10px;
+      margin-bottom: 16px;
+      font-size: 13px;
+      backdrop-filter: blur(4px);
+    }
+    nav a { color: var(--primary); text-decoration: none; margin-right: 10px; }
+    nav a:hover { text-decoration: underline; }
+    h2 {
+      margin: 24px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--primary);
+      color: #1e3a8a;
+      font-size: 20px;
+    }
+    h3 { margin: 14px 0 8px; font-size: 16px; color: #334155; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .kpi {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px;
+      background: #f8fbff;
+    }
+    .kpi .v { font-size: 22px; font-weight: 700; color: var(--primary); }
+    .kpi .t { font-size: 12px; color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 13px; }
+    th, td { border: 1px solid var(--line); padding: 7px; vertical-align: top; text-align: left; }
+    th { background: #eff4ff; }
+    code {
+      background: #eef2ff;
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-size: 12px;
+    }
+    ul { margin: 8px 0 8px 18px; }
+    .imgbox img {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+    .caption { margin-top: 6px; color: var(--muted); font-size: 12px; text-align: center; }
+    .iframe-wrap {
+      margin-top: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+    }
+    iframe { width: 100%; height: 740px; border: 0; display: block; }
+    .muted { color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>Sprint 2 Presentation (V2)</h1>
+      <p>Plan, sponsor-driven updates, key lists, Isolation Score, density matrix, interactive topology, and validation.</p>
+    </header>
+
+    <nav>
+      <strong>Contents:</strong>
+      <a href="#pid-s2">0. PID Sprint 2 Tasks</a>
+      <a href="#martin">1. Martin Feedback Implemented</a>
+      <a href="#lists">2. Top Lists and Main Metrics</a>
+      <a href="#iso">3. Isolation Score</a>
+      <a href="#density">4. Team Density Heatmap</a>
+      <a href="#topo">5. Interactive Topology V2</a>
+      <a href="#validation">6. Scenario Injection Testing</a>
+      <a href="#pid-s3">8. PID Sprint 3 Tasks</a>
+    </nav>
+
+    <section id="pid-s2">
+      <h2>0) PID Sprint 2 Tasks</h2>
+      <div class="card">
+        <p>From <code>docs/PID.md</code>, Sprint 2 (Weeks 3–4) focuses on:</p>
+        <ul>
+          <li>Compute centrality and Isolation Score to identify <code>Central Hubs</code>, <code>Brokers</code>, and <code>Silent Islands</code> (individuals and teams).</li>
+          <li>Deliver a dynamic network map and actionable silent-risk shortlists for management review.</li>
+          <li>Prepare and validate <code>Isolation_Risk_Flag</code> as the binary target for Sprint 3 modeling.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="martin">
+      <h2>1) What Was Added from Martin's Feedback</h2>
+      <div class="card">
+        <table>
+          <thead>
+            <tr><th>Feedback</th><th>Implementation</th><th>Current Output</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1) Convert text fields to numeric</td>
+              <td>Encode edge attributes for analysis</td>
+              <td><code>Interaction_Type_Code</code> (Hard=1, Soft=0) and <code>Interaction_Frequency_Weight</code> (Daily=1.00, Weekly=0.67, Monthly=0.33, Rarely=0.10)</td>
+            </tr>
+            <tr>
+              <td>2) Cluster nodes by Region/Team</td>
+              <td>Strengthen group clustering in layout</td>
+              <td>No Region in synthetic data, so clustering is done by <strong>Team</strong> using <code>spring_layout + virtual intra-team edges</code></td>
+            </tr>
+            <tr>
+              <td>3) Add interactivity</td>
+              <td>Hover + click focus behavior</td>
+              <td><code>sprint2_interactive_topology_v2.html</code>: click node/edge to focus while other elements fade, with a persistent info panel</td>
+            </tr>
+            <tr>
+              <td>4) Boundary Spanning / Broker logic</td>
+              <td>Add structural bridge metric</td>
+              <td>Added <code>betweenness_centrality</code> and shipped <code>sprint2_brokers_shortlist.md</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="lists">
+      <h2>2) Top Lists: Main Metrics and Calculation Logic</h2>
+      <div class="card">
+        <h3>A. Central Hubs (Power Users)</h3>
+        <p><strong>Main metric:</strong> <code>in_degree</code> (times an employee is asked for help)</p>
+        <p class="muted">Computed as the number of directed edges where the employee appears as <code>Target_EMP_ID</code>.</p>
+        <table>
+          <thead><tr><th>Top sample</th><th>EMP_ID</th><th>in_degree</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>EMP_159</td><td>33</td></tr>
+            <tr><td>2</td><td>EMP_126</td><td>33</td></tr>
+            <tr><td>3</td><td>EMP_198</td><td>32</td></tr>
+          </tbody>
+        </table>
+
+        <h3>B. Brokers (Bridges / Boundary Spanners)</h3>
+        <p><strong>Main metric:</strong> <code>betweenness_centrality</code></p>
+        <p class="muted">Computed from weighted shortest paths; edge distance uses <code>1 / Interaction_Frequency_Weight</code>. Higher values indicate stronger bridge roles.</p>
+        <table>
+          <thead><tr><th>Top sample</th><th>EMP_ID</th><th>betweenness</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>EMP_259</td><td>0.095352</td></tr>
+            <tr><td>2</td><td>EMP_219</td><td>0.089780</td></tr>
+            <tr><td>3</td><td>EMP_210</td><td>0.084158</td></tr>
+          </tbody>
+        </table>
+
+        <h3>C. Silent Islands (Individuals / Teams)</h3>
+        <p><strong>Main metric for individuals:</strong> <code>Isolation_Score</code>, then thresholded by <code>tau_ROC</code> for high-risk flags.</p>
+        <p><strong>Main team view:</strong> team-level aggregation of <code>%High</code> and average Isolation Score.</p>
+        <p class="muted">Individuals are scored first, then rolled up by Team (Silent / At Risk / Healthy by threshold rules).</p>
+      </div>
+    </section>
+
+    <section id="iso">
+      <h2>3) Isolation Score: Components and Interpretation</h2>
+      <div class="card">
+        <p><strong>Formula (v1.0):</strong></p>
+        <p><code>Isolation_Score = 0.25*OutboundScarcity + 0.25*WeakWeightShare + 0.25*TargetConcentration + 0.25*WeakBridgeDeficit</code></p>
+        <table>
+          <thead>
+            <tr><th>Sub-metric</th><th>Interpretation</th><th>Core formula</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>OutboundScarcity</code></td>
+              <td>Higher when a person rarely asks others for help</td>
+              <td><code>1 - out_degree/max_out_degree</code></td>
+            </tr>
+            <tr>
+              <td><code>WeakWeightShare</code></td>
+              <td>Higher when outbound ties are mostly weak (low frequency)</td>
+              <td><code>Weak_Tie_Outbound_Count / out_degree</code></td>
+            </tr>
+            <tr>
+              <td><code>TargetConcentration</code></td>
+              <td>Higher when requests are concentrated on very few people</td>
+              <td>Herfindahl：<code>Σ(count_to_target/total_outbound)^2</code></td>
+            </tr>
+            <tr>
+              <td><code>WeakBridgeDeficit</code></td>
+              <td>Higher when cross-team weak bridges are missing</td>
+              <td><code>1 - Weak_Cross_Team_Tie_Count/max(...)</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="muted">All four components are normalized to [0,1]. Higher means higher isolation risk. Equal weights are used as the v1.0 baseline.</p>
+      </div>
+    </section>
+
+    <section id="density">
+      <h2>4) Team Density Heatmap (<code>sprint2_team_density_heatmap.png</code>)</h2>
+      <div class="card">
+        <p><strong>How to read:</strong> Rows are source teams (who ask for help). Columns are target teams (who are asked). The diagonal is intra-team density; off-diagonal cells are cross-team density.</p>
+        <div class="imgbox">
+          <img src="outputs/sprint2_team_density_heatmap.png" alt="Sprint 2 Team Density Heatmap" />
+          <div class="caption">Unweighted directed team density (Cross &amp; Parker block density)</div>
+        </div>
+        <h3>Key findings in this snapshot</h3>
+        <ul>
+          <li>All six teams have <code>intra/off-diagonal &lt; 1</code> (DE=0.37, CS=0.97), so no classic silo team appears in this synthetic wave.</li>
+          <li>Analytics &amp; BI acts as a net helper (higher inbound demand than outbound demand).</li>
+          <li>Data Engineering depends more on outside teams, especially Analytics &amp; BI, than on internal ties.</li>
+          <li>This matrix turns visual structure into auditable directional dependency numbers.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="topo">
+      <h2>5) Interactive Topology (<code>sprint2_interactive_topology_v2.html</code>)</h2>
+      <div class="card">
+        <ul>
+          <li>Node encoding: color=Team, size≈<code>in_degree</code>, shape=Profile_Type, border color/width=Isolation Risk Tier.</li>
+          <li>Edge encoding: width≈<code>Interaction_Frequency_Weight</code>, color=Hard vs Soft.</li>
+          <li>V2 behavior: click a node or edge to focus; unrelated elements fade strongly.</li>
+          <li>A fixed info panel shows details for the clicked object (not only hover tooltip).</li>
+        </ul>
+        <div class="iframe-wrap">
+          <iframe src="outputs/sprint2_interactive_topology_v2.html" title="Sprint 2 Interactive Topology V2"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="validation">
+      <h2>6) Scenario Injection Testing and Results</h2>
+      <div class="card">
+        <p><strong>Goal:</strong> Use seeded <code>island</code> archetypes as ground truth in synthetic data and test whether Isolation Score can detect them reliably.</p>
+        <div class="kpis">
+          <div class="kpi"><div class="v">0.9999</div><div class="t">ROC-AUC</div></div>
+          <div class="kpi"><div class="v">0.6917</div><div class="t">τ_ROC (Youden's J optimal threshold)</div></div>
+          <div class="kpi"><div class="v">1.0000</div><div class="t">Sensitivity (TPR)</div></div>
+          <div class="kpi"><div class="v">0.9923</div><div class="t">Specificity (TNR)</div></div>
+        </div>
+        <table>
+          <thead><tr><th></th><th>Predicted Island</th><th>Predicted Not Island</th></tr></thead>
+          <tbody>
+            <tr><td>Actual Island</td><td><strong>TP=41</strong></td><td>FN=0</td></tr>
+            <tr><td>Actual Not Island</td><td>FP=2</td><td><strong>TN=257</strong></td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>Result: PID §66 credibility target is met (very high detection and very low false alarms).</li>
+          <li><strong>Why τ_ROC matters:</strong> this threshold is chosen to balance two goals at the same time: catch as many true high-risk cases as possible while keeping false positives low enough for practical management use.</li>
+          <li>Only 2 false positives appear at the decision boundary; treat them as investigation cases, not confirmed islands.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pid-s3">
+      <h2>8) PID Sprint 3 Tasks</h2>
+      <div class="card">
+        <p>From <code>docs/PID.md</code>, Sprint 3 (Weeks 5–6) focuses on predictive modeling:</p>
+        <ul>
+          <li>Use isolation risk as binary supervised target <code>y</code>.</li>
+          <li>Use simulated employee attributes as features <code>x</code> (for example Seniority, Years_Exp, skill and team variables).</li>
+          <li>Train and tune models (for example Logistic Regression and Random Forest).</li>
+          <li>Use 80/20 split plus 5-fold cross-validation; evaluate AUC, Brier score, and confusion-matrix metrics.</li>
+        </ul>
+        <p class="muted">Counter-metrics are intentionally excluded from this page, as requested.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

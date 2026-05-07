@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sprint 2 Presentation | Social Telemetry</title>
+  <style>
+    :root {
+      --bg: #f0f4fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --primary: #1d4ed8;
+      --accent: #0f766e;
+      --ok: #15803d;
+      --warn: #b45309;
+      --danger: #b91c1c;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+      font-size: 15px;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 18px 64px; }
+    header.hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 45%, #0f766e 100%);
+      color: #fff;
+      padding: 36px 24px;
+      border-radius: 16px;
+      margin-bottom: 22px;
+    }
+    header.hero h1 { margin: 0 0 8px; font-size: 26px; font-weight: 700; }
+    header.hero .en { opacity: 0.92; font-size: 15px; margin: 6px 0 0; }
+    header.hero .meta { margin-top: 14px; font-size: 13px; opacity: 0.88; }
+    nav.toc {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(240, 244, 251, 0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+    nav.toc a { color: var(--primary); margin-right: 12px; text-decoration: none; }
+    nav.toc a:hover { text-decoration: underline; }
+    h2 {
+      font-size: 20px;
+      margin: 28px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--primary);
+      color: #1e3a8a;
+    }
+    h2 .en { display: block; font-size: 14px; font-weight: 500; color: var(--muted); margin-top: 4px; }
+    h3 { font-size: 16px; margin: 16px 0 8px; color: #374151; }
+    .bilingual { margin: 10px 0; }
+    .bilingual .cn { margin: 0 0 6px; }
+    .bilingual .en {
+      margin: 0;
+      padding-left: 12px;
+      border-left: 3px solid var(--accent);
+      color: #374151;
+      font-size: 14px;
+    }
+    .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); font-weight: 700; margin-bottom: 4px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 14px;
+    }
+    .work-item { margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--line); }
+    .work-item:first-of-type { border-top: none; padding-top: 0; }
+    .kpi {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .kpi .item {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      background: #fafbff;
+    }
+    .kpi .sub { font-size: 12px; color: var(--muted); }
+    .kpi .num { font-size: 22px; font-weight: 700; color: var(--primary); }
+    .kpi .hint { font-size: 11px; color: var(--muted); margin-top: 4px; }
+    .ok { color: var(--ok); font-weight: 700; }
+    .warn { color: var(--warn); font-weight: 700; }
+    .danger { color: var(--danger); font-weight: 700; }
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-right: 4px;
+    }
+    .pill.ok { background: #dcfce7; color: #166534; }
+    .pill.warn { background: #fef3c7; color: #92400e; }
+    .pill.info { background: #dbeafe; color: #1e40af; }
+    .pill.accent { background: #ccfbf1; color: #0f766e; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+    th, td { border: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #eef2ff; }
+    ul { margin: 6px 0 6px 18px; }
+    code { background: #eef2ff; padding: 2px 5px; border-radius: 4px; font-size: 12px; }
+    .imgbox { margin-top: 12px; }
+    .imgbox img {
+      width: 100%;
+      max-width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+    .imgbox figcaption { font-size: 12px; color: var(--muted); margin-top: 6px; text-align: center; }
+    .iframe-wrap {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 12px;
+    }
+    .iframe-wrap iframe { width: 100%; height: 720px; border: 0; display: block; }
+    .foot { margin-top: 32px; color: var(--muted); font-size: 12px; text-align: center; }
+    @media print {
+      nav.toc { position: static; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>Sprint 2 汇报：核心 ONA、孤立分数与交互式拓扑</h1>
+      <p class="en">Sprint 2 Review: Core ONA Metrics, Isolation Score &amp; Interactive Topology</p>
+      <p class="meta">Social Telemetry — Seeing the Silent Teams · Canon EMEA Professional Services · Capstone · Weeks 3–4</p>
+    </header>
+
+    <nav class="toc">
+      <strong>目录 / Contents:</strong>
+      <a href="#plan">计划 Plan</a>
+      <a href="#work">工作 Work</a>
+      <a href="#snapshot">结果 Snapshot</a>
+      <a href="#density">密度矩阵 Density</a>
+      <a href="#viz">交互图 Topology</a>
+      <a href="#validation">验证 Validation</a>
+      <a href="#s3">Sprint 3</a>
+      <a href="#files">文件 Files</a>
+    </nav>
+
+    <!-- 1. Sprint plan -->
+    <section id="plan">
+      <h2>一、Sprint 2 计划与目标 <span class="en">Sprint 2 Plan &amp; Objectives</span></h2>
+      <div class="card">
+        <div class="bilingual">
+          <p class="cn"><strong>时间范围：</strong>Weeks 3–4（双周迭代）。</p>
+          <p class="en"><strong>Timeline:</strong> Weeks 3–4, bi-weekly agile cadence.</p>
+        </div>
+        <div class="bilingual">
+          <p class="cn"><strong>核心目标：</strong>(1) 计算 In/Out-degree + Betweenness 中心性；(2) 实现 Isolation Score v1.0 + 阈值策略 + 三档风险分层；(3) 交付静默个人名单 + 团队级聚合 + Cross & Parker 块密度矩阵；(4) 交互式拓扑图（pyvis）落地 Martin 的 Team 聚类 + hover tooltip 建议。</p>
+          <p class="en"><strong>Core goals:</strong> (1) Compute centrality (in/out/betweenness); (2) Operationalize Isolation Score v1.0 + threshold policy + three-tier risk layering; (3) Deliver silent-individual shortlist + team-level aggregation + Cross &amp; Parker block-density matrix; (4) Ship interactive topology (pyvis) with team clustering + hover tooltip per Martin's Sprint 1 feedback.</p>
+        </div>
+        <div class="bilingual">
+          <p class="cn"><strong>来源对齐：</strong>PID Sprint 2 四项核心任务 · Martin Sprint 1 评审 5 条建议 · CEU 课程对 counter-metrics / Scenario Injection Testing 的硬要求。</p>
+          <p class="en"><strong>Scope alignment:</strong> PID Sprint 2 four core tasks · Martin's 5 feedback points from Sprint 1 review · CEU course requirement for counter-metrics / Scenario Injection Testing.</p>
+        </div>
+        <h3>Definition of Done（基准 11 项 + D12 + D13）</h3>
+        <table>
+          <thead>
+            <tr><th>#</th><th>交付 Deliverable</th><th>状态 Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>D1</td><td>Schema v1.2.0：新增 <code>Interaction_Type_Code</code> + <code>Interaction_Frequency_Weight</code> 两列</td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D2</td><td><code>sprint2_nodes_with_metrics.csv</code>（300 × 20 列）</td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D3</td><td><code>sprint2_silent_individuals_shortlist.md</code> Top 20</td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D4</td><td><code>sprint2_silent_teams_aggregated.md</code> 6 teams</td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D5</td><td><code>sprint2_power_user_concentration.md</code></td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td><strong>D13</strong></td><td><strong><code>sprint2_brokers_shortlist.md</code></strong> — Top-10 结构中介（betweenness 主序）</td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D6</td><td><code>sprint2_validation_report.md</code>（Scenario Injection Testing）</td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D7</td><td><code>sprint2_counter_metrics.md</code>（CM-1/2/3）</td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D8</td><td><code>sprint2_interactive_topology.html</code>（pyvis self-contained）</td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D9</td><td><code>sprint2_summary_report.md</code> + <code>sprint2_review_pack.md</code></td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D10</td><td><code>run_sprint2.py</code> + <code>notebook.ipynb</code> + <code>README.md</code></td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>D11</td><td>治理：CHANGELOG v1.2.0 + v1.2.1 + v1.2.2 · <code>requirements.txt</code></td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td><strong>D12</strong></td><td><strong>Team 间有向密度矩阵</strong>（Cross &amp; Parker 块密度，6×6 + Hard/Soft + 热力图）</td><td><span class="pill ok">PASS</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 2. Workstreams -->
+    <section id="work">
+      <h2>二、本 Sprint 完成的工作 <span class="en">Work Completed This Sprint</span></h2>
+
+      <div class="card">
+        <div class="work-item">
+          <h3>WS1 · Schema v1.2.0 — 数值映射 (Martin #3)</h3>
+          <div class="label">依据与原理 Rationale</div>
+          <div class="bilingual">
+            <p class="cn">Sponsor 建议把文本字段抽象为数字：`Interaction_Type` 枚举、`Interaction_Frequency` 0–1 小数。算法和可视化层统一用数字，原字符串列保留给人类阅读。</p>
+            <p class="en">Sponsor requested numeric mapping for algorithmic efficiency. Strings are retained for human-readable tables; integer / decimal columns drive downstream code and layouts.</p>
+          </div>
+          <div class="label">产出 Deliverables</div>
+          <ul>
+            <li><code>data/mock_data_edges.csv</code> 加 2 列：<code>Interaction_Type_Code</code>（Hard=1 / Soft=0）、<code>Interaction_Frequency_Weight</code>（Daily=1.00 / Weekly=0.67 / Monthly=0.33 / Rarely=0.10，指数衰减）</li>
+            <li><code>docs/mock_codebook.md</code> Table 2 同步；Granovetter 整数权重与 v1.2.0 小数权重并列展示</li>
+          </ul>
+        </div>
+
+        <div class="work-item">
+          <h3>WS2 · Network Metrics — 中心性 + Boundary Spanning (Martin #1)</h3>
+          <div class="label">依据与原理 Rationale</div>
+          <div class="bilingual">
+            <p class="cn">In-degree → Hub 识别（Cross &amp; Parker central connector）；Betweenness → Broker 识别（Granovetter bridge）；<code>Cross_Team_Tie_Count</code> → Boundary Spanner 操作化（每人跨越了几个 Team）。仅使用你批准的两篇参考文献，不引入 Burt structural holes。</p>
+            <p class="en">In-degree flags hubs (Cross &amp; Parker central connector); betweenness flags brokers (Granovetter bridge); <code>Cross_Team_Tie_Count</code> operationalizes Cross &amp; Parker's boundary spanner (how many distinct teams each employee reaches). Burt's structural-hole measures were out of scope by decision.</p>
+          </div>
+          <div class="label">产出 Deliverables</div>
+          <ul>
+            <li><code>src/metrics.py</code> — 300 节点全量指标（degree / strength / betweenness / Cross_Team_Tie_Count / Weak_Tie_Outbound_Count / Weak_Cross_Team_Tie_Count）</li>
+            <li><code>outputs/sprint2_power_user_concentration.md</code> — Top-5 Hub inbound share, Herfindahl index</li>
+            <li><code>outputs/sprint2_brokers_shortlist.md</code> — Top-10 brokers（betweenness + Cross_Team_Tie_Count tie-break）</li>
+          </ul>
+        </div>
+
+        <div class="work-item">
+          <h3>WS3 · Isolation Score v1.0</h3>
+          <div class="label">依据与原理 Rationale</div>
+          <div class="bilingual">
+            <p class="cn">4 组件等权（w=0.25 each）：OutboundScarcity + WeakWeightShare + TargetConcentration + WeakBridgeDeficit。每项归一化到 [0, 1]；零出向节点被定义为 1.0（最孤立）。公式与归一化方法同步写入 codebook。</p>
+            <p class="en">Four equally weighted (0.25 each) sub-components: OutboundScarcity + WeakWeightShare + TargetConcentration + WeakBridgeDeficit. Each normalized to [0, 1]; zero-outbound nodes defined as 1.0 (maximally isolated). Formula and normalization documented in the codebook.</p>
+          </div>
+          <div class="label">产出 Deliverables</div>
+          <ul>
+            <li><code>src/isolation_score.py</code> — 可独立运行的 4-component scorer</li>
+            <li><code>Isolation_Score</code> 列加入 <code>sprint2_nodes_with_metrics.csv</code></li>
+          </ul>
+        </div>
+
+        <div class="work-item">
+          <h3>WS4 + WS5 · 阈值策略与 Scenario Injection Testing</h3>
+          <div class="label">依据与原理 Rationale</div>
+          <div class="bilingual">
+            <p class="cn">PID §66 要求："算法能准确 flag 注入的 island 且不产生 false positive。" 我们用 `Profile_Type=='island'` 作为 y，对 <code>Isolation_Score</code> 做 ROC 分析，取 Youden's J 最优点为 τ_ROC；并行输出三档分层（High / Medium / Low）。</p>
+            <p class="en">PID §66 mandates scenario injection testing. Using `Profile_Type == 'island'` as ground truth (41 / 300), we ran ROC analysis on Isolation_Score; τ_ROC = Youden's-J-optimal point. In parallel, a three-tier layering (High / Medium / Low) is emitted.</p>
+          </div>
+          <div class="label">产出 Deliverables</div>
+          <ul>
+            <li><code>src/threshold.py</code></li>
+            <li><code>Isolation_Risk_Flag</code>（binary y）+ <code>Isolation_Risk_Tier</code>（categorical）加入 D2</li>
+            <li><code>outputs/sprint2_validation_report.md</code> — AUC 0.9999，Sensitivity 1.0，Specificity 0.99</li>
+          </ul>
+        </div>
+
+        <div class="work-item">
+          <h3>WS6 · Team-level Aggregation（PID "silent teams"）</h3>
+          <div class="bilingual">
+            <p class="cn">把个人层面的孤立分数聚合到 6 个 Team，输出 <code>Team_Island_Status</code> ∈ {Silent, At Risk, Healthy}。当前合成数据中所有 team 都在 Healthy 档，这是一个额外的 Scenario Validation by-product。</p>
+            <p class="en">Individual-level scores rolled up to 6 teams, producing <code>Team_Island_Status</code>. All teams land in Healthy tier in the synthetic data — itself a Scenario Validation by-product confirming the archetype injection was balanced across teams.</p>
+          </div>
+          <div class="label">产出 Deliverables</div>
+          <ul>
+            <li><code>outputs/sprint2_silent_teams_aggregated.md</code></li>
+          </ul>
+        </div>
+
+        <div class="work-item">
+          <h3>WS7 · Interactive Topology (Martin #4 + #5)</h3>
+          <div class="bilingual">
+            <p class="cn">用 <code>nx.spring_layout</code> + 虚拟 intra-team 边强化 Team 空间聚类（separation ratio 9.5×），再用 pyvis 渲染为 self-contained HTML；节点 hover tooltip 含 10+ 个字段（EMP_ID / Team / Seniority / Years_Exp / 所有中心性 / Isolation Score / Tier 等）。</p>
+            <p class="en">Spring layout with virtual intra-team edges (separation ratio 9.5×) feeds pyvis to render a self-contained interactive HTML. Node tooltip exposes ~10 fields including all centrality metrics, Isolation Score and tier.</p>
+          </div>
+          <div class="label">产出 Deliverables</div>
+          <ul>
+            <li><code>src/viz.py</code></li>
+            <li><code>outputs/sprint2_interactive_topology.html</code> (~1 MB, self-contained)</li>
+          </ul>
+        </div>
+
+        <div class="work-item">
+          <h3>WS8 · Counter-metrics（CEU 硬要求）</h3>
+          <div class="bilingual">
+            <p class="cn">3 条 guardrail/tradeoff 防 Goodhart's Law：CM-1 新员工误报率（待真实数据启用）；CM-2 非英语主用者误伤率（当前 8.57%，低于阈值）；CM-3 Broker 误判数（0，模型自洽）。</p>
+            <p class="en">Three Goodhart-guardrail counter-metrics: CM-1 new-hire FP rate (deferred to real-data wave), CM-2 non-English primary users high-risk rate (8.57% current, below threshold), CM-3 broker false-positive count (0, model self-consistent).</p>
+          </div>
+          <div class="label">产出 Deliverables</div>
+          <ul><li><code>outputs/sprint2_counter_metrics.md</code></li></ul>
+        </div>
+
+        <div class="work-item">
+          <h3>WS9 · 一键执行 + Notebook + 汇总</h3>
+          <div class="bilingual">
+            <p class="cn">一条命令 <code>python sprints/sprint2/run_sprint2.py</code> 产出全部 D2–D9 + D12 + D13 的 10+ 个文件；notebook 含 8 cell 的演示版，可直接在 Jupyter 里跑。</p>
+            <p class="en">Single command <code>python sprints/sprint2/run_sprint2.py</code> produces all 10+ output files (D2–D9 + D12 + D13); notebook has 8 cells for Jupyter-based demo.</p>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>WS10 · 治理 Governance</h3>
+          <div class="bilingual">
+            <p class="cn">CHANGELOG v1.2.0（schema + 完整 Sprint 2 发布）+ v1.2.1（Team 密度矩阵）+ v1.2.2（Brokers shortlist / D13）；新建 <code>Capstone/requirements.txt</code> 声明依赖；PID delta log 更新大方向一致性自检表。</p>
+            <p class="en">CHANGELOG v1.2.0 (schema + full Sprint 2 delivery) + v1.2.1 (team density matrix) + v1.2.2 (brokers shortlist / D13); new <code>Capstone/requirements.txt</code>; PID delta log's consistency table refreshed to Sprint-2-end status.</p>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>D12 (v1.2.1 patch) · Team 间有向密度矩阵</h3>
+          <div class="bilingual">
+            <p class="cn">Sprint 2 交付后补丁：按 Cross &amp; Parker (2004) 块密度框架生成 6×6 有向密度矩阵，行 = 求助发起 team，列 = 被求助 team。4 个版本：未加权 / 加权 / Hard / Soft，加 2 张注释热力图 PNG。</p>
+            <p class="en">Post-Sprint-2 patch: 6×6 directed block density matrix per Cross &amp; Parker (2004). Four variants (unweighted / weighted / Hard / Soft) plus two annotated heatmap PNGs. Converts Martin's "is a team silo'd" question into hard numbers.</p>
+          </div>
+          <div class="label">产出 Deliverables</div>
+          <ul>
+            <li><code>src/team_density.py</code></li>
+            <li><code>outputs/sprint2_team_density_matrix.md</code> + 4 个 CSV + 2 张 PNG</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Quantitative Snapshot -->
+    <section id="snapshot">
+      <h2>三、量化结果 <span class="en">Quantitative Snapshot</span></h2>
+      <div class="card">
+        <div class="kpi">
+          <div class="item"><div class="sub">Nodes 节点</div><div class="num">300</div><div class="hint">seed = 5228</div></div>
+          <div class="item"><div class="sub">Edges 边</div><div class="num">1042</div><div class="hint">Hard 490 / Soft 552</div></div>
+          <div class="item"><div class="sub">ROC-AUC</div><div class="num">0.9999</div><div class="hint">target ≥ 0.80</div></div>
+          <div class="item"><div class="sub">τ_ROC</div><div class="num">0.6917</div><div class="hint">Youden's J optimal</div></div>
+          <div class="item"><div class="sub">Sensitivity (TPR)</div><div class="num">1.0000</div><div class="hint">41 / 41 islands recovered</div></div>
+          <div class="item"><div class="sub">Specificity (TNR)</div><div class="num">0.9923</div><div class="hint">257 / 259 non-islands</div></div>
+          <div class="item"><div class="sub">Top-5 Hub Share</div><div class="num">14.49%</div><div class="hint">preferential attachment 证据</div></div>
+          <div class="item"><div class="sub">Top-10 Hub Share</div><div class="num">23.32%</div><div class="hint">3.3% 员工吸走 23.3% 求助</div></div>
+          <div class="item"><div class="sub">Team 空间聚类</div><div class="num">9.5×</div><div class="hint">inter : intra distance ratio</div></div>
+          <div class="item"><div class="sub">Risk Tier High / Med / Low</div><div class="num">43 / 126 / 131</div><div class="hint">pyramid of intervention priority</div></div>
+        </div>
+        <h3>Archetype 回收验证 · Archetype Recovery</h3>
+        <div class="bilingual">
+          <p class="cn">所有 8 个注入 <code>hub</code> 精准出现在 Central Connectors 表 Top-8（主序 <code>in_degree</code>、<code>in_strength</code> 破并列；精度 100%）；所有 41 个注入 <code>island</code> 被 <code>Isolation_Risk_Flag = 1</code>（召回率 100%）。Welch t-test <code>island</code> vs <code>balanced</code> 的 p ≈ 10⁻⁴⁵——分布完全分离。</p>
+          <p class="en">All 8 seeded <code>hub</code> archetypes appear in Top-8 Central Connectors (<code>in_degree</code> primary, <code>in_strength</code> tie-break; 100% precision). All 41 seeded <code>island</code> archetypes flagged (100% recall). Welch's t-test (island vs balanced) p ≈ 10⁻⁴⁵ — distributions completely non-overlapping.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Density Matrix -->
+    <section id="density">
+      <h2>四、团队间密度矩阵 <span class="en">Team-to-Team Directed Block Density (Cross &amp; Parker, 2004)</span></h2>
+      <div class="card">
+        <div class="bilingual">
+          <p class="cn"><strong>读图说明：</strong>行 = 求助发起 Team，列 = 被求助 Team。对角线（深蓝框）= 团队内部求助密度；非对角线 = 跨团队求助密度。颜色越深密度越高。</p>
+          <p class="en"><strong>How to read:</strong> rows = source team (who asks), columns = target team (who is asked). Diagonal cells (dark-blue outline) = intra-team density; off-diagonal = cross-team. Deeper color = higher density.</p>
+        </div>
+        <div class="imgbox">
+          <figure>
+            <img src="outputs/sprint2_team_density_heatmap.png" alt="Team density heatmap (unweighted)" />
+            <figcaption>Unweighted directed density heatmap. Density = observed ties / possible directed ties.</figcaption>
+          </figure>
+        </div>
+
+        <h3>关键发现 · Key findings in current snapshot</h3>
+        <div class="bilingual">
+          <p class="cn">① 所有 6 个 team 的 intra/off-diagonal 比率都 &lt; 1（Data Engineering 最低 0.37，Client Services 最高 0.97）——<strong>没有 team 呈现 silo 特征</strong>。这是对 Martin "是否有整个团队变成孤岛" 的硬数据答复：在当前合成数据中未出现。</p>
+          <p class="cn">② Analytics &amp; BI 是 <strong>净助人方</strong>（inbound 0.086 vs outbound 0.066）。</p>
+          <p class="cn">③ Data Engineering 是 <strong>最向外依赖的团队</strong>（内部 0.005 vs 对 Analytics &amp; BI 的 0.017，3.4× 不对称）。</p>
+          <p class="en">① All six teams' intra/off-diagonal ratios are &lt; 1 (lowest 0.37 Data Engineering, highest 0.97 Client Services) — <strong>no team displays a classical silo pattern</strong> in synthetic data, directly answering Martin's question.</p>
+          <p class="en">② Analytics &amp; BI is a <strong>net help provider</strong> (inbound 0.086 &gt; outbound 0.066).</p>
+          <p class="en">③ Data Engineering is the <strong>most outward-dependent</strong> team (its own internal density 0.005 is only 1/3.4 of its density toward Analytics &amp; BI at 0.017).</p>
+        </div>
+
+        <h3>不对称 Top-5 · Largest cross-team asymmetries</h3>
+        <table>
+          <thead>
+            <tr><th>Team A → Team B</th><th>ρ(A→B)</th><th>ρ(B→A)</th><th>|asymmetry|</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Data Engineering → Analytics &amp; BI</td><td>0.0172</td><td>0.0079</td><td>0.0093</td></tr>
+            <tr><td>Platform Engineering → Client Services</td><td>0.0158</td><td>0.0096</td><td>0.0062</td></tr>
+            <tr><td>Solution Architecture → Platform Engineering</td><td>0.0149</td><td>0.0098</td><td>0.0051</td></tr>
+            <tr><td>Data Engineering → Platform Engineering</td><td>0.0137</td><td>0.0103</td><td>0.0034</td></tr>
+            <tr><td>Information Management → Data Engineering</td><td>0.0124</td><td>0.0094</td><td>0.0030</td></tr>
+          </tbody>
+        </table>
+        <div class="bilingual">
+          <p class="cn"><strong>叙事意义：</strong>不对称越大，越说明一个 team 结构性地依赖另一个 team 获取帮助，但反之不成立——这就是 Boundary Spanning 的"方向性"问题。</p>
+          <p class="en"><strong>Narrative:</strong> larger asymmetry means team A structurally depends on team B for help while B does not reciprocate — the directional facet of Boundary Spanning (Cross &amp; Parker 2004).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Interactive Topology -->
+    <section id="viz">
+      <h2>五、交互式拓扑图 <span class="en">Interactive Topology (pyvis)</span></h2>
+      <div class="card">
+        <div class="bilingual">
+          <p class="cn"><strong>读图说明：</strong>节点颜色 = Team（ColorBrewer Set2 色盲友好）；节点大小 ∝ in-degree（Hub 越大）；节点边框粗细/颜色 = Isolation_Risk_Tier（High=加粗红 / Medium=中等橙 / Low=细灰）；节点形状 = Profile_Type（balanced=圆 / hub=菱形 / broker=三角 / island=方块）。鼠标悬停显示 10+ 字段。</p>
+          <p class="en"><strong>How to read:</strong> color = Team (ColorBrewer Set2, colorblind-friendly); size ∝ in-degree (hubs larger); border = Isolation_Risk_Tier (High=thick red, Medium=orange, Low=thin gray); shape = Profile_Type (circle/diamond/triangle/square). Hover a node to see ~10 fields.</p>
+        </div>
+        <div class="iframe-wrap">
+          <iframe src="outputs/sprint2_interactive_topology.html" title="Sprint 2 Interactive Topology"></iframe>
+        </div>
+        <div class="bilingual">
+          <p class="cn">空间聚类 separation ratio = <strong>9.5×</strong>（跨团队距离是团队内距离的 9.5 倍），实现 Martin #4 "看得出整个团队是不是一个孤岛"的视觉诉求。</p>
+          <p class="en">Spatial clustering separation ratio = <strong>9.5×</strong>; Martin's "can I see whether a whole team is an island" request is visually satisfied.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Validation -->
+    <section id="validation">
+      <h2>六、Scenario Injection Testing <span class="en">Model Validation (PID §66)</span></h2>
+      <div class="card">
+        <div class="bilingual">
+          <p class="cn">PID §66 要求："算法能准确 flag 注入的 island 且不产生 false positive"。我们用 41 个 Sprint 1 注入的 island archetype 作为 ground truth 做 ROC 分析。</p>
+          <p class="en">PID §66 requires the algorithm to accurately flag injected islands without generating false positives. We used the 41 island archetypes from Sprint 1 as ground truth for ROC analysis.</p>
+        </div>
+        <h3>Confusion matrix at τ_ROC = 0.6917</h3>
+        <table>
+          <thead>
+            <tr><th></th><th>Predicted Island (Flag=1)</th><th>Predicted Not Island (Flag=0)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Actual Island</strong></td><td class="ok">TP = 41</td><td class="ok">FN = 0</td></tr>
+            <tr><td><strong>Actual Not Island</strong></td><td class="warn">FP = 2</td><td class="ok">TN = 257</td></tr>
+          </tbody>
+        </table>
+        <div class="bilingual">
+          <p class="cn"><strong>FP 解读：</strong>2 个误报（EMP_004、EMP_125）都正好落在 τ_ROC 边界，主导分量是 OutboundScarcity=0.67 + WeakBridgeDeficit=0.60。建议管理层将这 2 人标注为"需调查，不确认 island"——符合 Cross &amp; Parker 的"ONA 输出是判断依据，不是自动决策"原则。</p>
+          <p class="en"><strong>FP interpretation:</strong> both false positives (EMP_004, EMP_125) sit exactly at τ_ROC boundary with OutboundScarcity=0.67 + WeakBridgeDeficit=0.60. Recommend management treat these as "flagged for investigation, not confirmed island" — aligned with Cross &amp; Parker's stance that ONA outputs inform judgment, not replace it.</p>
+        </div>
+
+        <h3>Counter-metrics (Goodhart 保护)</h3>
+        <table>
+          <thead>
+            <tr><th>CM</th><th>类型</th><th>目标</th><th>当前值</th><th>状态</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CM-1 New-Hire FP Rate</td><td>Guardrail</td><td>≤ 10%</td><td>Undefined (0/0 in synthetic)</td><td><span class="pill info">Deferred</span></td></tr>
+            <tr><td>CM-2 Non-English User High-Risk Rate</td><td>Guardrail</td><td>≤ 10%</td><td>8.57%</td><td><span class="pill ok">PASS</span></td></tr>
+            <tr><td>CM-3 Broker False Positive Count</td><td>Tradeoff</td><td>= 0</td><td>0</td><td><span class="pill ok">PASS</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 7. Handoff to Sprint 3 -->
+    <section id="s3">
+      <h2>七、与 Sprint 3 的衔接 <span class="en">Handoff to Sprint 3</span></h2>
+      <div class="card">
+        <div class="bilingual">
+          <p class="cn"><strong>直接输入：</strong>数据 <code>data/*.csv</code> + 指标表 <code>outputs/sprint2_nodes_with_metrics.csv</code> 作为冻结基线；τ_ROC = 0.6917 已定，<code>Isolation_Risk_Flag</code> 作为 Sprint 3 的二分类目标 y。</p>
+          <p class="en"><strong>Direct inputs:</strong> Frozen `data/*.csv` + `outputs/sprint2_nodes_with_metrics.csv`; τ_ROC = 0.6917 fixed, `Isolation_Risk_Flag` becomes Sprint 3 binary target y.</p>
+        </div>
+        <h3>Sprint 3 计划任务</h3>
+        <table>
+          <thead>
+            <tr><th>#</th><th>任务 Task</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>用节点属性（Seniority / Team / Years_Exp / A1–H3 行为信号）作为 x；`Isolation_Risk_Flag` 作为 y；训练 Logistic Regression（可解释） + Random Forest（非线性）</td></tr>
+            <tr><td>2</td><td>80/20 holdout + 5-fold CV；评估 AUC / Brier Score / Confusion Matrix</td></tr>
+            <tr><td>3</td><td>对照 Sprint 2 规则式 Isolation Score，分析"模型学到了什么"（label leakage 防护）</td></tr>
+            <tr><td>4</td><td>新增 CM-4 / CM-5（模型 vs 规则不一致率；类别比例稳定性）</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 8. Files -->
+    <section id="files">
+      <h2>八、本 Sprint 交付文件索引 <span class="en">Sprint 2 File Index</span></h2>
+      <div class="card">
+        <h3><code>sprints/sprint2/</code></h3>
+        <ul>
+          <li><code>README.md</code> — DoD 清单 + 复现命令</li>
+          <li><code>sprint2_plan.md</code> — 本 Sprint 的计划原文</li>
+          <li><code>run_sprint2.py</code> — 一键执行脚本</li>
+          <li><code>notebook.ipynb</code> — 演示版 notebook</li>
+          <li><code>presentation.html</code> — 本汇报页</li>
+          <li><code>outputs/</code> — 所有交付输出（见下）</li>
+        </ul>
+
+        <h3><code>sprints/sprint2/outputs/</code></h3>
+        <ul>
+          <li><code>sprint2_nodes_with_metrics.csv</code> — 300 × 20 列节点指标总表</li>
+          <li><code>sprint2_silent_individuals_shortlist.md</code> — Top 20 个人名单 + 解释</li>
+          <li><code>sprint2_silent_teams_aggregated.md</code> — 6-team 聚合视图</li>
+          <li><code>sprint2_power_user_concentration.md</code> — Hub 集中度报告</li>
+          <li><code>sprint2_brokers_shortlist.md</code> — Brokers Top 10（betweenness-ranked）</li>
+          <li><code>sprint2_validation_report.md</code> — Scenario Injection Testing</li>
+          <li><code>sprint2_counter_metrics.md</code> — CM-1 / 2 / 3</li>
+          <li><code>sprint2_interactive_topology.html</code> — pyvis 交互式网络图</li>
+          <li><code>sprint2_team_density_matrix.{csv, md}</code> + weighted/hard/soft CSV + 2 张 PNG — Cross &amp; Parker 块密度</li>
+          <li><code>sprint2_summary_report.md</code> / <code>sprint2_review_pack.md</code> / <code>sprint2_summary.json</code></li>
+        </ul>
+
+        <h3><code>src/</code>（跨 Sprint 可复用）</h3>
+        <ul>
+          <li><code>generate_assets.py</code>（Sprint 1 + schema v1.2.0 补丁）</li>
+          <li><code>metrics.py</code>（WS2）</li>
+          <li><code>isolation_score.py</code>（WS3）</li>
+          <li><code>threshold.py</code>（WS4）</li>
+          <li><code>viz.py</code>（WS7）</li>
+          <li><code>team_density.py</code>（D12 补丁）</li>
+        </ul>
+
+        <h3><code>docs/</code>（治理文件）</h3>
+        <ul>
+          <li><code>PID.md</code>（只读）· <code>PID_delta_log.md</code>（大方向自检表已更新至 Sprint 2 末）· <code>CHANGELOG.md</code>（v1.2.0 + v1.2.1 + v1.2.2）· <code>mock_codebook.md</code>（Isolation Score v1.0 正式定稿）</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="foot">
+      Sprint 2 Presentation · Bilingual CN/EN · Social Telemetry Capstone · Canon EMEA<br />
+      Open this file from the <code>sprints/sprint2/</code> folder so image and iframe paths resolve correctly.
+    </p>
+  </div>
+</body>
+</html>

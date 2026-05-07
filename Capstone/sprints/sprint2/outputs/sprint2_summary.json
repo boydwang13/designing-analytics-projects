@@ -1,0 +1,25 @@
+{
+  "nodes": 300,
+  "edges": 1042,
+  "auc": 0.9999058291741219,
+  "tau_roc": 0.6917,
+  "sensitivity": 1.0,
+  "specificity": 0.9922779922779923,
+  "confusion": {
+    "tp": 41,
+    "fp": 2,
+    "tn": 257,
+    "fn": 0
+  },
+  "tier_counts": {
+    "Low": 131,
+    "Medium": 126,
+    "High": 43
+  },
+  "power_user_concentration": {
+    "total_inbound": 1042,
+    "Top5_Hub_Inbound_Share": 0.1449,
+    "Top10_Hub_Inbound_Share": 0.2332,
+    "Inbound_Herfindahl_Index": 0.009354
+  }
+}

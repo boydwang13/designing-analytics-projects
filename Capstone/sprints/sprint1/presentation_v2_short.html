@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sprint 1 Review V2 | Social Telemetry</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#121a2f;
+      --text:#e5ecff;
+      --muted:#9fb1d9;
+      --line:#2a355a;
+      --primary:#5ea1ff;
+      --ok:#40d18b;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+    .deck{max-width:1120px;margin:0 auto;padding:22px 16px 36px}
+    .slide{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin:0 0 16px;box-shadow:0 10px 26px rgba(0,0,0,.24)}
+    h1,h2,h3{margin:0 0 10px}
+    h1{font-size:30px}
+    h2{font-size:24px;color:var(--primary)}
+    h3{font-size:16px;color:#d7e2ff}
+    .sub{font-size:14px;color:var(--muted)}
+    ul{margin:8px 0 0 20px}
+    li{margin:6px 0}
+    .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:10px}
+    .item{border:1px solid var(--line);border-radius:10px;padding:10px;background:#0f1730}
+    .num{font-size:24px;font-weight:700;color:var(--primary)}
+    .ok{color:var(--ok);font-weight:700}
+    code{background:#1d2a52;padding:2px 5px;border-radius:4px}
+    table{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+    th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+    th{background:#162146}
+    .imgbox{margin-top:10px}
+    .imgbox img{width:100%;border:1px solid var(--line);border-radius:10px;background:#fff}
+    .note{border-left:3px solid #5ea1ff;padding-left:10px;margin-top:10px;color:#d8e4ff}
+    .footer{text-align:center;color:var(--muted);font-size:12px;margin-top:8px}
+  </style>
+</head>
+<body>
+  <div class="deck">
+
+    <section class="slide">
+      <h1>Sprint 1 Review (V2)</h1>
+      <p class="sub">Project: Social Telemetry — Seeing the Silent Teams | Canon EMEA</p>
+      <h2>The Plan for This Sprint</h2>
+      <ul>
+        <li>Generate a large-scale synthetic dataset via Python/AI, with node attributes and communication connections.</li>
+        <li>Run EDA and build an initial network topology prototype to establish the ONA pipeline.</li>
+      </ul>
+      <div class="kpi">
+        <div class="item"><div>Nodes</div><div class="num">300</div></div>
+        <div class="item"><div>Edges</div><div class="num">1042</div></div>
+        <div class="item"><div>DQ</div><div class="num ok">PASS</div></div>
+        <div class="item"><div>Issue Count</div><div class="num">0</div></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>What I Did in This Sprint</h2>
+      <h3>(1) Generated reproducible synthetic data under GDPR constraints</h3>
+      <ul>
+        <li>I split the original structure into two core tables:
+          <ul>
+            <li><code>mock_data_nodes.csv</code> (employee attributes)</li>
+            <li><code>mock_data_edges.csv</code> (directed communication ties)</li>
+          </ul>
+        </li>
+        <li>I reviewed ONA / broker references and added <code>Awareness_Score</code> and <code>Energy_Score</code>.</li>
+        <li>I updated survey and codebook accordingly.</li>
+        <li>I generated data with injected archetypes (<code>hub</code>, <code>broker</code>, <code>island</code>, <code>balanced</code>) plus noise.</li>
+      </ul>
+      <div class="note">Note: Awareness and Energy are already captured in data schema; deeper usage will be expanded in Sprint 2.</div>
+    </section>
+
+    <section class="slide">
+      <h2>* How Matching Works (Profile -> Edge Behavior)</h2>
+      <ul>
+        <li>Each employee is assigned one profile in <code>mock_data_nodes.csv</code>: hub / broker / island / balanced.</li>
+        <li>Edges are then generated in <code>mock_data_edges.csv</code> based on profile-specific rules.</li>
+      </ul>
+      <table>
+        <thead><tr><th>Profile</th><th>Edge behavior</th></tr></thead>
+        <tbody>
+          <tr><td>Hub</td><td>Moderate outgoing ties; often receives many incoming ties.</td></tr>
+          <tr><td>Broker</td><td>Fewer Hard ties; more Soft ties; often cross-team bridges.</td></tr>
+          <tr><td>Island</td><td>Very few outgoing ties (sometimes zero); often weaker frequencies.</td></tr>
+          <tr><td>Balanced</td><td>Mid-level Hard and Soft ties.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="slide">
+      <h2>(2) Run a Data-Quality Gate and EDA</h2>
+      <h3>** DQ gate checks did 4 things</h3>
+      <ol>
+        <li>Required columns exist.</li>
+        <li>No missing values in key edge fields.</li>
+        <li>Values are valid:
+          <ul>
+            <li><code>Interaction_Type</code> in {Hard, Soft}</li>
+            <li><code>Interaction_Frequency</code> in {Daily, Weekly, Monthly, Rarely}</li>
+            <li><code>Awareness_Score</code> and <code>Energy_Score</code> in 1..5</li>
+            <li><code>Nomination_Rank</code> in 1..3</li>
+          </ul>
+        </li>
+        <li>Relationship consistency:
+          <ul>
+            <li>No duplicate rank per person and interaction type</li>
+            <li>All source/target IDs exist in node table</li>
+          </ul>
+        </li>
+      </ol>
+      <h3>*** EDA did these things</h3>
+      <ul>
+        <li>Checked basic data shape.</li>
+        <li>Checked tie distributions (Hard/Soft, Daily/Weekly/Monthly/Rarely).</li>
+        <li>Built node connectivity profile (out-degree and in-degree).</li>
+        <li>Found early network signals: likely hubs and likely silent candidates.</li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <h2>(3) Initial Topology Prototype (Core Deliverable)</h2>
+      <ul>
+        <li>Created <code>network_prototype_v1.png</code> and <code>sprint1_topology_sandbox.png</code>.</li>
+        <li>Created <code>generate_sprint1_assets.py</code> as the first pipeline version.</li>
+      </ul>
+      <h3>**** Sandbox selection logic</h3>
+      <ol>
+        <li>Start with random sampling (fixed seed, repeatable).</li>
+        <li>If edges are too sparse, add highly connected nodes (top sources/targets).</li>
+      </ol>
+      <p class="sub">So it is not pure random. It is random-first, then connectivity-based boosting.</p>
+    </section>
+
+    <section class="slide">
+      <h2>How to Read sprint1_topology_sandbox.png</h2>
+      <ul>
+        <li><strong>Node size</strong> = incoming links (in-degree).</li>
+        <li><strong>Node color</strong>: red = higher in-degree, blue = lower in-degree.</li>
+        <li><strong>Edge color</strong> = interaction frequency category:
+          <ul>
+            <li>Daily = dark red</li>
+            <li>Weekly = orange</li>
+            <li>Monthly = light blue</li>
+            <li>Rarely = dark blue</li>
+          </ul>
+        </li>
+        <li><strong>Edge thickness</strong> = interaction strength from frequency.</li>
+      </ul>
+      <div class="imgbox"><img src="outputs/sprint1_topology_sandbox.png" alt="sandbox topology" /></div>
+    </section>
+
+    <section class="slide">
+      <h2>Key Signals from Sprint 1</h2>
+      <ul>
+        <li>Top 5 hub candidates (in-degree): EMP_126, EMP_159, EMP_198, EMP_166, EMP_247</li>
+        <li>Top 5 silent candidates (lowest out-degree): EMP_213, EMP_282, EMP_271, EMP_071, EMP_052</li>
+        <li>Frequency distribution: Weekly 409, Monthly 259, Daily 240, Rarely 134</li>
+      </ul>
+      <div class="imgbox"><img src="outputs/network_prototype_v1.png" alt="full topology" /></div>
+    </section>
+
+    <section class="slide">
+      <h2>The Plan for Next Sprint (Sprint 2)</h2>
+      <ul>
+        <li>Compute centrality and isolation scores to identify:
+          <ul>
+            <li>Central hubs (power users)</li>
+            <li>Brokers (bridges)</li>
+            <li>Silent islands (isolated people/teams)</li>
+          </ul>
+        </li>
+        <li>Deliver dynamic network map + actionable list of silent teams/individuals for management review (first iteration).</li>
+      </ul>
+      <table>
+        <thead><tr><th>Sprint 2 task</th><th>Uses Sprint 1 output</th></tr></thead>
+        <tbody>
+          <tr><td>Centrality computation</td><td><code>data/mock_data_edges.csv</code></td></tr>
+          <tr><td>Isolation score + thresholding</td><td><code>outputs/sprint1_node_degree_profile.csv</code> + edge frequencies</td></tr>
+          <tr><td>Management shortlist</td><td><code>outputs/sprint1_summary_report.md</code> + topology insights</td></tr>
+          <tr><td>Dynamic map iteration</td><td><code>network_prototype_v1.png</code> baseline</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p class="footer">Sprint 1 Review V2 (short) · Based on your provided framework and notes</p>
+  </div>
+</body>
+</html>

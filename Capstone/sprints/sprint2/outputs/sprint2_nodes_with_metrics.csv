@@ -1,0 +1,301 @@
+EMP_ID,Team,Seniority,Years_Exp,Profile_Type,in_degree,out_degree,in_strength,out_strength,betweenness_centrality,Cross_Team_Tie_Count,Weak_Tie_Outbound_Count,Weak_Cross_Team_Tie_Count,OutboundScarcity,WeakWeightShare,TargetConcentration,WeakBridgeDeficit,Isolation_Score,Isolation_Risk_Flag,Isolation_Risk_Tier
+EMP_001,Solution Architecture,Mid-level,16,balanced,0,4,0.0,2.66,0.0,2,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_002,Data Engineering,Mid-level,17,balanced,0,4,0.0,3.67,0.0,3,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_003,Platform Engineering,Mid-level,13,balanced,3,3,2.34,2.34,0.020466,1,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_004,Information Management,Mid-level,7,balanced,1,2,1.0,0.43,0.000258,1,2,2,0.6667,1.0,0.5,0.6,0.6917,1,High
+EMP_005,Information Management,Junior,10,balanced,0,2,0.0,1.0,0.0,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_006,Solution Architecture,Junior,5,island,4,0,2.66,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_007,Client Services,Junior,9,balanced,7,5,4.0,4.34,0.034795,3,0,0,0.1667,0.0,0.2,1.0,0.3417,0,Low
+EMP_008,Data Engineering,Junior,13,balanced,2,2,0.43,1.0,0.000533,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_009,Information Management,Senior,13,balanced,1,4,0.1,2.33,0.000196,2,2,1,0.3333,0.5,0.25,0.8,0.4708,0,Medium
+EMP_010,Platform Engineering,Mid-level,17,balanced,2,4,1.1,2.33,0.006893,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_011,Solution Architecture,Junior,8,balanced,2,3,1.1,0.87,0.00142,2,2,2,0.5,0.6667,0.3333,0.6,0.525,0,Medium
+EMP_012,Analytics & BI,Mid-level,5,balanced,3,3,1.77,2.0,0.007387,1,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_013,Information Management,Junior,7,balanced,2,2,1.0,1.1,0.000325,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_014,Platform Engineering,Junior,11,balanced,1,6,0.67,1.86,0.038024,3,5,5,0.0,0.8333,0.1667,0.0,0.25,0,Low
+EMP_015,Data Engineering,Mid-level,15,balanced,3,4,1.67,2.0,0.010327,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_016,Client Services,Junior,5,balanced,2,5,1.67,2.44,0.00173,3,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_017,Analytics & BI,Mid-level,6,balanced,5,3,3.67,2.34,0.009888,1,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_018,Solution Architecture,Junior,14,balanced,4,3,3.01,2.34,0.032932,1,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_019,Platform Engineering,Mid-level,16,balanced,3,5,2.0,4.01,0.014225,4,0,0,0.1667,0.0,0.2,1.0,0.3417,0,Low
+EMP_020,Platform Engineering,Mid-level,3,balanced,3,4,1.43,1.87,0.009543,2,2,1,0.3333,0.5,0.25,0.8,0.4708,0,Medium
+EMP_021,Information Management,Senior,16,balanced,6,5,3.0,2.66,0.015854,2,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_022,Client Services,Mid-level,3,island,2,0,1.34,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_023,Solution Architecture,Junior,3,balanced,1,5,0.67,3.33,0.011436,1,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_024,Client Services,Junior,4,balanced,9,4,5.44,2.77,0.014801,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_025,Data Engineering,Mid-level,11,balanced,3,5,1.1,3.67,0.013884,3,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_026,Analytics & BI,Mid-level,11,balanced,0,3,0.0,2.33,0.0,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_027,Client Services,Senior,4,balanced,1,6,0.67,2.77,0.015404,3,3,2,0.0,0.5,0.1667,0.6,0.3167,0,Low
+EMP_028,Client Services,Senior,15,broker,6,3,4.34,2.01,0.005322,1,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_029,Solution Architecture,Senior,9,balanced,2,3,1.0,1.33,0.000758,2,2,2,0.5,0.6667,0.3333,0.6,0.525,0,Medium
+EMP_030,Client Services,Junior,7,island,1,0,1.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_031,Client Services,Junior,8,balanced,2,3,1.0,1.44,0.010398,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_032,Analytics & BI,Senior,2,balanced,1,2,0.67,1.0,0.001347,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_033,Platform Engineering,Mid-level,10,balanced,4,5,2.33,3.0,0.012196,2,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_034,Platform Engineering,Junior,8,balanced,1,2,0.67,1.67,0.000595,2,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_035,Client Services,Senior,11,balanced,2,3,1.34,2.1,0.001704,1,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_036,Information Management,Junior,4,island,0,0,0.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_037,Platform Engineering,Junior,3,island,3,0,2.34,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_038,Information Management,Mid-level,3,balanced,5,4,4.01,2.66,0.013271,4,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_039,Client Services,Mid-level,14,balanced,1,5,0.33,4.0,0.004091,4,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_040,Client Services,Mid-level,6,balanced,3,2,2.67,2.0,0.018084,1,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_041,Data Engineering,Senior,2,balanced,1,5,0.33,3.1,0.003344,3,2,1,0.1667,0.4,0.2,0.8,0.3917,0,Low
+EMP_042,Platform Engineering,Junior,13,balanced,3,5,2.01,2.43,0.011507,3,3,2,0.1667,0.6,0.2,0.6,0.3917,0,Low
+EMP_043,Data Engineering,Mid-level,18,balanced,2,4,1.34,3.33,0.026348,4,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_044,Analytics & BI,Junior,10,balanced,0,2,0.0,0.77,0.0,1,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_045,Information Management,Junior,5,balanced,1,4,0.33,2.0,0.002435,3,2,1,0.3333,0.5,0.25,0.8,0.4708,0,Medium
+EMP_046,Client Services,Junior,13,balanced,2,2,0.2,1.0,0.0,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_047,Data Engineering,Senior,11,balanced,2,6,1.1,3.43,0.007491,3,3,3,0.0,0.5,0.1667,0.4,0.2667,0,Low
+EMP_048,Platform Engineering,Junior,2,balanced,1,4,0.33,2.44,0.002974,4,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_049,Analytics & BI,Junior,6,island,2,1,1.0,0.67,0.00486,1,0,0,0.8333,0.0,1.0,1.0,0.7083,1,High
+EMP_050,Analytics & BI,Junior,4,balanced,2,4,1.67,2.2,0.006672,4,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_051,Data Engineering,Junior,4,island,2,0,0.66,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_052,Information Management,Mid-level,6,island,2,1,0.77,0.33,0.003019,1,1,1,0.8333,1.0,1.0,0.8,0.9083,1,High
+EMP_053,Analytics & BI,Mid-level,11,broker,8,4,4.77,2.0,0.023153,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_054,Data Engineering,Junior,8,balanced,0,5,0.0,2.44,0.0,3,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_055,Solution Architecture,Senior,3,balanced,3,5,1.44,3.0,0.011651,2,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_056,Platform Engineering,Mid-level,3,balanced,6,4,3.1,1.2,0.005713,3,3,3,0.3333,0.75,0.25,0.4,0.4333,0,Medium
+EMP_057,Data Engineering,Mid-level,16,balanced,2,4,1.34,0.63,0.00303,3,4,4,0.3333,1.0,0.25,0.2,0.4458,0,Medium
+EMP_058,Data Engineering,Senior,17,balanced,2,3,1.1,2.33,0.006745,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_059,Platform Engineering,Junior,10,island,0,0,0.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_060,Solution Architecture,Senior,4,balanced,2,4,1.67,1.77,0.020097,1,2,1,0.3333,0.5,0.25,0.8,0.4708,0,Medium
+EMP_061,Platform Engineering,Mid-level,3,balanced,0,5,0.0,3.35,0.0,4,0,0,0.1667,0.0,0.2,1.0,0.3417,0,Low
+EMP_062,Solution Architecture,Mid-level,12,broker,10,3,5.87,2.67,0.022246,2,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_063,Analytics & BI,Senior,15,balanced,0,5,0.0,2.43,0.0,4,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_064,Platform Engineering,Junior,11,balanced,2,4,1.0,3.0,0.003793,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_065,Solution Architecture,Mid-level,16,broker,9,2,5.53,1.67,0.015335,2,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_066,Analytics & BI,Junior,13,balanced,2,5,2.0,3.33,0.019244,4,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_067,Information Management,Mid-level,2,island,1,0,1.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_068,Platform Engineering,Senior,15,hub,21,4,11.08,3.1,0.049123,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_069,Data Engineering,Junior,7,balanced,2,5,1.34,2.44,0.035049,3,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_070,Solution Architecture,Senior,14,balanced,1,4,1.0,1.77,0.006648,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_071,Solution Architecture,Mid-level,5,island,3,1,1.2,0.33,0.009551,1,1,1,0.8333,1.0,1.0,0.8,0.9083,1,High
+EMP_072,Analytics & BI,Mid-level,8,balanced,4,5,2.1,2.43,0.005101,2,3,2,0.1667,0.6,0.2,0.6,0.3917,0,Low
+EMP_073,Platform Engineering,Mid-level,8,balanced,2,4,1.1,1.3,0.008922,2,3,2,0.3333,0.75,0.25,0.6,0.4833,0,Medium
+EMP_074,Analytics & BI,Mid-level,7,balanced,4,4,1.77,3.01,0.033712,2,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_075,Platform Engineering,Senior,15,balanced,3,5,2.01,3.0,0.031122,2,2,1,0.1667,0.4,0.2,0.8,0.3917,0,Low
+EMP_076,Information Management,Mid-level,7,balanced,1,6,0.33,3.43,0.009506,3,3,2,0.0,0.5,0.1667,0.6,0.3167,0,Low
+EMP_077,Data Engineering,Mid-level,17,balanced,2,4,1.0,2.44,0.004304,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_078,Solution Architecture,Senior,9,balanced,4,4,1.99,3.34,0.006975,2,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_079,Platform Engineering,Senior,10,balanced,1,3,0.33,3.0,0.013161,1,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_080,Analytics & BI,Senior,16,broker,8,4,2.75,3.34,0.026832,2,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_081,Data Engineering,Mid-level,3,balanced,2,2,1.34,1.33,0.001257,1,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_082,Platform Engineering,Mid-level,11,balanced,1,4,1.0,3.33,0.002817,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_083,Platform Engineering,Mid-level,9,balanced,1,5,0.1,2.44,0.000988,2,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_084,Information Management,Mid-level,15,balanced,3,4,1.44,2.77,0.009719,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_085,Data Engineering,Junior,11,balanced,0,5,0.0,2.2,0.0,3,3,2,0.1667,0.6,0.2,0.6,0.3917,0,Low
+EMP_086,Solution Architecture,Senior,13,balanced,0,3,0.0,0.99,0.0,1,3,3,0.5,1.0,0.3333,0.4,0.5583,0,Medium
+EMP_087,Platform Engineering,Junior,1,island,3,0,1.67,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_088,Client Services,Mid-level,4,balanced,4,3,3.34,1.67,0.051063,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_089,Data Engineering,Junior,9,island,2,0,1.1,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_090,Analytics & BI,Mid-level,16,balanced,7,3,5.34,2.34,0.027663,3,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_091,Client Services,Mid-level,18,balanced,1,5,1.0,3.1,0.00788,3,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_092,Analytics & BI,Mid-level,4,balanced,6,6,3.44,3.1,0.037755,4,3,3,0.0,0.5,0.1667,0.4,0.2667,0,Low
+EMP_093,Solution Architecture,Junior,17,balanced,2,6,1.34,4.34,0.002589,5,1,1,0.0,0.1667,0.1667,0.8,0.2834,0,Low
+EMP_094,Information Management,Senior,7,broker,5,3,2.21,1.67,0.008468,3,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_095,Information Management,Junior,4,balanced,1,2,0.1,1.67,0.0,2,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_096,Analytics & BI,Mid-level,9,balanced,1,4,0.33,2.1,0.000101,2,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_097,Data Engineering,Mid-level,14,balanced,6,6,1.86,3.67,0.022239,3,2,2,0.0,0.3333,0.1667,0.6,0.275,0,Low
+EMP_098,Platform Engineering,Mid-level,12,balanced,1,5,1.0,3.33,0.006182,3,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_099,Analytics & BI,Mid-level,6,balanced,2,2,1.0,1.33,0.000303,1,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_100,Platform Engineering,Mid-level,9,island,1,0,0.67,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_101,Data Engineering,Mid-level,17,balanced,4,5,2.68,2.66,0.010493,4,3,2,0.1667,0.6,0.2,0.6,0.3917,0,Low
+EMP_102,Platform Engineering,Mid-level,3,balanced,3,3,1.77,1.33,0.009306,2,2,1,0.5,0.6667,0.3333,0.8,0.575,0,Medium
+EMP_103,Analytics & BI,Junior,7,balanced,2,6,1.67,3.66,0.013636,4,3,3,0.0,0.5,0.1667,0.4,0.2667,0,Low
+EMP_104,Information Management,Senior,14,balanced,1,5,0.33,2.77,0.003472,3,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_105,Platform Engineering,Mid-level,5,broker,11,4,6.09,3.0,0.026494,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_106,Platform Engineering,Junior,9,island,1,0,1.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_107,Information Management,Senior,2,balanced,3,6,2.67,3.33,0.025605,3,3,2,0.0,0.5,0.1667,0.6,0.3167,0,Low
+EMP_108,Solution Architecture,Mid-level,8,broker,10,4,7.1,2.34,0.036681,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_109,Data Engineering,Mid-level,10,balanced,2,3,1.67,1.67,0.00606,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_110,Data Engineering,Mid-level,1,island,0,0,0.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_111,Client Services,Senior,18,balanced,2,6,1.34,3.67,0.018529,4,2,2,0.0,0.3333,0.1667,0.6,0.275,0,Low
+EMP_112,Data Engineering,Mid-level,12,balanced,1,4,0.33,0.97,0.003019,2,3,3,0.3333,0.75,0.25,0.4,0.4333,0,Medium
+EMP_113,Client Services,Senior,17,balanced,1,5,0.33,3.68,0.013937,4,0,0,0.1667,0.0,0.2,1.0,0.3417,0,Low
+EMP_114,Information Management,Mid-level,8,broker,11,4,6.87,0.86,0.009046,4,4,4,0.3333,1.0,0.25,0.2,0.4458,0,Medium
+EMP_115,Data Engineering,Mid-level,8,balanced,0,4,0.0,1.87,0.0,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_116,Data Engineering,Junior,14,balanced,1,5,0.33,2.66,0.005331,3,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_117,Analytics & BI,Mid-level,9,balanced,3,3,1.33,1.67,0.009571,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_118,Platform Engineering,Mid-level,12,balanced,2,5,1.0,2.44,0.004136,3,2,1,0.1667,0.4,0.2,0.8,0.3917,0,Low
+EMP_119,Client Services,Junior,2,balanced,0,6,0.0,3.44,0.0,2,2,2,0.0,0.3333,0.1667,0.6,0.275,0,Low
+EMP_120,Information Management,Mid-level,4,balanced,1,4,0.33,1.43,0.000617,3,3,3,0.3333,0.75,0.25,0.4,0.4333,0,Medium
+EMP_121,Analytics & BI,Senior,15,balanced,4,4,3.01,2.34,0.030813,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_122,Platform Engineering,Junior,7,island,4,0,2.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_123,Solution Architecture,Junior,9,balanced,4,5,2.44,3.0,0.006659,3,2,1,0.1667,0.4,0.2,0.8,0.3917,0,Low
+EMP_124,Analytics & BI,Senior,4,balanced,0,5,0.0,3.34,0.0,2,1,0,0.1667,0.2,0.2,1.0,0.3917,0,Low
+EMP_125,Solution Architecture,Senior,12,balanced,4,2,1.77,0.43,0.0,1,2,2,0.6667,1.0,0.5,0.6,0.6917,1,High
+EMP_126,Analytics & BI,Senior,8,hub,33,2,20.18,1.67,0.037998,2,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_127,Client Services,Junior,8,balanced,0,4,0.0,1.87,0.0,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_128,Analytics & BI,Mid-level,1,island,2,0,1.67,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_129,Data Engineering,Mid-level,15,balanced,3,5,1.77,3.01,0.023802,4,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_130,Solution Architecture,Mid-level,14,balanced,5,6,2.1,3.66,0.031928,4,3,3,0.0,0.5,0.1667,0.4,0.2667,0,Low
+EMP_131,Solution Architecture,Mid-level,12,balanced,3,2,2.0,0.77,0.003472,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_132,Platform Engineering,Mid-level,7,balanced,3,2,2.67,1.0,0.019379,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_133,Analytics & BI,Mid-level,4,island,2,1,0.77,0.1,0.000146,1,1,1,0.8333,1.0,1.0,0.8,0.9083,1,High
+EMP_134,Solution Architecture,Junior,17,balanced,6,5,3.67,3.0,0.027828,4,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_135,Information Management,Junior,4,island,0,0,0.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_136,Platform Engineering,Mid-level,5,balanced,1,4,0.1,1.09,0.0,2,4,4,0.3333,1.0,0.375,0.2,0.4771,0,Medium
+EMP_137,Analytics & BI,Senior,3,balanced,2,5,0.66,1.64,0.004543,3,3,2,0.1667,0.6,0.2,0.6,0.3917,0,Low
+EMP_138,Analytics & BI,Mid-level,12,balanced,2,4,1.33,2.68,0.009072,3,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_139,Data Engineering,Mid-level,5,island,3,0,2.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_140,Data Engineering,Mid-level,2,island,1,1,0.33,0.67,4.5e-05,1,0,0,0.8333,0.0,1.0,1.0,0.7083,1,High
+EMP_141,Client Services,Mid-level,12,balanced,3,4,2.01,2.44,0.009151,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_142,Analytics & BI,Junior,10,island,1,0,0.67,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_143,Information Management,Senior,5,balanced,1,2,1.0,1.0,0.001218,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_144,Analytics & BI,Mid-level,15,broker,10,2,4.97,1.34,0.01045,2,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_145,Client Services,Senior,17,balanced,2,4,1.33,3.01,0.021234,4,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_146,Analytics & BI,Mid-level,17,balanced,3,3,1.67,0.53,0.002997,3,3,3,0.5,1.0,0.3333,0.4,0.5583,0,Medium
+EMP_147,Analytics & BI,Junior,4,balanced,3,4,2.01,2.67,0.011468,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_148,Solution Architecture,Mid-level,3,balanced,1,3,0.67,1.77,0.004573,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_149,Client Services,Senior,6,balanced,3,4,2.34,3.34,0.036857,2,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_150,Analytics & BI,Senior,12,balanced,1,4,0.1,1.77,0.0,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_151,Analytics & BI,Junior,1,island,3,2,0.76,0.66,0.003098,2,2,2,0.6667,1.0,0.5,0.6,0.6917,1,High
+EMP_152,Solution Architecture,Junior,12,balanced,2,3,1.34,1.67,0.006869,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_153,Data Engineering,Junior,1,island,3,1,2.34,0.1,0.0,0,1,0,0.8333,1.0,1.0,1.0,0.9583,1,High
+EMP_154,Information Management,Junior,16,balanced,3,6,1.44,3.0,0.018095,4,3,3,0.0,0.5,0.1667,0.4,0.2667,0,Low
+EMP_155,Analytics & BI,Mid-level,8,balanced,0,5,0.0,3.01,0.0,3,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_156,Platform Engineering,Senior,11,broker,6,4,4.34,2.77,0.031919,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_157,Data Engineering,Mid-level,2,balanced,1,5,0.67,2.1,0.05946,4,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_158,Data Engineering,Mid-level,13,balanced,1,5,0.1,3.11,0.0,3,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_159,Analytics & BI,Senior,8,hub,33,3,20.67,2.67,0.065263,2,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_160,Client Services,Mid-level,10,balanced,3,6,2.34,5.0,0.044341,3,1,1,0.0,0.1667,0.1667,0.8,0.2834,0,Low
+EMP_161,Client Services,Senior,7,broker,8,4,3.19,1.54,0.010359,3,2,1,0.3333,0.5,0.25,0.8,0.4708,0,Medium
+EMP_162,Platform Engineering,Mid-level,9,balanced,4,4,1.2,3.33,0.008079,1,1,0,0.3333,0.25,0.25,1.0,0.4583,0,Medium
+EMP_163,Platform Engineering,Mid-level,9,balanced,4,5,0.97,2.1,0.012355,4,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_164,Solution Architecture,Mid-level,7,broker,10,4,6.0,3.01,0.036776,2,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_165,Information Management,Junior,3,balanced,1,4,0.33,2.0,0.012738,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_166,Analytics & BI,Senior,20,hub,29,3,19.57,2.0,0.059378,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_167,Analytics & BI,Junior,10,balanced,0,3,0.0,1.67,0.0,3,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_168,Data Engineering,Senior,14,balanced,2,4,0.43,1.77,0.001212,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_169,Client Services,Junior,16,balanced,3,4,2.0,1.32,0.011999,2,4,3,0.3333,1.0,0.25,0.4,0.4958,0,Medium
+EMP_170,Solution Architecture,Junior,6,balanced,1,6,0.1,3.34,0.006038,3,2,2,0.0,0.3333,0.1667,0.6,0.275,0,Low
+EMP_171,Analytics & BI,Mid-level,6,balanced,1,4,0.67,3.01,0.003017,3,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_172,Solution Architecture,Junior,4,balanced,3,4,2.01,3.67,0.015149,4,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_173,Solution Architecture,Mid-level,10,broker,6,4,3.67,3.01,0.035872,3,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_174,Data Engineering,Mid-level,10,balanced,3,5,1.1,2.32,0.005892,4,4,4,0.1667,0.8,0.2,0.2,0.3417,0,Low
+EMP_175,Analytics & BI,Mid-level,3,island,4,0,1.77,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_176,Client Services,Mid-level,8,broker,10,3,4.77,2.0,0.022542,1,1,0,0.5,0.3333,0.3333,1.0,0.5416,0,Medium
+EMP_177,Solution Architecture,Mid-level,4,balanced,2,3,1.33,2.34,0.002104,2,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_178,Platform Engineering,Mid-level,16,balanced,3,5,1.44,2.1,0.003176,4,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_179,Solution Architecture,Senior,4,balanced,1,5,1.0,3.34,0.008877,2,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_180,Client Services,Junior,17,balanced,1,2,0.33,1.33,0.000213,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_181,Platform Engineering,Junior,5,balanced,4,5,1.77,2.87,0.011442,3,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_182,Information Management,Mid-level,15,balanced,1,6,1.0,3.77,0.002205,4,2,2,0.0,0.3333,0.1667,0.6,0.275,0,Low
+EMP_183,Platform Engineering,Senior,3,balanced,5,4,3.68,3.01,0.052236,2,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_184,Solution Architecture,Mid-level,10,balanced,3,4,1.1,2.44,0.001914,2,1,0,0.3333,0.25,0.25,1.0,0.4583,0,Medium
+EMP_185,Platform Engineering,Senior,11,balanced,4,6,1.43,3.34,0.004429,3,2,2,0.0,0.3333,0.1667,0.6,0.275,0,Low
+EMP_186,Platform Engineering,Junior,18,balanced,3,5,2.0,3.67,0.024714,3,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_187,Analytics & BI,Mid-level,2,balanced,2,5,2.0,2.33,0.007695,3,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_188,Information Management,Junior,14,balanced,1,4,0.67,2.43,0.000522,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_189,Client Services,Mid-level,5,balanced,2,2,2.0,1.0,0.00229,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_190,Solution Architecture,Mid-level,17,balanced,1,2,0.67,1.67,0.001337,2,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_191,Information Management,Mid-level,8,balanced,4,4,3.34,2.0,0.014678,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_192,Data Engineering,Junior,14,balanced,2,5,0.77,3.01,0.001285,3,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_193,Solution Architecture,Mid-level,3,balanced,7,4,3.33,3.01,0.023118,2,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_194,Solution Architecture,Junior,9,island,4,1,2.33,0.33,0.005636,1,1,1,0.8333,1.0,1.0,0.8,0.9083,1,High
+EMP_195,Solution Architecture,Mid-level,15,balanced,0,4,0.0,2.0,0.0,2,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_196,Platform Engineering,Mid-level,8,broker,11,4,5.73,2.77,0.059876,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_197,Data Engineering,Senior,8,broker,11,3,3.95,2.67,0.029015,1,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_198,Platform Engineering,Senior,12,hub,32,3,19.33,2.0,0.073343,1,1,0,0.5,0.3333,0.3333,1.0,0.5416,0,Medium
+EMP_199,Platform Engineering,Mid-level,16,balanced,0,3,0.0,0.99,0.0,3,3,3,0.5,1.0,0.3333,0.4,0.5583,0,Medium
+EMP_200,Analytics & BI,Junior,5,island,0,1,0.0,0.33,0.0,0,1,0,0.8333,1.0,1.0,1.0,0.9583,1,High
+EMP_201,Platform Engineering,Junior,7,island,2,0,1.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_202,Analytics & BI,Mid-level,9,broker,6,3,3.33,2.34,0.028396,2,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_203,Data Engineering,Junior,6,balanced,7,3,4.78,1.1,0.006388,3,2,2,0.5,0.6667,0.3333,0.6,0.525,0,Medium
+EMP_204,Analytics & BI,Junior,3,island,4,0,2.43,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_205,Solution Architecture,Mid-level,7,balanced,3,2,2.0,1.67,0.001842,1,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_206,Platform Engineering,Mid-level,12,balanced,0,4,0.0,2.67,0.0,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_207,Information Management,Mid-level,15,broker,6,4,5.01,3.1,0.0763,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_208,Solution Architecture,Mid-level,16,balanced,1,3,0.1,1.67,0.0,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_209,Platform Engineering,Mid-level,7,balanced,1,4,0.33,2.11,2.2e-05,4,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_210,Client Services,Mid-level,11,broker,14,3,10.01,1.67,0.084158,2,1,0,0.5,0.3333,0.3333,1.0,0.5416,0,Medium
+EMP_211,Information Management,Junior,14,balanced,7,6,3.88,2.77,0.058916,4,3,2,0.0,0.5,0.1667,0.6,0.3167,0,Low
+EMP_212,Information Management,Mid-level,5,balanced,3,4,2.67,3.34,0.024277,3,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_213,Analytics & BI,Mid-level,2,island,2,1,1.0,0.1,0.006027,1,1,1,0.8333,1.0,1.0,0.8,0.9083,1,High
+EMP_214,Information Management,Mid-level,4,balanced,4,5,1.54,3.0,0.016083,4,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_215,Information Management,Mid-level,4,balanced,2,4,1.34,2.1,0.008603,2,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_216,Analytics & BI,Mid-level,3,island,2,1,2.0,0.1,0.002839,1,1,1,0.8333,1.0,1.0,0.8,0.9083,1,High
+EMP_217,Platform Engineering,Mid-level,9,balanced,3,2,2.0,1.0,0.014807,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_218,Client Services,Mid-level,14,hub,22,2,11.74,2.0,0.033426,1,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_219,Information Management,Senior,13,hub,20,2,12.63,1.67,0.08978,2,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_220,Platform Engineering,Junior,9,balanced,3,4,1.44,2.66,0.001693,2,2,1,0.3333,0.5,0.25,0.8,0.4708,0,Medium
+EMP_221,Analytics & BI,Junior,5,balanced,5,2,3.67,1.1,0.006932,1,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_222,Data Engineering,Mid-level,5,balanced,1,5,1.0,2.66,0.012039,3,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_223,Analytics & BI,Mid-level,4,balanced,3,6,0.87,3.1,0.014708,3,3,3,0.0,0.5,0.1667,0.4,0.2667,0,Low
+EMP_224,Information Management,Junior,8,island,1,0,1.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_225,Information Management,Mid-level,6,balanced,2,4,1.67,2.33,0.005415,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_226,Analytics & BI,Mid-level,4,balanced,2,5,1.33,3.34,0.002583,4,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_227,Client Services,Junior,7,island,1,0,0.67,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_228,Client Services,Senior,10,balanced,0,2,0.0,1.33,0.0,1,1,0,0.6667,0.5,0.5,1.0,0.6667,0,Medium
+EMP_229,Information Management,Mid-level,10,balanced,2,4,1.0,2.11,0.00312,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_230,Solution Architecture,Mid-level,7,broker,5,4,4.01,2.68,0.043067,2,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_231,Client Services,Junior,4,balanced,3,6,1.67,3.44,0.018715,4,2,2,0.0,0.3333,0.1667,0.6,0.275,0,Low
+EMP_232,Platform Engineering,Senior,16,broker,10,4,6.77,2.11,0.032652,4,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_233,Client Services,Junior,9,balanced,1,3,0.1,1.77,0.003053,3,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_234,Client Services,Mid-level,18,balanced,1,6,0.33,2.86,0.003266,3,4,3,0.0,0.6667,0.1667,0.4,0.3084,0,Low
+EMP_235,Analytics & BI,Junior,2,balanced,1,5,0.67,2.66,0.00069,3,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_236,Solution Architecture,Junior,11,balanced,2,3,1.67,2.0,0.004282,3,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_237,Platform Engineering,Junior,4,balanced,2,4,0.66,1.77,0.006358,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_238,Analytics & BI,Junior,10,island,1,0,0.33,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_239,Client Services,Senior,2,balanced,2,5,1.67,1.87,0.009877,3,3,2,0.1667,0.6,0.2,0.6,0.3917,0,Low
+EMP_240,Analytics & BI,Mid-level,10,balanced,1,3,0.33,2.34,0.001807,1,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_241,Information Management,Senior,17,balanced,5,4,2.78,3.34,0.007016,3,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_242,Data Engineering,Mid-level,12,balanced,2,5,1.34,3.0,0.005294,4,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_243,Client Services,Junior,7,balanced,4,4,1.2,2.33,0.012493,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_244,Client Services,Mid-level,13,balanced,1,3,1.0,1.77,0.008303,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_245,Solution Architecture,Mid-level,8,balanced,3,4,0.87,2.67,0.016837,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_246,Client Services,Senior,18,balanced,1,4,0.1,2.2,2.2e-05,2,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_247,Client Services,Senior,9,hub,24,3,14.19,2.34,0.065092,2,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_248,Data Engineering,Senior,5,balanced,3,3,1.33,1.43,0.00413,3,2,2,0.5,0.6667,0.3333,0.6,0.525,0,Medium
+EMP_249,Platform Engineering,Junior,10,balanced,2,3,2.0,1.67,0.013054,3,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_250,Data Engineering,Senior,7,balanced,2,5,1.0,3.77,0.005185,3,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_251,Solution Architecture,Mid-level,3,balanced,3,4,1.67,2.44,0.03342,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_252,Analytics & BI,Mid-level,14,broker,6,3,2.53,2.01,0.029733,3,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_253,Platform Engineering,Junior,4,balanced,2,2,1.1,0.77,0.000359,1,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_254,Data Engineering,Junior,17,balanced,1,2,1.0,1.0,0.00066,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_255,Information Management,Mid-level,13,balanced,1,6,0.67,4.01,0.030562,5,1,1,0.0,0.1667,0.1667,0.8,0.2834,0,Low
+EMP_256,Platform Engineering,Mid-level,5,balanced,2,5,1.34,3.0,0.003878,3,2,2,0.1667,0.4,0.2,0.6,0.3417,0,Low
+EMP_257,Client Services,Junior,18,balanced,1,4,0.67,3.0,0.014201,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_258,Platform Engineering,Senior,14,balanced,0,4,0.0,1.99,0.0,2,3,2,0.3333,0.75,0.25,0.6,0.4833,0,Medium
+EMP_259,Client Services,Mid-level,13,broker,8,4,6.68,3.01,0.095352,3,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_260,Solution Architecture,Senior,9,balanced,3,6,2.01,3.76,0.026391,4,3,3,0.0,0.5,0.1667,0.4,0.2667,0,Low
+EMP_261,Analytics & BI,Mid-level,16,balanced,3,4,1.66,3.0,0.056791,1,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_262,Solution Architecture,Senior,9,balanced,4,3,2.1,2.0,0.012317,2,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_263,Information Management,Junior,17,balanced,4,6,2.0,4.0,0.046363,2,2,1,0.0,0.3333,0.1667,0.8,0.325,0,Low
+EMP_264,Analytics & BI,Junior,2,balanced,2,6,1.0,3.1,0.011111,3,3,2,0.0,0.5,0.1667,0.6,0.3167,0,Low
+EMP_265,Information Management,Mid-level,16,balanced,2,5,1.34,2.2,0.0178,2,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_266,Platform Engineering,Senior,17,balanced,2,3,0.77,1.77,0.007793,3,1,1,0.5,0.3333,0.3333,0.8,0.4916,0,Medium
+EMP_267,Analytics & BI,Mid-level,12,broker,9,4,4.54,3.01,0.04883,2,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_268,Information Management,Senior,11,balanced,4,4,2.33,1.43,0.02023,3,3,3,0.3333,0.75,0.25,0.4,0.4333,0,Medium
+EMP_269,Platform Engineering,Senior,17,balanced,1,2,1.0,1.67,0.005898,2,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_270,Analytics & BI,Junior,12,balanced,2,4,1.0,2.77,0.007699,2,1,0,0.3333,0.25,0.25,1.0,0.4583,0,Medium
+EMP_271,Solution Architecture,Junior,5,island,3,1,1.2,0.1,0.0,1,1,1,0.8333,1.0,1.0,0.8,0.9083,1,High
+EMP_272,Platform Engineering,Mid-level,12,broker,5,4,2.67,2.67,0.016696,1,1,0,0.3333,0.25,0.25,1.0,0.4583,0,Medium
+EMP_273,Analytics & BI,Mid-level,15,balanced,1,4,0.33,1.87,0.00168,4,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_274,Analytics & BI,Mid-level,14,balanced,3,3,2.0,1.33,0.005628,2,2,2,0.5,0.6667,0.3333,0.6,0.525,0,Medium
+EMP_275,Information Management,Mid-level,7,balanced,2,3,1.1,2.34,0.01332,2,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_276,Solution Architecture,Junior,2,balanced,3,2,2.34,1.0,0.00734,2,1,1,0.6667,0.5,0.5,0.8,0.6167,0,Medium
+EMP_277,Data Engineering,Junior,10,island,2,0,1.67,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_278,Solution Architecture,Junior,8,balanced,4,5,3.33,3.11,0.04386,4,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low
+EMP_279,Analytics & BI,Mid-level,5,balanced,3,5,2.0,1.87,0.011884,2,3,2,0.1667,0.6,0.2,0.6,0.3917,0,Low
+EMP_280,Solution Architecture,Senior,12,balanced,2,3,1.67,1.2,0.001895,2,2,2,0.5,0.6667,0.3333,0.6,0.525,0,Medium
+EMP_281,Information Management,Senior,4,balanced,4,5,3.0,2.2,0.003698,4,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_282,Platform Engineering,Junior,4,island,1,1,0.1,0.33,2.2e-05,1,1,1,0.8333,1.0,1.0,0.8,0.9083,1,High
+EMP_283,Data Engineering,Mid-level,10,island,1,0,0.1,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_284,Solution Architecture,Mid-level,4,balanced,1,3,1.0,1.33,0.001698,2,2,2,0.5,0.6667,0.3333,0.6,0.525,0,Medium
+EMP_285,Data Engineering,Junior,4,balanced,5,5,1.53,3.68,0.002957,4,0,0,0.1667,0.0,0.2,1.0,0.3417,0,Low
+EMP_286,Information Management,Mid-level,7,balanced,1,4,0.67,1.3,0.006451,1,3,2,0.3333,0.75,0.25,0.6,0.4833,0,Medium
+EMP_287,Analytics & BI,Junior,9,island,4,0,3.0,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_288,Information Management,Senior,7,broker,7,4,4.44,2.67,0.041322,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_289,Client Services,Junior,16,balanced,2,3,1.34,0.76,0.000236,3,3,3,0.5,1.0,0.3333,0.4,0.5583,0,Medium
+EMP_290,Analytics & BI,Mid-level,12,balanced,1,4,0.33,2.44,0.002997,2,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_291,Data Engineering,Mid-level,16,balanced,3,5,1.67,1.87,0.004929,3,3,3,0.1667,0.6,0.2,0.4,0.3417,0,Low
+EMP_292,Solution Architecture,Mid-level,7,broker,2,4,1.0,2.34,0.004298,4,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_293,Data Engineering,Junior,12,balanced,2,2,1.0,1.67,0.009353,2,0,0,0.6667,0.0,0.5,1.0,0.5417,0,Medium
+EMP_294,Data Engineering,Mid-level,5,island,1,0,0.67,0.0,0.0,0,0,0,1.0,1.0,1.0,1.0,1.0,1,High
+EMP_295,Client Services,Junior,15,balanced,1,4,0.33,1.77,0.000778,3,2,2,0.3333,0.5,0.25,0.6,0.4208,0,Medium
+EMP_296,Analytics & BI,Mid-level,5,balanced,3,4,2.0,3.01,0.013428,3,0,0,0.3333,0.0,0.25,1.0,0.3958,0,Low
+EMP_297,Data Engineering,Junior,9,balanced,1,4,0.1,2.67,0.005982,3,1,1,0.3333,0.25,0.25,0.8,0.4083,0,Low
+EMP_298,Data Engineering,Senior,11,broker,15,3,7.99,2.34,0.082881,2,0,0,0.5,0.0,0.3333,1.0,0.4583,0,Medium
+EMP_299,Solution Architecture,Mid-level,12,balanced,3,5,2.34,3.0,0.017308,3,2,1,0.1667,0.4,0.2,0.8,0.3917,0,Low
+EMP_300,Analytics & BI,Mid-level,18,balanced,1,5,0.67,3.01,0.010937,3,1,1,0.1667,0.2,0.2,0.8,0.3417,0,Low

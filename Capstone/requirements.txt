@@ -1,0 +1,18 @@
+# Capstone · Social Telemetry — Python dependencies
+#
+# Install with:
+#     pip install -r Capstone/requirements.txt
+#
+# Or (if using the existing workspace-level .venv_lib):
+#     pip install --target .venv_lib -r Capstone/requirements.txt
+
+# --- Sprint 1 (data generation + static EDA + PNG rendering) ---
+pandas>=1.5
+Pillow>=10
+numpy>=1.23
+
+# --- Sprint 2 (core ONA + Isolation Score + threshold + interactive viz) ---
+networkx>=3
+scikit-learn>=1.3
+scipy>=1.10
+pyvis>=0.3

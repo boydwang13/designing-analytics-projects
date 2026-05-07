@@ -1,0 +1,301 @@
+EMP_ID,Seniority,Team,Years_Exp,Profile_Type,A1_PostgreSQL,A2_Linux,A3_Python,A4_Cloud,A5_InfoMgmt,A6_Networking,A7_DataAnalytics,A8_API,A9_TechConsult,B1_English,B2_German,B3_French,B4_OtherLang,C1_ClientMeetings,C2_ScopingSessions,C3_IndustryAdvice,D1_KnowledgeSessions,D2_MentoringCount,D3_CrossTeamContrib,E1_TeamLeadCount,E2_EscalationsToMe,E3_UnblockCount,F1_IncidentsCalled,F2_ProblemConsults,F3_InnovationsAdopted,G1_MultiCountryProj,G2_CulturalBridging,H1_StakeholderExplain,H2_DocsAuthored,H3_PresentationsGiven,Isolation_Risk_Flag
+EMP_001,Mid-level,Solution Architecture,16,balanced,3,3,2,3,1,2,1,2,3,3,2,1,2,3,3,4,1,1,3,3,1,3,4,2,3,4,4,4,3,3,0
+EMP_002,Mid-level,Data Engineering,17,balanced,3,4,4,3,3,3,3,3,3,2,2,0,1,4,5,3,4,4,3,2,2,3,3,2,2,2,4,0,5,4,0
+EMP_003,Mid-level,Platform Engineering,13,balanced,3,4,4,2,4,4,2,1,1,2,2,1,1,2,2,4,1,2,4,2,4,3,4,4,5,4,2,4,3,3,0
+EMP_004,Mid-level,Information Management,7,balanced,1,5,4,3,3,4,2,4,2,3,2,1,0,3,1,4,3,4,3,2,2,2,3,3,4,2,1,4,5,3,0
+EMP_005,Junior,Information Management,10,balanced,4,3,5,4,3,3,4,3,0,3,2,1,1,3,3,2,4,4,2,3,3,4,3,3,4,4,4,3,2,5,0
+EMP_006,Junior,Solution Architecture,5,island,2,1,1,3,1,3,1,2,2,3,1,2,2,2,0,1,0,0,1,0,4,0,1,0,0,1,0,0,0,2,1
+EMP_007,Junior,Client Services,9,balanced,5,3,4,1,3,3,4,1,2,3,2,1,2,3,3,3,4,3,2,2,2,2,4,4,4,3,1,3,3,5,0
+EMP_008,Junior,Data Engineering,13,balanced,3,3,2,3,2,2,3,4,2,3,1,0,1,2,4,4,3,3,2,3,3,3,3,3,4,3,2,1,2,5,0
+EMP_009,Senior,Information Management,13,balanced,3,3,2,3,3,2,5,3,2,5,2,0,0,2,4,3,3,5,3,4,3,3,4,4,2,3,4,2,2,2,0
+EMP_010,Mid-level,Platform Engineering,17,balanced,2,3,1,3,2,2,3,4,1,2,2,0,2,2,1,2,3,2,5,2,2,3,3,4,3,2,2,3,2,3,0
+EMP_011,Junior,Solution Architecture,8,balanced,3,2,3,3,3,2,3,2,1,4,3,2,2,4,3,4,2,5,3,4,3,4,3,2,2,4,3,4,3,3,0
+EMP_012,Mid-level,Analytics & BI,5,balanced,2,2,3,2,3,2,1,4,2,4,0,2,1,5,2,3,3,3,3,5,4,3,2,4,4,4,1,1,2,3,0
+EMP_013,Junior,Information Management,7,balanced,3,2,3,3,1,3,4,2,1,3,2,2,1,3,3,1,3,1,2,3,4,2,5,2,1,3,2,4,3,4,0
+EMP_014,Junior,Platform Engineering,11,balanced,5,2,2,3,2,3,2,2,2,3,1,1,1,3,3,3,2,3,3,2,2,3,5,3,2,2,3,4,1,3,0
+EMP_015,Mid-level,Data Engineering,15,balanced,2,3,3,3,3,3,2,4,3,2,2,0,2,2,3,3,2,4,2,1,2,3,3,4,3,4,3,2,4,3,0
+EMP_016,Junior,Client Services,5,balanced,4,3,4,3,2,3,5,3,1,3,2,0,1,3,3,5,0,4,3,3,4,5,4,4,4,1,4,3,3,2,0
+EMP_017,Mid-level,Analytics & BI,6,balanced,2,4,3,3,4,3,4,3,3,2,2,2,1,3,3,4,3,5,5,4,4,5,4,2,4,4,3,4,2,2,0
+EMP_018,Junior,Solution Architecture,14,balanced,3,4,3,2,3,3,3,2,2,1,1,1,1,3,4,4,3,2,2,5,3,2,2,3,2,2,2,3,4,2,0
+EMP_019,Mid-level,Platform Engineering,16,balanced,3,5,4,3,5,3,2,2,3,3,0,2,0,4,2,5,3,3,3,5,1,1,4,3,5,2,2,3,1,2,0
+EMP_020,Mid-level,Platform Engineering,3,balanced,4,3,1,2,3,2,3,4,2,3,0,0,2,4,2,3,3,4,5,1,3,3,1,4,3,2,5,3,4,5,0
+EMP_021,Senior,Information Management,16,balanced,2,3,3,3,5,4,3,5,0,3,1,2,1,4,2,4,3,5,3,4,2,5,1,1,2,4,2,4,4,3,0
+EMP_022,Mid-level,Client Services,3,island,3,2,0,2,3,1,2,2,0,2,1,0,1,2,0,3,0,3,2,2,2,0,1,0,3,2,1,2,3,1,1
+EMP_023,Junior,Solution Architecture,3,balanced,5,4,3,4,2,2,3,2,2,3,2,0,2,2,2,3,4,3,3,3,2,2,3,3,4,2,1,1,4,3,0
+EMP_024,Junior,Client Services,4,balanced,1,2,4,4,4,3,3,3,1,3,1,0,1,2,2,5,3,0,3,2,3,5,4,5,3,3,4,1,3,4,0
+EMP_025,Mid-level,Data Engineering,11,balanced,1,1,3,2,3,3,3,4,3,3,0,1,1,3,4,3,1,4,2,1,3,3,4,4,2,2,2,2,3,5,0
+EMP_026,Mid-level,Analytics & BI,11,balanced,1,4,2,5,3,3,4,3,1,2,1,2,0,4,2,3,4,2,5,4,3,2,3,2,2,3,4,3,2,4,0
+EMP_027,Senior,Client Services,4,balanced,2,3,5,4,3,1,2,3,2,3,3,1,0,3,3,3,2,3,2,3,2,3,3,0,3,4,3,3,3,4,0
+EMP_028,Senior,Client Services,15,broker,4,4,2,3,2,2,2,2,1,4,1,1,0,4,3,3,4,2,3,3,5,4,4,4,4,4,2,1,3,4,0
+EMP_029,Senior,Solution Architecture,9,balanced,2,3,2,4,3,3,3,4,2,4,2,1,2,5,4,3,2,3,3,3,2,4,5,4,3,2,3,4,5,1,0
+EMP_030,Junior,Client Services,7,island,2,3,3,0,2,2,2,1,1,2,2,1,2,2,1,1,2,2,3,2,2,1,0,3,0,2,2,1,1,0,1
+EMP_031,Junior,Client Services,8,balanced,2,4,2,3,1,2,5,3,3,3,1,1,2,4,2,4,2,3,5,2,2,4,1,3,1,3,3,5,4,2,0
+EMP_032,Senior,Analytics & BI,2,balanced,3,3,3,3,4,4,1,4,3,3,0,1,1,0,2,4,1,4,3,4,4,2,3,3,4,1,4,4,1,5,0
+EMP_033,Mid-level,Platform Engineering,10,balanced,4,3,5,4,4,3,3,3,2,3,1,0,1,4,4,3,3,3,2,4,3,3,1,4,3,3,3,3,3,2,0
+EMP_034,Junior,Platform Engineering,8,balanced,3,4,2,3,3,3,2,5,3,4,0,1,1,4,4,1,3,3,2,3,3,4,1,5,1,3,4,4,2,5,0
+EMP_035,Senior,Client Services,11,balanced,2,2,1,5,3,3,5,4,1,2,2,1,0,4,4,2,1,2,3,3,1,4,1,4,3,2,5,5,2,3,0
+EMP_036,Junior,Information Management,4,island,1,2,1,1,2,2,2,2,0,2,1,1,2,1,1,0,2,0,2,0,2,1,0,1,0,1,1,2,3,1,1
+EMP_037,Junior,Platform Engineering,3,island,2,1,2,1,1,1,1,1,0,2,1,0,2,2,1,0,2,0,1,1,0,1,3,1,2,0,0,0,2,0,1
+EMP_038,Mid-level,Information Management,3,balanced,3,3,3,5,4,3,3,3,1,3,2,1,1,3,3,3,4,0,5,3,1,4,2,3,4,3,3,5,4,2,0
+EMP_039,Mid-level,Client Services,14,balanced,3,5,4,3,3,3,2,4,2,2,1,0,1,5,2,3,1,3,2,3,4,4,3,4,2,3,2,5,3,3,0
+EMP_040,Mid-level,Client Services,6,balanced,2,3,3,5,4,5,2,4,2,4,2,1,1,4,5,4,3,5,1,3,4,4,2,3,3,3,3,5,2,4,0
+EMP_041,Senior,Data Engineering,2,balanced,2,4,1,2,5,5,3,3,3,5,1,2,1,2,2,3,3,2,2,4,1,3,2,2,3,1,4,5,3,3,0
+EMP_042,Junior,Platform Engineering,13,balanced,2,4,3,3,2,0,3,3,2,3,2,1,2,4,4,3,3,2,4,4,4,3,4,3,4,3,3,5,2,3,0
+EMP_043,Mid-level,Data Engineering,18,balanced,5,1,3,1,3,3,3,3,0,2,1,3,0,2,4,3,2,4,3,5,4,4,2,2,3,4,1,4,3,4,0
+EMP_044,Junior,Analytics & BI,10,balanced,4,2,1,3,3,3,3,2,2,1,0,1,1,2,2,2,4,2,3,4,3,4,4,3,3,3,2,2,3,4,0
+EMP_045,Junior,Information Management,5,balanced,3,3,1,3,2,2,2,1,0,3,1,1,2,3,5,3,5,4,3,2,3,3,3,3,3,2,3,2,3,4,0
+EMP_046,Junior,Client Services,13,balanced,5,3,4,3,5,3,3,3,1,2,3,0,2,1,4,2,3,3,3,3,3,4,1,2,3,3,4,4,3,3,0
+EMP_047,Senior,Data Engineering,11,balanced,2,5,3,4,2,1,4,4,3,3,0,2,0,2,4,3,4,3,4,3,2,4,4,4,2,2,4,4,3,2,0
+EMP_048,Junior,Platform Engineering,2,balanced,2,4,2,3,3,2,3,3,2,5,2,0,1,3,5,2,4,4,1,4,5,3,5,2,2,4,4,2,5,5,0
+EMP_049,Junior,Analytics & BI,6,island,1,5,1,5,3,3,2,1,2,2,1,0,0,0,0,0,2,0,1,0,0,1,1,0,0,1,2,0,1,2,1
+EMP_050,Junior,Analytics & BI,4,balanced,1,3,2,5,3,3,2,3,0,2,1,2,1,3,2,2,3,2,3,3,3,5,4,2,2,2,2,3,4,2,0
+EMP_051,Junior,Data Engineering,4,island,2,4,1,2,1,2,2,2,1,2,2,0,1,0,1,2,2,2,1,0,0,1,1,2,1,1,2,2,0,0,1
+EMP_052,Mid-level,Information Management,6,island,1,4,3,2,3,2,3,1,3,3,1,1,1,0,1,3,2,1,1,2,1,1,0,2,0,0,1,2,1,0,1
+EMP_053,Mid-level,Analytics & BI,11,broker,0,3,1,3,0,1,2,2,1,2,0,1,0,4,5,4,5,4,3,5,4,5,5,4,4,3,4,4,4,4,0
+EMP_054,Junior,Data Engineering,8,balanced,3,3,4,2,3,2,4,2,1,4,2,0,2,4,2,3,4,5,5,3,3,5,4,2,3,2,5,3,4,1,0
+EMP_055,Senior,Solution Architecture,3,balanced,3,4,5,2,4,4,2,4,2,5,3,0,1,4,3,1,4,2,3,2,1,5,2,2,3,4,2,4,5,1,0
+EMP_056,Mid-level,Platform Engineering,3,balanced,4,4,3,4,3,3,4,2,2,2,0,0,0,4,3,5,3,3,3,4,2,1,4,3,4,2,5,3,4,2,0
+EMP_057,Mid-level,Data Engineering,16,balanced,4,2,4,3,3,4,4,4,3,2,2,2,1,3,1,2,1,3,0,2,3,3,2,2,4,4,2,5,4,2,0
+EMP_058,Senior,Data Engineering,17,balanced,3,2,4,5,1,4,4,1,2,3,3,1,0,3,3,4,3,0,2,4,3,2,3,3,4,3,1,1,5,3,0
+EMP_059,Junior,Platform Engineering,10,island,1,1,0,3,2,1,1,3,1,2,1,1,1,3,0,1,1,1,1,0,0,0,2,1,2,2,0,0,2,2,1
+EMP_060,Senior,Solution Architecture,4,balanced,2,4,2,4,3,3,3,3,2,5,1,1,0,3,2,1,5,0,2,3,3,4,3,2,3,4,2,3,4,3,0
+EMP_061,Mid-level,Platform Engineering,3,balanced,3,2,3,4,5,3,4,5,4,3,1,1,1,2,3,1,3,2,2,3,4,3,2,3,2,5,3,3,3,5,0
+EMP_062,Mid-level,Solution Architecture,12,broker,4,1,1,3,2,2,2,4,2,5,3,1,0,5,3,2,3,3,3,4,5,4,5,4,5,3,5,4,5,5,0
+EMP_063,Senior,Analytics & BI,15,balanced,3,3,3,2,2,3,4,2,3,3,0,2,1,5,2,2,5,3,4,1,4,3,5,3,2,5,2,4,2,4,0
+EMP_064,Junior,Platform Engineering,11,balanced,2,4,2,3,3,2,4,5,3,3,0,1,1,2,2,2,4,4,2,0,3,2,5,4,4,2,4,3,2,4,0
+EMP_065,Mid-level,Solution Architecture,16,broker,2,0,3,2,2,4,3,3,3,4,1,0,1,3,0,4,4,4,5,5,4,4,3,3,5,4,5,4,4,5,0
+EMP_066,Junior,Analytics & BI,13,balanced,4,4,4,2,4,3,1,3,2,4,2,1,1,2,5,5,2,5,3,4,3,3,2,3,4,1,4,3,4,3,0
+EMP_067,Mid-level,Information Management,2,island,2,3,1,2,2,2,3,0,2,3,1,0,1,2,1,3,2,0,2,0,2,0,0,1,0,1,1,2,3,1,1
+EMP_068,Senior,Platform Engineering,15,hub,3,4,5,4,3,4,5,3,4,4,1,1,1,3,5,5,2,4,4,4,3,4,4,4,3,3,4,4,4,4,0
+EMP_069,Junior,Data Engineering,7,balanced,3,4,3,2,3,2,2,2,0,3,2,1,1,3,2,1,3,3,1,1,4,2,4,3,3,3,3,4,2,4,0
+EMP_070,Senior,Solution Architecture,14,balanced,3,5,1,2,3,3,3,5,2,3,2,2,2,5,4,4,3,4,3,0,0,2,3,3,3,5,4,4,2,3,0
+EMP_071,Mid-level,Solution Architecture,5,island,1,3,1,2,0,2,4,1,1,2,2,2,2,0,0,1,1,1,1,1,1,0,1,2,0,0,1,3,0,0,1
+EMP_072,Mid-level,Analytics & BI,8,balanced,3,3,3,3,3,2,4,3,2,3,1,0,0,1,2,2,4,2,2,4,5,3,2,5,2,2,3,4,5,2,0
+EMP_073,Mid-level,Platform Engineering,8,balanced,2,2,2,3,3,2,3,2,3,4,1,1,1,4,3,4,3,4,3,3,3,2,4,4,5,2,2,4,4,2,0
+EMP_074,Mid-level,Analytics & BI,7,balanced,4,2,3,3,4,3,3,3,0,3,1,0,1,2,2,3,2,3,3,4,5,5,2,4,4,0,4,1,4,3,0
+EMP_075,Senior,Platform Engineering,15,balanced,2,4,1,4,4,4,4,3,4,3,1,2,2,3,2,4,4,5,2,3,4,2,2,4,4,2,5,5,3,1,0
+EMP_076,Mid-level,Information Management,7,balanced,4,2,3,4,3,3,3,4,2,3,0,2,0,1,2,3,2,3,4,2,3,3,3,4,3,4,2,2,4,3,0
+EMP_077,Mid-level,Data Engineering,17,balanced,3,3,2,5,4,2,2,4,2,4,0,0,1,2,4,4,4,3,2,3,3,2,4,2,3,2,4,2,2,2,0
+EMP_078,Senior,Solution Architecture,9,balanced,5,2,3,3,3,2,2,5,2,3,2,1,2,4,4,2,3,3,4,3,5,3,5,0,5,3,3,2,2,3,0
+EMP_079,Senior,Platform Engineering,10,balanced,4,3,3,5,4,2,2,3,0,2,1,1,1,3,2,4,2,2,3,4,4,3,4,1,3,1,3,3,5,4,0
+EMP_080,Senior,Analytics & BI,16,broker,3,2,1,2,1,2,2,2,2,4,2,2,1,2,5,4,4,5,4,3,4,2,3,5,3,2,4,5,5,5,0
+EMP_081,Mid-level,Data Engineering,3,balanced,3,5,4,3,1,3,3,4,1,4,2,2,0,3,3,3,1,5,1,4,3,3,2,3,1,4,3,4,2,2,0
+EMP_082,Mid-level,Platform Engineering,11,balanced,4,3,4,1,3,2,3,4,3,3,0,0,1,4,3,3,2,3,1,4,3,3,4,2,2,2,3,4,3,1,0
+EMP_083,Mid-level,Platform Engineering,9,balanced,3,3,5,3,2,4,2,2,1,4,1,1,1,2,5,3,4,4,3,3,0,4,3,3,2,3,2,4,4,2,0
+EMP_084,Mid-level,Information Management,15,balanced,4,2,2,3,3,2,4,5,4,4,0,1,1,3,4,3,3,4,4,5,3,4,4,3,2,4,4,4,4,2,0
+EMP_085,Junior,Data Engineering,11,balanced,4,5,3,2,2,3,3,4,2,5,0,1,0,5,3,5,3,4,2,3,2,4,4,2,2,4,1,2,3,4,0
+EMP_086,Senior,Solution Architecture,13,balanced,3,2,2,3,3,3,3,3,1,2,1,1,2,3,3,1,3,4,1,3,3,3,4,4,5,4,4,2,4,4,0
+EMP_087,Junior,Platform Engineering,1,island,0,2,2,3,1,1,3,3,1,1,2,0,0,0,2,2,1,2,1,2,1,0,1,1,1,1,0,1,1,1,1
+EMP_088,Mid-level,Client Services,4,balanced,4,4,3,2,3,3,4,3,2,3,2,1,2,3,2,4,4,4,3,3,3,3,4,4,2,5,2,3,3,2,0
+EMP_089,Junior,Data Engineering,9,island,2,3,2,4,3,3,2,2,0,2,1,1,1,1,2,1,0,1,0,1,0,0,0,2,0,1,2,1,1,2,1
+EMP_090,Mid-level,Analytics & BI,16,balanced,2,1,4,2,3,3,2,4,2,4,1,1,2,4,0,2,3,4,4,4,3,3,5,2,2,2,3,2,1,2,0
+EMP_091,Mid-level,Client Services,18,balanced,4,2,4,3,3,3,4,2,3,2,1,2,2,5,0,3,4,3,2,4,3,2,3,3,4,5,1,2,2,3,0
+EMP_092,Mid-level,Analytics & BI,4,balanced,3,2,3,2,4,2,3,1,2,3,2,0,0,3,3,3,2,2,3,5,3,3,3,4,0,4,4,2,5,2,0
+EMP_093,Junior,Solution Architecture,17,balanced,3,4,2,3,4,3,2,2,0,3,3,2,2,3,3,3,3,1,1,2,4,2,3,4,3,3,3,1,0,3,0
+EMP_094,Senior,Information Management,7,broker,2,3,2,2,0,4,1,1,3,4,2,1,2,3,3,4,4,5,5,3,3,4,4,5,4,1,4,4,3,4,0
+EMP_095,Junior,Information Management,4,balanced,3,3,1,2,3,3,4,4,1,4,1,1,1,0,4,4,3,4,3,5,5,2,3,3,2,4,5,3,1,4,0
+EMP_096,Mid-level,Analytics & BI,9,balanced,1,1,4,2,3,2,2,2,1,4,1,1,1,3,3,2,2,4,2,3,5,3,4,2,5,3,4,4,4,3,0
+EMP_097,Mid-level,Data Engineering,14,balanced,3,3,3,3,3,3,2,3,3,2,0,0,2,2,3,4,2,5,4,2,3,4,3,3,3,5,3,4,2,3,0
+EMP_098,Mid-level,Platform Engineering,12,balanced,3,3,3,2,3,2,2,3,2,3,0,1,2,3,3,2,2,1,2,5,2,3,2,3,2,3,2,3,3,4,0
+EMP_099,Mid-level,Analytics & BI,6,balanced,5,3,3,3,3,4,2,4,2,4,1,2,1,4,3,4,4,4,3,4,4,5,4,3,3,3,2,3,3,3,0
+EMP_100,Mid-level,Platform Engineering,9,island,0,2,1,3,2,4,3,2,1,1,2,3,0,1,0,0,0,0,3,2,1,0,2,2,2,1,3,1,1,0,1
+EMP_101,Mid-level,Data Engineering,17,balanced,3,3,3,4,4,4,3,4,0,3,2,0,0,4,5,2,3,3,2,5,3,2,4,2,4,3,3,2,4,5,0
+EMP_102,Mid-level,Platform Engineering,3,balanced,2,1,2,2,3,3,4,5,1,4,1,0,3,3,5,4,2,3,1,2,3,2,5,4,2,4,3,3,3,3,0
+EMP_103,Junior,Analytics & BI,7,balanced,3,4,2,3,2,3,3,2,2,4,0,1,2,4,3,2,1,2,1,1,4,3,1,3,2,3,3,2,0,4,0
+EMP_104,Senior,Information Management,14,balanced,4,5,5,1,4,2,1,4,2,2,1,1,1,3,3,3,3,4,5,2,1,4,1,2,3,4,4,1,2,2,0
+EMP_105,Mid-level,Platform Engineering,5,broker,2,4,1,3,1,2,2,5,1,4,1,1,1,5,5,3,5,5,4,5,5,3,3,4,4,4,5,4,4,5,0
+EMP_106,Junior,Platform Engineering,9,island,3,2,3,2,2,2,2,2,1,2,1,1,1,0,3,1,1,1,0,2,2,2,1,0,1,1,1,0,1,1,1
+EMP_107,Senior,Information Management,2,balanced,1,5,4,4,4,2,4,4,2,2,0,1,0,0,4,2,4,1,4,2,3,5,3,4,3,4,5,1,3,4,0
+EMP_108,Mid-level,Solution Architecture,8,broker,2,3,1,4,3,2,1,3,3,4,2,0,1,3,5,5,4,5,4,5,3,4,3,3,3,5,4,5,4,4,0
+EMP_109,Mid-level,Data Engineering,10,balanced,2,2,4,2,2,3,1,2,2,5,0,0,1,3,3,3,4,4,4,1,2,4,2,3,0,2,1,4,2,2,0
+EMP_110,Mid-level,Data Engineering,1,island,2,1,3,1,2,3,1,3,0,3,1,0,1,3,2,0,1,0,0,2,4,2,1,1,0,2,0,1,4,0,1
+EMP_111,Senior,Client Services,18,balanced,3,5,1,3,1,2,2,5,2,5,2,0,0,1,4,3,3,3,2,0,4,4,4,5,3,4,4,2,4,3,0
+EMP_112,Mid-level,Data Engineering,12,balanced,2,4,2,3,2,2,4,5,2,3,1,1,1,3,3,3,2,3,2,5,1,3,3,2,4,1,2,4,4,2,0
+EMP_113,Senior,Client Services,17,balanced,4,2,4,4,3,2,2,2,0,3,3,0,0,2,2,3,2,3,3,2,4,5,4,2,2,3,4,4,3,1,0
+EMP_114,Mid-level,Information Management,8,broker,1,2,4,2,1,3,2,3,4,4,0,0,0,5,5,4,4,3,3,5,3,5,5,3,2,4,3,2,4,5,0
+EMP_115,Mid-level,Data Engineering,8,balanced,2,2,3,0,3,4,3,3,1,3,0,0,1,3,3,4,1,3,5,3,4,4,2,4,3,2,2,2,1,2,0
+EMP_116,Junior,Data Engineering,14,balanced,3,4,3,3,3,3,3,2,2,3,1,0,1,4,2,3,4,3,2,5,3,4,2,3,4,3,3,5,5,5,0
+EMP_117,Mid-level,Analytics & BI,9,balanced,4,5,3,3,3,4,3,2,4,2,1,0,2,4,3,2,3,2,3,3,3,4,3,5,3,2,4,5,3,5,0
+EMP_118,Mid-level,Platform Engineering,12,balanced,2,4,2,4,3,3,2,3,2,2,2,1,2,0,4,3,5,3,2,4,3,3,3,3,4,3,2,3,2,5,0
+EMP_119,Junior,Client Services,2,balanced,3,3,2,4,2,2,3,2,1,2,0,1,2,2,1,3,1,5,3,3,4,4,4,2,3,2,1,2,2,2,0
+EMP_120,Mid-level,Information Management,4,balanced,3,2,4,2,3,3,5,4,2,3,1,2,0,3,3,5,5,4,2,2,5,4,2,1,3,4,3,2,4,3,0
+EMP_121,Senior,Analytics & BI,15,balanced,4,4,0,3,3,3,3,4,0,3,1,1,1,3,3,2,4,3,4,3,3,3,3,3,4,3,3,3,3,4,0
+EMP_122,Junior,Platform Engineering,7,island,3,2,1,1,2,2,0,4,3,1,2,1,1,0,2,1,1,2,1,0,1,0,0,0,0,2,1,0,2,2,1
+EMP_123,Junior,Solution Architecture,9,balanced,0,2,1,2,3,3,1,3,2,3,3,0,2,2,3,2,2,3,3,3,3,4,3,3,2,4,3,1,3,4,0
+EMP_124,Senior,Analytics & BI,4,balanced,3,2,3,2,3,3,3,3,1,3,1,1,2,3,5,1,2,2,5,3,3,5,4,3,5,2,4,4,3,3,0
+EMP_125,Senior,Solution Architecture,12,balanced,4,3,3,1,4,3,2,3,1,2,3,0,1,3,3,4,2,3,5,4,1,5,4,5,3,2,3,1,3,3,0
+EMP_126,Senior,Analytics & BI,8,hub,5,3,5,5,4,3,4,2,5,5,2,1,1,4,3,4,5,5,3,5,5,5,4,4,3,5,4,4,5,1,0
+EMP_127,Junior,Client Services,8,balanced,4,2,3,3,4,4,2,1,2,1,1,0,0,1,1,4,3,2,2,3,3,4,3,3,4,3,2,3,3,2,0
+EMP_128,Mid-level,Analytics & BI,1,island,3,2,1,3,1,3,3,1,1,3,1,1,0,2,2,1,2,4,3,2,1,2,0,0,0,1,1,2,1,1,1
+EMP_129,Mid-level,Data Engineering,15,balanced,3,2,5,3,3,0,5,2,3,3,1,1,2,3,1,4,2,3,2,3,3,4,3,3,3,2,2,3,3,1,0
+EMP_130,Mid-level,Solution Architecture,14,balanced,3,4,3,3,3,4,4,3,2,2,4,0,2,4,5,4,2,2,3,3,2,2,4,4,2,2,3,3,5,4,0
+EMP_131,Mid-level,Solution Architecture,12,balanced,3,2,2,4,4,2,3,5,1,1,3,1,1,3,3,4,3,3,4,2,5,5,3,4,2,4,4,4,3,4,0
+EMP_132,Mid-level,Platform Engineering,7,balanced,3,4,4,3,4,2,2,2,1,3,2,1,1,4,2,3,3,5,1,1,3,2,3,4,4,3,2,1,2,2,0
+EMP_133,Mid-level,Analytics & BI,4,island,1,4,2,2,1,0,1,2,0,4,1,2,1,0,1,0,2,1,1,1,0,1,0,0,0,0,1,2,0,1,1
+EMP_134,Junior,Solution Architecture,17,balanced,4,4,4,2,2,3,1,3,2,2,1,0,0,3,2,3,3,3,4,5,4,5,4,4,4,4,3,2,4,1,0
+EMP_135,Junior,Information Management,4,island,3,2,2,1,1,3,4,1,1,1,2,1,0,0,4,1,2,3,0,1,1,2,0,2,1,0,0,2,2,1,1
+EMP_136,Mid-level,Platform Engineering,5,balanced,2,2,4,4,5,4,3,5,2,2,0,0,1,2,3,5,3,2,4,4,3,4,3,4,2,3,3,3,2,2,0
+EMP_137,Senior,Analytics & BI,3,balanced,2,4,4,3,2,3,3,5,3,3,1,0,0,3,3,4,3,2,3,3,2,0,3,2,4,5,2,2,3,4,0
+EMP_138,Mid-level,Analytics & BI,12,balanced,2,3,1,3,4,3,4,2,3,2,2,1,0,2,2,4,3,5,2,3,3,3,2,2,2,3,2,3,3,3,0
+EMP_139,Mid-level,Data Engineering,5,island,4,2,2,3,1,2,1,1,2,3,1,1,0,2,0,1,1,1,0,0,2,2,2,3,2,2,2,0,1,0,1
+EMP_140,Mid-level,Data Engineering,2,island,2,3,2,3,3,2,4,2,2,3,0,1,1,2,0,0,0,0,1,2,0,0,1,2,1,1,2,0,1,1,1
+EMP_141,Mid-level,Client Services,12,balanced,3,4,0,4,3,5,3,3,1,3,2,0,1,3,2,2,3,3,2,2,2,5,1,5,3,4,3,2,3,5,0
+EMP_142,Junior,Analytics & BI,10,island,3,1,4,1,2,2,1,2,0,1,0,1,1,2,0,2,0,3,0,2,0,2,2,2,0,1,0,0,1,1,1
+EMP_143,Senior,Information Management,5,balanced,5,0,3,4,1,3,3,4,3,2,1,3,2,2,3,3,4,4,2,1,5,1,2,3,2,1,3,3,3,4,0
+EMP_144,Mid-level,Analytics & BI,15,broker,2,3,2,1,1,2,1,3,1,4,1,1,1,4,4,5,4,4,4,4,4,5,4,4,5,3,5,4,3,2,0
+EMP_145,Senior,Client Services,17,balanced,2,2,2,2,3,4,2,3,2,4,2,2,1,4,3,5,2,3,3,4,2,1,3,5,4,3,4,3,4,1,0
+EMP_146,Mid-level,Analytics & BI,17,balanced,3,3,2,5,3,3,3,4,2,1,2,1,2,2,2,2,3,3,4,3,3,3,4,4,2,1,5,2,3,3,0
+EMP_147,Junior,Analytics & BI,4,balanced,2,1,3,2,4,4,2,3,1,2,1,2,1,3,2,3,3,4,3,1,4,3,5,2,3,4,4,3,3,2,0
+EMP_148,Mid-level,Solution Architecture,3,balanced,2,3,4,3,3,3,3,3,1,4,2,1,2,3,0,3,5,3,3,4,3,2,5,3,4,1,5,2,4,4,0
+EMP_149,Senior,Client Services,6,balanced,3,4,5,2,5,2,4,2,1,3,3,1,0,3,4,4,1,4,3,3,4,2,5,0,3,2,3,4,3,3,0
+EMP_150,Senior,Analytics & BI,12,balanced,4,4,3,2,4,1,5,2,2,2,1,0,1,1,2,3,0,2,3,3,2,4,1,2,4,1,3,5,3,3,0
+EMP_151,Junior,Analytics & BI,1,island,2,2,5,2,2,3,2,2,1,2,0,2,0,3,1,1,0,0,1,0,0,1,3,2,1,1,0,1,2,1,1
+EMP_152,Junior,Solution Architecture,12,balanced,2,3,5,3,2,3,2,3,2,3,2,1,1,3,2,3,3,3,5,3,5,5,2,2,1,1,2,2,5,3,0
+EMP_153,Junior,Data Engineering,1,island,1,3,4,2,2,2,2,4,1,2,0,2,1,3,2,1,1,0,1,1,0,1,1,1,0,1,1,1,1,1,1
+EMP_154,Junior,Information Management,16,balanced,3,2,2,3,4,3,2,2,1,4,2,0,1,2,3,3,3,5,3,2,4,5,3,2,3,3,3,2,3,1,0
+EMP_155,Mid-level,Analytics & BI,8,balanced,4,3,3,3,4,2,2,5,2,3,2,2,2,3,4,3,3,4,4,3,3,1,2,4,3,2,3,3,3,5,0
+EMP_156,Senior,Platform Engineering,11,broker,1,3,3,4,1,3,2,2,4,3,2,1,0,3,5,2,3,4,4,3,5,5,3,1,4,5,4,3,5,5,0
+EMP_157,Mid-level,Data Engineering,2,balanced,1,3,3,4,4,2,4,2,2,4,1,1,1,3,3,3,3,2,3,4,4,1,3,4,5,1,1,2,3,2,0
+EMP_158,Mid-level,Data Engineering,13,balanced,4,2,4,3,1,3,2,2,1,2,0,1,2,2,3,4,1,2,3,3,4,1,1,2,4,4,3,2,4,4,0
+EMP_159,Senior,Analytics & BI,8,hub,5,5,5,4,4,4,4,4,5,4,2,2,1,5,5,4,2,1,4,3,3,4,2,5,4,4,5,4,3,5,0
+EMP_160,Mid-level,Client Services,10,balanced,0,4,1,4,2,5,3,5,5,3,2,1,2,4,4,3,5,4,3,4,5,3,2,4,1,1,3,4,4,5,0
+EMP_161,Senior,Client Services,7,broker,1,2,2,0,2,3,2,4,0,5,2,1,1,4,4,4,4,4,3,4,4,3,3,4,5,3,4,5,5,1,0
+EMP_162,Mid-level,Platform Engineering,9,balanced,3,4,2,4,3,3,3,4,1,4,1,1,0,3,3,1,5,4,3,2,3,3,5,1,1,2,3,2,3,5,0
+EMP_163,Mid-level,Platform Engineering,9,balanced,2,4,4,4,4,2,3,3,3,2,0,1,0,2,2,3,3,3,3,4,4,2,5,3,4,3,4,4,3,1,0
+EMP_164,Mid-level,Solution Architecture,7,broker,3,2,1,0,3,2,2,1,2,5,2,0,2,2,5,3,5,3,5,4,5,5,3,5,5,3,3,3,3,4,0
+EMP_165,Junior,Information Management,3,balanced,5,3,4,4,3,3,4,4,1,3,2,2,1,2,4,4,3,3,2,2,3,4,2,2,2,2,4,1,2,1,0
+EMP_166,Senior,Analytics & BI,20,hub,4,5,4,2,5,5,2,4,5,4,1,1,0,3,5,5,3,4,4,2,5,3,5,3,3,5,2,5,2,4,0
+EMP_167,Junior,Analytics & BI,10,balanced,5,4,5,4,4,3,2,4,2,3,1,0,1,3,3,2,5,3,3,5,3,1,4,2,2,4,4,1,3,1,0
+EMP_168,Senior,Data Engineering,14,balanced,4,4,1,3,2,4,3,3,0,3,0,1,1,3,2,4,2,3,3,3,4,1,2,2,3,3,3,3,4,4,0
+EMP_169,Junior,Client Services,16,balanced,3,4,4,4,2,3,2,4,2,4,3,1,0,2,5,3,3,5,4,2,4,3,2,4,4,2,2,4,4,2,0
+EMP_170,Junior,Solution Architecture,6,balanced,3,4,4,3,2,2,2,3,3,3,1,2,1,2,2,5,4,4,3,4,4,1,4,4,4,4,4,3,4,3,0
+EMP_171,Mid-level,Analytics & BI,6,balanced,3,3,4,5,3,4,3,2,3,3,0,0,1,4,5,2,3,1,3,4,3,3,3,2,4,2,3,5,2,3,0
+EMP_172,Junior,Solution Architecture,4,balanced,3,4,3,4,4,3,4,3,2,4,3,2,0,3,3,1,4,2,4,1,4,1,3,3,5,2,3,3,3,1,0
+EMP_173,Mid-level,Solution Architecture,10,broker,2,3,1,2,2,0,2,2,0,4,2,2,1,3,2,3,5,2,4,4,4,1,5,5,5,3,4,3,5,4,0
+EMP_174,Mid-level,Data Engineering,10,balanced,4,4,2,1,3,5,2,2,1,3,1,0,1,4,2,2,3,3,5,3,2,2,3,1,3,3,3,5,4,3,0
+EMP_175,Mid-level,Analytics & BI,3,island,2,1,1,3,3,2,0,1,2,2,1,1,1,0,1,1,3,2,0,1,1,1,1,3,0,1,0,0,1,0,1
+EMP_176,Mid-level,Client Services,8,broker,2,2,1,0,2,2,2,2,2,4,1,0,2,4,3,5,4,4,5,5,3,4,3,5,5,5,4,4,4,4,0
+EMP_177,Mid-level,Solution Architecture,4,balanced,3,3,3,3,4,4,2,2,3,3,2,0,1,4,2,4,2,2,5,4,3,1,2,3,3,2,3,3,3,3,0
+EMP_178,Mid-level,Platform Engineering,16,balanced,3,3,3,4,4,2,3,4,2,3,1,1,2,3,2,5,4,3,5,2,3,3,3,5,2,2,3,4,3,3,0
+EMP_179,Senior,Solution Architecture,4,balanced,3,4,1,3,1,2,4,2,2,2,2,1,1,5,4,2,3,1,4,2,1,3,2,3,3,4,4,3,3,2,0
+EMP_180,Junior,Client Services,17,balanced,4,5,2,2,3,4,3,3,2,3,2,1,0,3,4,2,5,3,1,3,3,4,4,2,5,1,3,3,4,3,0
+EMP_181,Junior,Platform Engineering,5,balanced,4,4,2,2,3,4,2,2,2,3,1,1,2,5,2,1,3,4,3,5,1,3,3,2,5,2,3,3,1,2,0
+EMP_182,Mid-level,Information Management,15,balanced,3,4,2,3,3,5,3,2,2,2,1,1,0,2,4,4,5,4,4,3,1,1,1,3,4,4,3,3,3,3,0
+EMP_183,Senior,Platform Engineering,3,balanced,2,4,5,1,4,4,2,3,2,3,1,0,1,3,0,3,5,3,3,2,4,4,5,1,3,0,2,4,2,4,0
+EMP_184,Mid-level,Solution Architecture,10,balanced,5,2,4,5,3,3,4,4,1,3,2,1,1,2,4,4,2,1,3,4,3,4,2,4,4,2,3,4,3,4,0
+EMP_185,Senior,Platform Engineering,11,balanced,3,4,3,4,4,3,4,4,3,2,0,1,0,3,4,1,4,4,3,3,3,3,3,3,5,4,2,1,5,4,0
+EMP_186,Junior,Platform Engineering,18,balanced,4,3,3,3,2,2,3,3,0,2,1,1,2,2,3,4,3,1,2,3,2,2,4,5,4,3,3,4,3,3,0
+EMP_187,Mid-level,Analytics & BI,2,balanced,2,3,3,3,2,4,1,1,1,4,0,1,2,4,3,4,3,3,5,3,3,2,5,3,3,3,4,3,0,3,0
+EMP_188,Junior,Information Management,14,balanced,1,4,2,3,3,5,3,3,3,2,1,1,2,2,4,4,3,2,2,2,3,3,2,4,3,2,3,3,4,3,0
+EMP_189,Mid-level,Client Services,5,balanced,3,3,5,5,4,3,3,3,1,3,2,0,2,3,5,2,5,4,2,4,3,2,1,4,0,4,2,4,3,2,0
+EMP_190,Mid-level,Solution Architecture,17,balanced,2,4,3,1,2,3,3,2,2,4,1,3,0,3,2,3,3,5,4,4,4,4,3,3,2,3,4,3,3,3,0
+EMP_191,Mid-level,Information Management,8,balanced,5,4,3,2,1,4,5,4,2,3,1,0,2,4,3,2,4,1,2,2,2,4,4,4,4,4,2,4,3,3,0
+EMP_192,Junior,Data Engineering,14,balanced,4,3,2,3,4,3,1,3,3,3,0,0,1,4,2,2,2,3,3,5,1,2,2,2,3,2,3,2,3,3,0
+EMP_193,Mid-level,Solution Architecture,3,balanced,2,4,2,1,2,2,3,2,3,2,1,2,1,4,5,3,3,2,2,3,2,3,3,5,3,2,5,2,4,4,0
+EMP_194,Junior,Solution Architecture,9,island,2,3,3,1,3,1,3,1,1,2,2,0,2,3,2,0,0,1,2,2,0,0,0,1,3,1,3,1,0,2,1
+EMP_195,Mid-level,Solution Architecture,15,balanced,5,3,4,4,4,5,3,3,0,4,2,1,1,5,3,3,3,1,3,4,2,4,2,3,3,4,4,4,3,4,0
+EMP_196,Mid-level,Platform Engineering,8,broker,1,3,3,2,2,5,3,1,3,4,2,1,1,3,4,4,4,5,4,5,4,4,3,3,4,3,4,4,5,3,0
+EMP_197,Senior,Data Engineering,8,broker,3,3,1,2,1,2,3,3,3,5,1,1,2,4,5,4,5,5,4,4,5,5,4,2,5,3,1,4,4,4,0
+EMP_198,Senior,Platform Engineering,12,hub,5,2,3,5,3,4,5,5,5,4,1,1,0,4,2,2,4,4,4,4,4,4,4,5,5,4,3,5,5,5,0
+EMP_199,Mid-level,Platform Engineering,16,balanced,2,4,2,2,4,3,3,2,4,3,1,0,2,2,3,2,4,4,1,4,2,2,3,2,3,3,4,2,3,3,0
+EMP_200,Junior,Analytics & BI,5,island,3,1,1,1,3,3,2,3,1,3,1,0,2,1,0,1,0,0,1,0,0,4,0,1,0,0,1,0,1,1,1
+EMP_201,Junior,Platform Engineering,7,island,3,3,2,2,2,4,4,2,0,0,1,0,1,1,0,1,0,1,2,1,2,0,2,0,1,0,2,0,2,4,1
+EMP_202,Mid-level,Analytics & BI,9,broker,3,2,1,2,2,4,1,3,2,4,0,2,1,4,4,3,4,5,5,5,3,5,4,4,4,5,3,3,5,3,0
+EMP_203,Junior,Data Engineering,6,balanced,3,1,1,3,5,3,4,3,3,4,0,1,1,3,3,4,4,4,1,5,2,2,2,4,3,3,5,4,3,2,0
+EMP_204,Junior,Analytics & BI,3,island,1,2,3,1,3,1,2,1,0,1,0,1,2,2,0,1,1,1,2,3,2,0,2,3,3,1,1,0,4,2,1
+EMP_205,Mid-level,Solution Architecture,7,balanced,4,3,4,3,2,3,2,3,2,2,2,0,0,2,1,2,2,4,3,4,2,4,5,4,3,2,5,1,3,3,0
+EMP_206,Mid-level,Platform Engineering,12,balanced,3,1,1,3,3,3,4,3,3,1,1,1,1,3,4,3,3,4,3,2,2,4,2,4,5,1,4,4,4,4,0
+EMP_207,Mid-level,Information Management,15,broker,1,3,3,1,2,2,1,1,2,3,0,0,2,2,4,3,3,4,5,4,3,5,2,5,5,2,4,5,4,3,0
+EMP_208,Mid-level,Solution Architecture,16,balanced,2,0,5,4,3,3,5,3,3,3,4,0,2,4,1,3,3,2,3,4,3,2,1,3,2,1,2,4,2,3,0
+EMP_209,Mid-level,Platform Engineering,7,balanced,5,2,1,2,3,1,3,3,3,2,1,1,1,4,5,4,2,4,3,2,3,3,2,2,2,4,5,3,3,4,0
+EMP_210,Mid-level,Client Services,11,broker,1,2,2,2,0,3,3,1,3,4,2,1,0,5,3,5,5,5,2,4,3,4,4,5,5,3,2,5,2,5,0
+EMP_211,Junior,Information Management,14,balanced,1,3,3,3,0,4,4,2,3,2,1,2,0,4,2,3,3,3,2,4,3,4,1,5,3,4,5,3,4,5,0
+EMP_212,Mid-level,Information Management,5,balanced,3,2,2,2,1,2,3,3,3,3,1,1,1,3,3,4,2,4,3,2,4,4,3,3,2,4,3,5,3,3,0
+EMP_213,Mid-level,Analytics & BI,2,island,2,3,1,2,3,1,4,2,2,3,1,1,2,0,0,0,1,2,0,2,3,2,1,1,1,1,1,0,0,0,1
+EMP_214,Mid-level,Information Management,4,balanced,2,4,4,3,3,3,2,3,3,1,0,1,1,3,2,3,4,4,2,4,3,3,1,3,4,4,4,2,3,2,0
+EMP_215,Mid-level,Information Management,4,balanced,3,2,3,4,2,3,2,4,2,2,1,2,1,3,3,3,3,0,3,3,2,3,2,3,4,3,3,2,2,3,0
+EMP_216,Mid-level,Analytics & BI,3,island,2,1,3,2,2,4,2,1,2,4,0,0,1,1,0,2,1,3,1,4,2,3,1,0,2,0,2,0,2,0,1
+EMP_217,Mid-level,Platform Engineering,9,balanced,3,3,4,4,5,4,2,3,1,4,1,1,1,2,4,5,4,4,3,3,4,3,3,2,2,4,4,1,3,5,0
+EMP_218,Mid-level,Client Services,14,hub,4,4,5,4,4,4,3,5,5,4,2,1,1,4,5,5,4,2,4,5,3,3,3,4,3,4,2,5,5,5,0
+EMP_219,Senior,Information Management,13,hub,3,5,4,4,3,3,3,4,5,4,1,1,2,4,4,4,4,3,3,5,5,5,5,4,5,4,2,4,4,2,0
+EMP_220,Junior,Platform Engineering,9,balanced,2,2,4,3,3,3,4,4,2,3,0,0,1,2,4,4,2,4,3,3,4,2,2,3,4,5,2,4,2,4,0
+EMP_221,Junior,Analytics & BI,5,balanced,1,5,4,3,4,3,4,5,0,2,2,1,1,3,2,3,4,4,3,3,2,2,2,3,3,3,2,5,4,2,0
+EMP_222,Mid-level,Data Engineering,5,balanced,2,3,1,3,4,4,4,2,3,2,1,1,1,1,3,3,3,3,3,3,3,2,2,1,3,3,3,1,4,2,0
+EMP_223,Mid-level,Analytics & BI,4,balanced,3,1,4,2,3,2,4,2,2,3,0,1,0,2,4,2,2,3,3,5,3,5,5,3,5,2,3,4,3,1,0
+EMP_224,Junior,Information Management,8,island,2,2,2,2,3,2,1,2,1,2,1,1,1,0,0,2,0,0,0,1,1,1,0,2,0,1,1,2,0,0,1
+EMP_225,Mid-level,Information Management,6,balanced,4,4,1,2,5,3,4,3,2,5,2,1,1,3,3,3,3,4,3,1,3,5,2,2,4,2,1,2,3,4,0
+EMP_226,Mid-level,Analytics & BI,4,balanced,3,1,4,4,3,3,3,3,2,3,2,0,2,3,3,2,1,1,3,3,4,4,5,5,2,2,4,5,2,4,0
+EMP_227,Junior,Client Services,7,island,4,3,3,3,1,0,0,1,1,3,2,1,0,1,1,1,0,0,2,1,3,1,1,0,2,1,2,0,0,1,1
+EMP_228,Senior,Client Services,10,balanced,2,4,4,1,3,3,3,2,1,3,2,1,1,4,2,4,2,3,1,4,3,3,4,5,2,1,3,2,5,2,0
+EMP_229,Mid-level,Information Management,10,balanced,3,4,3,3,2,3,4,2,4,4,0,1,3,2,3,3,2,3,3,4,3,3,3,1,3,4,3,3,3,4,0
+EMP_230,Mid-level,Solution Architecture,7,broker,2,1,3,2,3,3,3,3,2,5,1,1,0,3,4,2,5,3,3,3,4,4,2,4,4,4,3,5,4,3,0
+EMP_231,Junior,Client Services,4,balanced,2,3,3,3,4,3,4,2,1,3,3,1,3,2,2,4,4,3,4,3,3,2,4,3,1,3,5,2,2,4,0
+EMP_232,Senior,Platform Engineering,16,broker,2,2,2,3,2,2,4,3,4,5,0,1,1,3,5,2,4,1,4,3,5,3,4,5,3,3,4,4,3,4,0
+EMP_233,Junior,Client Services,9,balanced,3,4,2,3,2,4,2,3,3,3,2,0,0,3,4,2,3,5,2,2,4,2,2,4,2,3,3,2,3,3,0
+EMP_234,Mid-level,Client Services,18,balanced,3,3,3,3,5,2,3,1,0,3,3,1,0,4,4,3,3,2,2,4,2,2,2,4,3,3,2,4,2,3,0
+EMP_235,Junior,Analytics & BI,2,balanced,5,5,4,3,3,3,1,2,1,1,2,3,1,3,3,5,3,4,5,3,2,3,4,2,3,1,5,0,1,2,0
+EMP_236,Junior,Solution Architecture,11,balanced,3,2,4,5,3,4,3,2,1,2,2,1,1,3,5,2,5,4,3,4,0,4,3,3,2,1,5,3,3,2,0
+EMP_237,Junior,Platform Engineering,4,balanced,5,4,1,2,4,4,4,2,2,3,1,2,0,2,3,5,2,1,3,3,3,4,3,2,3,2,3,4,3,2,0
+EMP_238,Junior,Analytics & BI,10,island,4,3,2,1,1,2,1,1,2,3,1,1,1,3,2,0,2,0,0,2,0,0,2,1,0,3,0,0,0,0,1
+EMP_239,Senior,Client Services,2,balanced,3,4,4,3,4,2,4,3,0,2,2,1,0,4,2,1,1,4,5,2,2,3,4,3,2,4,3,2,4,3,0
+EMP_240,Mid-level,Analytics & BI,10,balanced,3,4,4,4,2,2,4,2,2,3,1,1,1,1,5,3,3,3,4,2,1,2,4,4,2,3,2,2,3,2,0
+EMP_241,Senior,Information Management,17,balanced,3,1,2,4,2,2,2,3,2,3,0,1,3,5,4,5,4,3,2,3,2,5,3,2,2,4,2,4,2,2,0
+EMP_242,Mid-level,Data Engineering,12,balanced,3,4,3,3,3,3,3,2,1,3,0,1,1,1,4,2,5,3,3,2,4,5,3,2,5,3,0,3,4,3,0
+EMP_243,Junior,Client Services,7,balanced,2,3,2,3,2,2,5,4,3,5,2,0,2,4,2,1,2,2,3,3,1,1,3,2,0,5,4,3,3,4,0
+EMP_244,Mid-level,Client Services,13,balanced,5,3,2,2,3,4,3,2,1,3,3,1,0,3,4,3,4,5,0,1,4,3,3,2,3,3,3,3,3,3,0
+EMP_245,Mid-level,Solution Architecture,8,balanced,3,5,3,2,4,2,3,5,2,4,2,1,1,3,2,4,3,2,4,4,4,2,2,2,3,3,3,2,2,4,0
+EMP_246,Senior,Client Services,18,balanced,2,4,3,0,3,2,3,4,4,2,2,1,2,4,3,1,5,4,3,2,2,3,4,3,3,5,3,2,4,5,0
+EMP_247,Senior,Client Services,9,hub,5,4,5,4,5,3,4,4,4,3,2,1,1,5,3,4,5,5,5,5,5,5,5,2,4,4,4,4,5,4,0
+EMP_248,Senior,Data Engineering,5,balanced,2,2,3,4,1,3,3,3,1,3,1,1,2,3,4,4,2,3,3,4,3,3,3,3,3,4,4,4,3,1,0
+EMP_249,Junior,Platform Engineering,10,balanced,4,4,3,4,5,3,4,4,3,3,2,1,1,3,3,3,2,3,1,4,2,3,1,5,4,1,3,4,3,4,0
+EMP_250,Senior,Data Engineering,7,balanced,3,3,3,3,5,5,3,3,1,4,0,0,0,1,5,3,4,4,1,3,3,3,3,5,2,3,1,3,2,2,0
+EMP_251,Mid-level,Solution Architecture,3,balanced,1,3,2,3,2,3,3,2,3,3,2,0,0,3,3,2,3,4,5,2,3,4,5,4,2,3,3,4,3,3,0
+EMP_252,Mid-level,Analytics & BI,14,broker,2,3,0,2,2,2,1,2,1,3,1,1,1,3,3,5,3,4,4,5,5,4,3,2,4,1,3,3,4,3,0
+EMP_253,Junior,Platform Engineering,4,balanced,3,3,4,3,3,3,3,5,2,2,1,3,2,3,5,1,2,3,3,3,3,3,4,5,3,3,3,2,3,4,0
+EMP_254,Junior,Data Engineering,17,balanced,3,2,4,4,3,4,3,3,2,3,2,3,1,3,2,5,5,3,2,5,3,3,3,4,4,2,3,3,3,3,0
+EMP_255,Mid-level,Information Management,13,balanced,4,3,3,2,1,3,2,3,1,5,1,0,2,4,2,4,3,1,4,4,2,2,3,4,3,3,4,2,3,2,0
+EMP_256,Mid-level,Platform Engineering,5,balanced,3,4,3,3,3,3,3,2,2,3,0,0,1,3,4,4,2,4,1,0,2,2,1,3,2,4,2,2,0,5,0
+EMP_257,Junior,Client Services,18,balanced,3,4,3,2,1,3,4,4,2,3,3,1,0,2,3,4,3,3,3,3,5,4,2,4,5,3,3,1,4,5,0
+EMP_258,Senior,Platform Engineering,14,balanced,1,4,3,3,4,2,3,2,2,2,2,1,0,3,4,5,3,4,3,3,5,3,2,4,2,2,4,2,2,5,0
+EMP_259,Mid-level,Client Services,13,broker,0,0,1,4,2,1,2,0,2,4,1,0,2,4,3,4,4,3,5,4,4,5,5,3,5,5,3,3,3,3,0
+EMP_260,Senior,Solution Architecture,9,balanced,3,3,3,3,3,3,3,5,0,3,2,1,0,3,1,4,4,2,2,4,1,4,5,4,4,3,3,5,5,4,0
+EMP_261,Mid-level,Analytics & BI,16,balanced,3,4,0,3,2,1,5,2,4,3,1,2,2,4,0,3,4,4,4,3,4,2,3,5,3,2,3,5,4,5,0
+EMP_262,Senior,Solution Architecture,9,balanced,3,1,2,4,5,2,4,3,3,2,3,1,1,1,3,3,3,3,2,3,5,3,5,2,3,2,2,4,3,3,0
+EMP_263,Junior,Information Management,17,balanced,3,4,5,3,3,2,3,4,2,4,1,1,0,5,3,2,2,1,4,2,2,5,1,3,3,3,2,2,3,3,0
+EMP_264,Junior,Analytics & BI,2,balanced,3,4,3,4,4,3,3,5,3,3,0,2,2,2,3,4,2,3,2,2,1,5,1,3,4,2,4,3,2,2,0
+EMP_265,Mid-level,Information Management,16,balanced,3,2,3,3,5,2,2,4,0,4,2,1,2,3,3,1,2,3,4,3,4,3,3,5,2,3,4,5,1,1,0
+EMP_266,Senior,Platform Engineering,17,balanced,3,2,3,3,2,4,3,1,2,5,0,0,1,3,2,5,3,3,4,2,2,2,3,2,3,3,4,3,5,3,0
+EMP_267,Mid-level,Analytics & BI,12,broker,1,1,2,2,3,2,2,3,1,4,1,1,2,4,5,3,5,5,5,2,3,3,3,4,4,4,5,3,5,4,0
+EMP_268,Senior,Information Management,11,balanced,4,2,2,2,3,4,3,2,1,4,1,0,1,4,3,1,3,4,4,2,3,2,1,3,4,1,3,3,4,4,0
+EMP_269,Senior,Platform Engineering,17,balanced,5,4,2,2,2,2,5,5,2,3,2,0,1,5,4,1,2,4,2,5,3,3,3,4,4,1,3,4,2,3,0
+EMP_270,Junior,Analytics & BI,12,balanced,3,3,3,4,1,4,4,2,2,3,1,2,0,3,3,4,5,3,4,4,2,3,2,4,2,5,5,2,4,4,0
+EMP_271,Junior,Solution Architecture,5,island,2,3,3,3,3,1,1,3,1,0,2,1,2,1,3,0,0,1,1,1,0,0,2,0,0,2,1,0,2,1,1
+EMP_272,Mid-level,Platform Engineering,12,broker,2,3,1,0,1,2,2,0,2,5,2,1,1,3,4,5,5,4,5,5,5,5,4,3,5,4,4,5,4,5,0
+EMP_273,Mid-level,Analytics & BI,15,balanced,4,4,2,5,2,4,3,2,2,3,2,1,0,3,2,4,4,3,3,3,4,3,2,3,3,3,3,3,2,3,0
+EMP_274,Mid-level,Analytics & BI,14,balanced,1,2,5,4,4,2,3,3,3,3,1,2,1,4,4,0,5,0,2,4,2,3,4,1,2,3,5,4,2,2,0
+EMP_275,Mid-level,Information Management,7,balanced,4,4,3,3,3,4,4,3,3,4,2,1,0,2,3,3,5,4,3,3,2,2,3,2,3,4,2,4,2,4,0
+EMP_276,Junior,Solution Architecture,2,balanced,3,4,3,1,4,3,1,4,2,3,2,3,0,0,5,4,4,3,2,3,3,1,2,4,4,2,2,3,4,2,0
+EMP_277,Junior,Data Engineering,10,island,3,1,2,1,2,3,2,1,3,2,1,1,1,0,3,0,0,0,2,1,3,0,1,0,0,2,1,0,1,2,1
+EMP_278,Junior,Solution Architecture,8,balanced,3,2,2,5,3,2,3,3,0,3,3,1,2,4,3,3,2,3,2,3,4,2,4,5,3,3,5,3,2,3,0
+EMP_279,Mid-level,Analytics & BI,5,balanced,2,4,2,3,4,3,3,3,3,4,0,1,0,2,3,4,5,2,4,3,2,5,3,3,2,2,4,3,1,4,0
+EMP_280,Senior,Solution Architecture,12,balanced,3,2,2,4,2,4,5,4,3,4,2,0,1,4,2,3,1,3,3,2,4,3,3,3,1,1,3,4,2,4,0
+EMP_281,Senior,Information Management,4,balanced,4,3,3,3,4,2,4,4,1,3,1,1,1,2,3,4,2,4,3,3,2,4,2,3,3,5,2,2,5,4,0
+EMP_282,Junior,Platform Engineering,4,island,2,3,0,3,1,2,2,2,1,2,2,1,1,1,2,2,1,2,3,0,0,1,0,1,4,1,2,0,1,0,1
+EMP_283,Mid-level,Data Engineering,10,island,1,2,1,2,3,3,4,2,2,2,0,1,2,2,0,1,1,1,2,4,0,2,0,4,2,1,0,2,2,1,1
+EMP_284,Mid-level,Solution Architecture,4,balanced,3,4,3,2,5,2,1,3,2,3,3,0,2,4,3,1,3,5,1,3,3,3,2,3,4,1,5,3,2,3,0
+EMP_285,Junior,Data Engineering,4,balanced,3,4,3,3,4,3,2,4,1,3,0,0,0,2,1,4,3,5,3,3,4,5,3,2,3,3,5,3,3,3,0
+EMP_286,Mid-level,Information Management,7,balanced,4,2,2,3,3,4,4,3,3,3,1,2,0,2,3,2,2,0,3,2,2,1,3,3,2,3,1,2,3,2,0
+EMP_287,Junior,Analytics & BI,9,island,4,2,2,2,4,2,1,2,1,2,0,3,2,2,1,2,0,2,2,2,0,1,0,0,0,2,1,3,1,0,1
+EMP_288,Senior,Information Management,7,broker,2,2,2,1,2,2,2,3,3,4,1,1,2,4,3,4,5,4,4,4,3,4,5,5,2,5,5,5,3,5,0
+EMP_289,Junior,Client Services,16,balanced,3,4,3,4,2,3,4,3,2,2,2,1,1,5,5,3,4,2,4,2,4,3,2,2,3,3,2,3,2,3,0
+EMP_290,Mid-level,Analytics & BI,12,balanced,3,4,2,2,3,4,3,2,2,2,0,0,0,3,3,2,4,3,2,3,0,3,3,2,3,4,1,2,4,4,0
+EMP_291,Mid-level,Data Engineering,16,balanced,3,3,2,2,5,5,3,3,2,4,1,2,2,2,4,4,2,5,2,1,2,0,5,1,5,2,4,3,2,1,0
+EMP_292,Mid-level,Solution Architecture,7,broker,3,1,2,3,1,3,3,2,2,3,1,1,0,5,4,3,4,3,3,2,4,5,4,3,5,4,5,4,5,4,0
+EMP_293,Junior,Data Engineering,12,balanced,4,4,3,2,5,3,3,3,1,2,1,2,2,3,3,4,2,3,3,5,3,2,5,2,3,2,1,3,1,1,0
+EMP_294,Mid-level,Data Engineering,5,island,2,1,3,0,2,1,3,3,0,2,2,2,1,1,1,1,0,1,2,2,0,0,2,2,2,0,0,0,0,1,1
+EMP_295,Junior,Client Services,15,balanced,1,2,2,4,2,3,4,3,0,4,2,0,1,2,5,2,4,3,2,3,2,2,1,2,4,5,3,5,5,3,0
+EMP_296,Mid-level,Analytics & BI,5,balanced,5,3,2,2,3,4,3,2,3,2,0,1,2,3,4,2,3,2,4,3,3,3,4,2,5,4,3,4,3,4,0
+EMP_297,Junior,Data Engineering,9,balanced,3,3,4,1,4,2,3,3,4,3,0,1,0,3,4,3,3,3,3,5,3,4,3,3,3,3,3,4,3,3,0
+EMP_298,Senior,Data Engineering,11,broker,2,2,2,1,3,1,2,1,4,3,1,1,0,4,2,4,3,5,5,2,5,5,5,5,4,5,5,4,2,3,0
+EMP_299,Mid-level,Solution Architecture,12,balanced,4,2,2,2,3,4,3,3,4,3,1,1,0,2,2,5,3,4,0,4,3,3,2,5,2,3,3,4,1,3,0
+EMP_300,Mid-level,Analytics & BI,18,balanced,4,3,4,3,2,2,3,4,2,4,0,1,1,4,2,5,3,4,2,3,3,3,4,4,2,4,3,2,2,4,0

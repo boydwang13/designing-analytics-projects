@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sprint 1 Presentation | Social Telemetry</title>
+  <style>
+    :root {
+      --bg: #f0f4fb;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --primary: #1d4ed8;
+      --accent: #0f766e;
+      --ok: #15803d;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.55;
+      font-size: 15px;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 18px 64px; }
+    header.hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 45%, #0f766e 100%);
+      color: #fff;
+      padding: 36px 24px;
+      border-radius: 16px;
+      margin-bottom: 22px;
+    }
+    header.hero h1 { margin: 0 0 8px; font-size: 26px; font-weight: 700; }
+    header.hero .en { opacity: 0.92; font-size: 15px; margin: 6px 0 0; }
+    header.hero .meta { margin-top: 14px; font-size: 13px; opacity: 0.88; }
+    nav.toc {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(240, 244, 251, 0.95);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+    nav.toc a { color: var(--primary); margin-right: 12px; text-decoration: none; }
+    nav.toc a:hover { text-decoration: underline; }
+    h2 {
+      font-size: 20px;
+      margin: 28px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--primary);
+      color: #1e3a8a;
+    }
+    h2 .en { display: block; font-size: 14px; font-weight: 500; color: var(--muted); margin-top: 4px; }
+    h3 { font-size: 16px; margin: 16px 0 8px; color: #374151; }
+    .bilingual { margin: 10px 0; }
+    .bilingual .cn { margin: 0 0 6px; }
+    .bilingual .en {
+      margin: 0;
+      padding-left: 12px;
+      border-left: 3px solid var(--accent);
+      color: #374151;
+      font-size: 14px;
+    }
+    .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); font-weight: 700; margin-bottom: 4px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px;
+      margin-top: 14px;
+    }
+    .work-item { margin-top: 18px; padding-top: 14px; border-top: 1px dashed var(--line); }
+    .work-item:first-of-type { border-top: none; padding-top: 0; }
+    .kpi {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .kpi .item {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 12px;
+      background: #fafbff;
+    }
+    .kpi .num { font-size: 22px; font-weight: 700; color: var(--primary); }
+    .ok { color: var(--ok); font-weight: 700; }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+    th, td { border: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; }
+    th { background: #eef2ff; }
+    ul { margin: 6px 0 6px 18px; }
+    code { background: #eef2ff; padding: 2px 5px; border-radius: 4px; font-size: 12px; }
+    .imgbox { margin-top: 12px; }
+    .imgbox img {
+      width: 100%;
+      max-width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #fff;
+    }
+    .foot { margin-top: 32px; color: var(--muted); font-size: 12px; text-align: center; }
+    @media print {
+      nav.toc { position: static; }
+      .card { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>Sprint 1 汇报：数据生成与拓扑原型</h1>
+      <p class="en">Sprint 1 Review: Data Generation &amp; Initial Network Topology Prototype</p>
+      <p class="meta">Social Telemetry — Seeing the Silent Teams · Canon EMEA Professional Services · Capstone</p>
+    </header>
+
+    <nav class="toc">
+      <strong>目录 / Contents:</strong>
+      <a href="#plan">计划 Plan</a>
+      <a href="#work">工作 Work</a>
+      <a href="#snapshot">结果 Snapshot</a>
+      <a href="#viz">可视化 Viz</a>
+      <a href="#s2">Sprint 2</a>
+      <a href="#files">文件 Files</a>
+    </nav>
+
+    <!-- 1. Sprint plan -->
+    <section id="plan">
+      <h2>一、Sprint 1 计划与目标 <span class="en">Sprint 1 Plan &amp; Objectives (from PID)</span></h2>
+      <div class="card">
+        <div class="bilingual">
+          <p class="cn"><strong>时间范围：</strong>Weeks 1–2（双周迭代）。</p>
+          <p class="en"><strong>Timeline:</strong> Weeks 1–2, aligned with the bi-weekly agile cadence.</p>
+        </div>
+        <div class="bilingual">
+          <p class="cn"><strong>核心目标：</strong>（1）在严格 GDPR 前提下生成可复现的大规模合成数据（节点属性 + 有向边 + 关系分数）；（2）完成探索性数据分析（EDA）与数据质量门禁；（3）建立基础网络拓扑可视化原型与可演示 Notebook，打通后续 ONA 管线。</p>
+          <p class="en"><strong>Core goals:</strong> (1) Generate reproducible synthetic data (node attributes, directed edges, relational scores) under GDPR constraints; (2) Run EDA and a data-quality gate; (3) Deliver an initial topology prototype and a presentable notebook to establish the analytics pipeline for ONA.</p>
+        </div>
+        <div class="bilingual">
+          <p class="cn"><strong>计划内交付物（Definition of Done）：</strong>冻结 schema；nodes/edges CSV；问卷与 codebook 一致；DQ 报告；EDA 摘要；拓扑图（含 sandbox）；可复现 notebook；Sponsor 评审摘要。</p>
+          <p class="en"><strong>Planned deliverables:</strong> Frozen schema; nodes/edges CSV; survey &amp; codebook alignment; DQ report; EDA summaries; topology images (incl. sandbox); reproducible notebook; sponsor review pack.</p>
+        </div>
+        <div class="bilingual">
+          <p class="cn"><strong>与 PID 的差异说明：</strong>PID 曾提及 region；本项目以 GDPR 为准，跨群组差异由 <code>Team</code> / <code>Seniority</code> 等字段代理，不采集地理定位。</p>
+          <p class="en"><strong>Note vs. PID wording:</strong> Where the PID mentions “region,” this sprint uses non-geographic proxies (e.g. <code>Team</code>, <code>Seniority</code>) for subgroup variation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. All work -->
+    <section id="work">
+      <h2>二、本 Sprint 完成的工作 <span class="en">Work Completed This Sprint</span></h2>
+      <p class="bilingual">
+        <span class="cn">以下每项均包含：<em>依据与原理</em>、<em>产出</em>、<em>对整体项目的支撑</em>、<em>与 Sprint 2 的衔接</em>。</span><br />
+        <span class="en" style="display:block;margin-top:6px;border-left:3px solid var(--accent);padding-left:12px;">Each item covers: <em>rationale</em>, <em>deliverables</em>, <em>project value</em>, and <em>handoff to Sprint 2</em>.</span>
+      </p>
+
+      <div class="card">
+        <div class="work-item">
+          <h3>1) Schema 冻结与问卷 / 字典一致性</h3>
+          <div class="label">Rationale 依据与原理</div>
+          <div class="bilingual">
+            <p class="cn">ONA 要求“测量工具—数据表—指标定义”一致；否则中心性、孤立度无法审计。边表固定为：Hard/Soft 求助关系 + 频次权重 + 每条边上的 Awareness/Energy 关系属性（Cross &amp; Parker 框架）。</p>
+            <p class="en">ONA requires alignment among instrument, tables, and metric definitions. Edges are help-seeking ties (<code>Hard</code>/<code>Soft</code>) with frequency weights and per-edge <code>Awareness_Score</code> / <code>Energy_Score</code> as relational attributes.</p>
+          </div>
+          <div class="label">Deliverables 产出</div>
+          <ul>
+            <li><code>docs/mock_survey.md</code> — Section I/J 与导出字段一致</li>
+            <li><code>docs/mock_codebook.md</code> — 字段定义与 CSV 一致</li>
+          </ul>
+          <div class="label">Project value 对整体项目的支撑</div>
+          <div class="bilingual">
+            <p class="cn">为后续“可解释的管理名单”和合规叙事提供单一事实来源（single source of truth）。</p>
+            <p class="en">Provides a single source of truth for explainable management lists and compliance narrative.</p>
+          </div>
+          <div class="label">Sprint 2 衔接</div>
+          <div class="bilingual">
+            <p class="cn">可直接在同一 schema 上计算 In-degree / Out-degree / Betweenness 与 Isolation Score，无需返工改表。</p>
+            <p class="en">Centrality and isolation metrics can be computed without schema rework.</p>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>2) 大规模合成数据生成（规则注入 + 随机扰动）</h3>
+          <div class="label">Rationale 依据与原理</div>
+          <div class="bilingual">
+            <p class="cn">PID 与 Sponsor 要求：在无真实通信数据下验证算法逻辑；通过注入 archetype（Hub / Broker / Island）+ 噪声，模拟“星型吸附、桥接、静默孤岛”等结构，便于场景注入测试。</p>
+            <p class="en">Synthetic data with injected archetypes (hubs, brokers, islands) plus noise validates algorithms without production communications data and supports scenario-based testing.</p>
+          </div>
+          <div class="label">Deliverables 产出</div>
+          <ul>
+            <li><code>data/mock_data_nodes.csv</code>（300 nodes）</li>
+            <li><code>data/mock_data_edges.csv</code>（1042 edges）</li>
+            <li><code>scripts/generate_sprint1_assets.py</code></li>
+            <li><code>docs/data_generation_notes.md</code>（seed、逻辑说明）</li>
+          </ul>
+          <div class="label">Project value 对整体项目的支撑</div>
+          <div class="bilingual">
+            <p class="cn">构成整个 capstone 的实证基础；同一管线可放大到更大 N 或调整参数做干预模拟。</p>
+            <p class="en">Foundational dataset for the capstone; the same generator can scale or simulate interventions.</p>
+          </div>
+          <div class="label">Sprint 2 衔接</div>
+          <div class="bilingual">
+            <p class="cn">作为 Sprint 2 的冻结输入快照，用于中心性、孤立分数与第一版“静默名单”。</p>
+            <p class="en">Serves as the frozen input snapshot for Sprint 2 centrality, isolation scoring, and v1 silent lists.</p>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>3) 数据质量门禁（DQ Gate）</h3>
+          <div class="label">Rationale 依据与原理</div>
+          <div class="bilingual">
+            <p class="cn">网络指标对缺失值、非法枚举、重复 nomination rank 极敏感；在 Sprint 1 前置校验可避免 Sprint 2 出现“假阳性孤岛”或不可复现结果。</p>
+            <p class="en">Graph metrics are sensitive to nulls, invalid enums, and duplicate ranks; early DQ prevents false isolation signals and irreproducible results in later sprints.</p>
+          </div>
+          <div class="label">Deliverables 产出</div>
+          <ul>
+            <li><code>outputs/dq_gate_report.md</code> — PASS，0 issues</li>
+            <li>Notebook 内嵌快速 DQ cell</li>
+          </ul>
+          <div class="label">Project value 对整体项目的支撑</div>
+          <div class="bilingual">
+            <p class="cn">满足 Sponsor 对“可审计、可复现”的咨询级交付预期。</p>
+            <p class="en">Supports consulting-grade, auditable, reproducible delivery.</p>
+          </div>
+          <div class="label">Sprint 2 衔接</div>
+          <div class="bilingual">
+            <p class="cn">Sprint 2 每次改数据或阈值前可复用同一套规则做回归检查。</p>
+            <p class="en">Same checks can be reused as regression tests before Sprint 2 data or threshold changes.</p>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>4) 探索性数据分析（EDA）</h3>
+          <div class="label">Rationale 依据与原理</div>
+          <div class="bilingual">
+            <p class="cn">在正式 ONA 指标前，需确认频次分布、类型结构、入/出度分布是否与业务叙事一致（例如是否存在明显中心节点与低出度尾部）。</p>
+            <p class="en">Before formal ONA metrics, validate distributions and degree profiles against the intended business narrative (hubs vs. low-outdegree tail).</p>
+          </div>
+          <div class="label">Deliverables 产出</div>
+          <ul>
+            <li><code>outputs/eda_profile_v1.csv</code></li>
+            <li><code>outputs/sprint1_freq_type_distribution.csv</code></li>
+            <li><code>outputs/sprint1_node_degree_profile.csv</code></li>
+          </ul>
+          <div class="label">Project value 对整体项目的支撑</div>
+          <div class="bilingual">
+            <p class="cn">为管理层沟通提供“数据长什么样”的直观证据，并校准后续阈值设定。</p>
+            <p class="en">Evidence for stakeholder communication and calibration of later thresholds.</p>
+          </div>
+          <div class="label">Sprint 2 衔接</div>
+          <div class="bilingual">
+            <p class="cn">为 Isolation Score 分位数阈值、分层名单（非单一硬切）提供先验参考。</p>
+            <p class="en">Informs quantile-based or tiered lists rather than a single hard cut in Sprint 2.</p>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>5) 网络拓扑原型（全量 + Sandbox）</h3>
+          <div class="label">Rationale 依据与原理</div>
+          <div class="bilingual">
+            <p class="cn">Sponsor 明确偏好敏捷：可先 20–50 节点“看得见”的静态原型再扩展。有向边 + 频次映射体现 Granovetter 意义上的强/弱连接强度；节点大小编码入度以突出 Hub。</p>
+            <p class="en">Agile preference: a small sandbox first, then scale. Directed ties and frequency mapping reflect tie strength; node size encodes in-degree for hub visibility.</p>
+          </div>
+          <div class="label">Deliverables 产出</div>
+          <ul>
+            <li><code>outputs/network_prototype_v1.png</code> — 全量可视化原型</li>
+            <li><code>outputs/sprint1_topology_sandbox.png</code> — 子图演示</li>
+          </ul>
+          <div class="label">Project value 对整体项目的支撑</div>
+          <div class="bilingual">
+            <p class="cn">完成“从表到图”的管线证明，支撑 Sponsor 双周评审叙事。</p>
+            <p class="en">Proves the table-to-graph pipeline and supports bi-weekly sponsor demos.</p>
+          </div>
+          <div class="label">Sprint 2 衔接</div>
+          <div class="bilingual">
+            <p class="cn">Sprint 2 在同一图上叠加中心性着色、社区/团队分组、孤立风险标签。</p>
+            <p class="en">Sprint 2 overlays centrality coloring, team grouping, and isolation-risk labels on the same visual layer.</p>
+          </div>
+        </div>
+
+        <div class="work-item">
+          <h3>6) 可复现 Notebook、自动化脚本与评审包</h3>
+          <div class="label">Rationale 依据与原理</div>
+          <div class="bilingual">
+            <p class="cn">PID 要求双周从 Notebook 展示；自动化脚本保证任何人用同一 seed 可复现相同产出。</p>
+            <p class="en">PID requires notebook-based demos; automation ensures reproducibility under a fixed seed.</p>
+          </div>
+          <div class="label">Deliverables 产出</div>
+          <ul>
+            <li><code>notebooks/sprint1_eda_and_topology_prototype.ipynb</code></li>
+            <li><code>scripts/run_sprint1_execution.py</code></li>
+            <li><code>outputs/sprint1_summary_report.md</code></li>
+            <li><code>outputs/sprint1_review_pack.md</code></li>
+          </ul>
+          <div class="label">Project value 对整体项目的支撑</div>
+          <div class="bilingual">
+            <p class="cn">降低沟通成本，形成可移交的“数据产品骨架”。</p>
+            <p class="en">Reduces communication friction and forms a transferable analytics product skeleton.</p>
+          </div>
+          <div class="label">Sprint 2 衔接</div>
+          <div class="bilingual">
+            <p class="cn">在同一 notebook 中追加 Centrality、Isolation、名单导出章节即可进入 Sprint 2 演示。</p>
+            <p class="en">Append centrality, isolation, and list-export sections in the same notebook for Sprint 2.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary table bilingual -->
+      <div class="card" style="margin-top:16px;">
+        <h3>工作项一览表 | Workstream summary</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>工作项<br /><span style="font-weight:400;color:var(--muted)">Workstream</span></th>
+              <th>核心原理<br /><span style="font-weight:400;color:var(--muted)">Key principle</span></th>
+              <th>主要产出<br /><span style="font-weight:400;color:var(--muted)">Key output</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Schema / 字典<br />Schema &amp; dictionary</td>
+              <td>单一事实来源<br />Single source of truth</td>
+              <td><code>docs/mock_survey.md</code>, <code>docs/mock_codebook.md</code></td>
+            </tr>
+            <tr>
+              <td>数据生成<br />Data generation</td>
+              <td>Archetype 注入 + 可复现<br />Archetypes + reproducibility</td>
+              <td><code>data/*.csv</code>, <code>scripts/generate_sprint1_assets.py</code></td>
+            </tr>
+            <tr>
+              <td>DQ Gate</td>
+              <td>错误前置<br />Shift-left quality</td>
+              <td><code>outputs/dq_gate_report.md</code></td>
+            </tr>
+            <tr>
+              <td>EDA</td>
+              <td>分布与度检验<br />Distribution &amp; degree checks</td>
+              <td><code>outputs/*profile*.csv</code>, <code>sprint1_freq*.csv</code></td>
+            </tr>
+            <tr>
+              <td>拓扑原型<br />Topology prototype</td>
+              <td>敏捷可见性<br />Agile visibility</td>
+              <td><code>outputs/*.png</code></td>
+            </tr>
+            <tr>
+              <td>Notebook / 自动化<br />Notebook / automation</td>
+              <td>可演示、可复跑<br />Demo + rerun</td>
+              <td><code>notebooks/*.ipynb</code>, <code>scripts/run_sprint1_execution.py</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 3. Snapshot -->
+    <section id="snapshot">
+      <h2>三、本 Sprint 量化结果 <span class="en">Quantitative Snapshot</span></h2>
+      <div class="card">
+        <div class="kpi">
+          <div class="item"><div class="sub">Nodes 节点（全量）</div><div class="num">300</div></div>
+          <div class="item"><div class="sub">Edges 边（全量）</div><div class="num">1042</div></div>
+          <div class="item"><div class="sub">Sandbox nodes</div><div class="num">69</div></div>
+          <div class="item"><div class="sub">Sandbox edges</div><div class="num">125</div></div>
+        </div>
+        <p>DQ Gate：<span class="ok">PASS</span>（0 issues） · DQ Gate: <span class="ok">PASS</span> (0 issues)</p>
+        <div class="bilingual">
+          <p class="cn"><strong>结构快照：</strong>balanced 222 · island 41 · broker 29 · hub 8；Hard 490 · Soft 552；频次 Weekly 为主。</p>
+          <p class="en"><strong>Structure snapshot:</strong> profile mix and Hard/Soft split as above; Weekly ties dominate frequency.</p>
+        </div>
+        <div class="bilingual">
+          <p class="cn"><strong>业务信号（示例）：</strong>入度 Top 指向 Hub 候选；低出度尾部指向 Silent Island 候选——与 Sprint 2 名单输出一致。</p>
+          <p class="en"><strong>Signals:</strong> high in-degree → hub candidates; low out-degree tail → silent-island candidates, aligned with Sprint 2 list outputs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Viz -->
+    <section id="viz">
+      <h2>四、可视化原型 <span class="en">Topology Visualizations</span></h2>
+      <div class="card">
+        <div class="bilingual">
+          <p class="cn"><strong>读图说明：</strong>节点越大 ≈ 入度越高（Hub）；边颜色/粗细 ≈ 互动频次（强/弱连接）；灰/蓝区分可对应 Hard/Soft 子图逻辑。</p>
+          <p class="en"><strong>How to read:</strong> larger nodes ≈ higher in-degree; edge color/width ≈ interaction frequency (strong vs. weak ties).</p>
+        </div>
+        <h3>4.1 全量原型 | Full-network prototype</h3>
+        <div class="imgbox"><img src="outputs/network_prototype_v1.png" alt="Full network prototype v1" /></div>
+        <h3>4.2 Sandbox 子图 | Sandbox (first-iteration demo)</h3>
+        <div class="imgbox"><img src="outputs/sprint1_topology_sandbox.png" alt="Sandbox topology" /></div>
+      </div>
+    </section>
+
+    <!-- 5. Sprint 2 -->
+    <section id="s2">
+      <h2>五、与 Sprint 2 的衔接 <span class="en">Handoff to Sprint 2 (Core ONA)</span></h2>
+      <div class="card">
+        <div class="bilingual">
+          <p class="cn"><strong>直接输入：</strong>本文件夹内 <code>data/mock_data_nodes.csv</code> 与 <code>data/mock_data_edges.csv</code> 作为冻结基线；<code>outputs/sprint1_node_degree_profile.csv</code> 可作为特征/ sanity 检查表。</p>
+          <p class="en"><strong>Direct inputs:</strong> Frozen <code>data/*.csv</code> baseline; <code>sprint1_node_degree_profile.csv</code> for feature/sanity checks.</p>
+        </div>
+        <h3>Sprint 2 计划任务（中英对照）</h3>
+        <table>
+          <thead>
+            <tr><th>#</th><th>中文</th><th>English</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>计算 In-degree / Out-degree / Betweenness centrality，并输出指标表。</td>
+              <td>Compute in-degree, out-degree, and betweenness centrality; export metric tables.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>定义并实现 Isolation Score（含弱桥缺失惩罚等），设定阈值或分层规则，生成 <code>Isolation_Risk_Flag</code>。</td>
+              <td>Define isolation score (incl. weak-bridge deficit), set thresholds/tiers, derive <code>Isolation_Risk_Flag</code>.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>输出第一版「静默团队/个人」管理名单（含解释字段与反指标提示）。</td>
+              <td>Deliver v1 management shortlist with explainability and counter-metric notes.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>将指标层叠加到动态或迭代网络图上，形成第一轮管理评审材料。</td>
+              <td>Overlay metrics on network views for the first management review iteration.</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="bilingual">
+          <p class="cn"><strong>风险控制：</strong>优先分层名单而非单一硬阈值；Sandbox 校验后再全量发布，降低误报。</p>
+          <p class="en"><strong>Risk control:</strong> Prefer tiered lists over a single hard cut; validate on sandbox before full-network release.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Files -->
+    <section id="files">
+      <h2>六、本文件夹归档结构 <span class="en">Folder index (<code>sprint1/</code>)</span></h2>
+      <div class="card">
+        <ul>
+          <li><code>data/</code> — 合成数据 Synthetic CSVs</li>
+          <li><code>docs/</code> — 问卷、字典、PID、生成说明 Survey, codebook, PID, notes</li>
+          <li><code>notebooks/</code> — 可演示 Notebook Presentable notebook</li>
+          <li><code>outputs/</code> — DQ、EDA、图、摘要报告 Reports &amp; figures</li>
+          <li><code>scripts/</code> — 生成与一键执行脚本 Generator &amp; runner</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="foot">
+      Sprint 1 Presentation · Bilingual CN/EN · Social Telemetry Capstone · Canon EMEA<br />
+      Open this file from the <code>sprint1/</code> folder so image paths resolve correctly.
+    </p>
+  </div>
+</body>
+</html>

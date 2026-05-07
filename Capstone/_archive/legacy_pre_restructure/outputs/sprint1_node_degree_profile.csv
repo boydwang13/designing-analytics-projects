@@ -1,0 +1,301 @@
+EMP_ID,Team,Seniority,Profile_Type,Isolation_Risk_Flag,out_degree,in_degree
+EMP_001,Solution Architecture,Mid-level,balanced,0,4,0
+EMP_002,Data Engineering,Mid-level,balanced,0,4,0
+EMP_003,Platform Engineering,Mid-level,balanced,0,3,3
+EMP_004,Information Management,Mid-level,balanced,0,2,1
+EMP_005,Information Management,Junior,balanced,0,2,0
+EMP_006,Solution Architecture,Junior,island,1,0,4
+EMP_007,Client Services,Junior,balanced,0,5,7
+EMP_008,Data Engineering,Junior,balanced,0,2,2
+EMP_009,Information Management,Senior,balanced,0,4,1
+EMP_010,Platform Engineering,Mid-level,balanced,0,4,2
+EMP_011,Solution Architecture,Junior,balanced,0,3,2
+EMP_012,Analytics & BI,Mid-level,balanced,0,3,3
+EMP_013,Information Management,Junior,balanced,0,2,2
+EMP_014,Platform Engineering,Junior,balanced,0,6,1
+EMP_015,Data Engineering,Mid-level,balanced,0,4,3
+EMP_016,Client Services,Junior,balanced,0,5,2
+EMP_017,Analytics & BI,Mid-level,balanced,0,3,5
+EMP_018,Solution Architecture,Junior,balanced,0,3,4
+EMP_019,Platform Engineering,Mid-level,balanced,0,5,3
+EMP_020,Platform Engineering,Mid-level,balanced,0,4,3
+EMP_021,Information Management,Senior,balanced,0,5,6
+EMP_022,Client Services,Mid-level,island,1,0,2
+EMP_023,Solution Architecture,Junior,balanced,0,5,1
+EMP_024,Client Services,Junior,balanced,0,4,9
+EMP_025,Data Engineering,Mid-level,balanced,0,5,3
+EMP_026,Analytics & BI,Mid-level,balanced,0,3,0
+EMP_027,Client Services,Senior,balanced,0,6,1
+EMP_028,Client Services,Senior,broker,0,3,6
+EMP_029,Solution Architecture,Senior,balanced,0,3,2
+EMP_030,Client Services,Junior,island,1,0,1
+EMP_031,Client Services,Junior,balanced,0,3,2
+EMP_032,Analytics & BI,Senior,balanced,0,2,1
+EMP_033,Platform Engineering,Mid-level,balanced,0,5,4
+EMP_034,Platform Engineering,Junior,balanced,0,2,1
+EMP_035,Client Services,Senior,balanced,0,3,2
+EMP_036,Information Management,Junior,island,1,0,0
+EMP_037,Platform Engineering,Junior,island,1,0,3
+EMP_038,Information Management,Mid-level,balanced,0,4,5
+EMP_039,Client Services,Mid-level,balanced,0,5,1
+EMP_040,Client Services,Mid-level,balanced,0,2,3
+EMP_041,Data Engineering,Senior,balanced,0,5,1
+EMP_042,Platform Engineering,Junior,balanced,0,5,3
+EMP_043,Data Engineering,Mid-level,balanced,0,4,2
+EMP_044,Analytics & BI,Junior,balanced,0,2,0
+EMP_045,Information Management,Junior,balanced,0,4,1
+EMP_046,Client Services,Junior,balanced,0,2,2
+EMP_047,Data Engineering,Senior,balanced,0,6,2
+EMP_048,Platform Engineering,Junior,balanced,0,4,1
+EMP_049,Analytics & BI,Junior,island,1,1,2
+EMP_050,Analytics & BI,Junior,balanced,0,4,2
+EMP_051,Data Engineering,Junior,island,1,0,2
+EMP_052,Information Management,Mid-level,island,1,1,2
+EMP_053,Analytics & BI,Mid-level,broker,0,4,8
+EMP_054,Data Engineering,Junior,balanced,0,5,0
+EMP_055,Solution Architecture,Senior,balanced,0,5,3
+EMP_056,Platform Engineering,Mid-level,balanced,0,4,6
+EMP_057,Data Engineering,Mid-level,balanced,0,4,2
+EMP_058,Data Engineering,Senior,balanced,0,3,2
+EMP_059,Platform Engineering,Junior,island,1,0,0
+EMP_060,Solution Architecture,Senior,balanced,0,4,2
+EMP_061,Platform Engineering,Mid-level,balanced,0,5,0
+EMP_062,Solution Architecture,Mid-level,broker,0,3,10
+EMP_063,Analytics & BI,Senior,balanced,0,5,0
+EMP_064,Platform Engineering,Junior,balanced,0,4,2
+EMP_065,Solution Architecture,Mid-level,broker,0,2,9
+EMP_066,Analytics & BI,Junior,balanced,0,5,2
+EMP_067,Information Management,Mid-level,island,1,0,1
+EMP_068,Platform Engineering,Senior,hub,0,4,21
+EMP_069,Data Engineering,Junior,balanced,0,5,2
+EMP_070,Solution Architecture,Senior,balanced,0,4,1
+EMP_071,Solution Architecture,Mid-level,island,1,1,3
+EMP_072,Analytics & BI,Mid-level,balanced,0,5,4
+EMP_073,Platform Engineering,Mid-level,balanced,0,4,2
+EMP_074,Analytics & BI,Mid-level,balanced,0,4,4
+EMP_075,Platform Engineering,Senior,balanced,0,5,3
+EMP_076,Information Management,Mid-level,balanced,0,6,1
+EMP_077,Data Engineering,Mid-level,balanced,0,4,2
+EMP_078,Solution Architecture,Senior,balanced,0,4,4
+EMP_079,Platform Engineering,Senior,balanced,0,3,1
+EMP_080,Analytics & BI,Senior,broker,0,4,8
+EMP_081,Data Engineering,Mid-level,balanced,0,2,2
+EMP_082,Platform Engineering,Mid-level,balanced,0,4,1
+EMP_083,Platform Engineering,Mid-level,balanced,0,5,1
+EMP_084,Information Management,Mid-level,balanced,0,4,3
+EMP_085,Data Engineering,Junior,balanced,0,5,0
+EMP_086,Solution Architecture,Senior,balanced,0,3,0
+EMP_087,Platform Engineering,Junior,island,1,0,3
+EMP_088,Client Services,Mid-level,balanced,0,3,4
+EMP_089,Data Engineering,Junior,island,1,0,2
+EMP_090,Analytics & BI,Mid-level,balanced,0,3,7
+EMP_091,Client Services,Mid-level,balanced,0,5,1
+EMP_092,Analytics & BI,Mid-level,balanced,0,6,6
+EMP_093,Solution Architecture,Junior,balanced,0,6,2
+EMP_094,Information Management,Senior,broker,0,3,5
+EMP_095,Information Management,Junior,balanced,0,2,1
+EMP_096,Analytics & BI,Mid-level,balanced,0,4,1
+EMP_097,Data Engineering,Mid-level,balanced,0,6,6
+EMP_098,Platform Engineering,Mid-level,balanced,0,5,1
+EMP_099,Analytics & BI,Mid-level,balanced,0,2,2
+EMP_100,Platform Engineering,Mid-level,island,1,0,1
+EMP_101,Data Engineering,Mid-level,balanced,0,5,4
+EMP_102,Platform Engineering,Mid-level,balanced,0,3,3
+EMP_103,Analytics & BI,Junior,balanced,0,6,2
+EMP_104,Information Management,Senior,balanced,0,5,1
+EMP_105,Platform Engineering,Mid-level,broker,0,4,11
+EMP_106,Platform Engineering,Junior,island,1,0,1
+EMP_107,Information Management,Senior,balanced,0,6,3
+EMP_108,Solution Architecture,Mid-level,broker,0,4,10
+EMP_109,Data Engineering,Mid-level,balanced,0,3,2
+EMP_110,Data Engineering,Mid-level,island,1,0,0
+EMP_111,Client Services,Senior,balanced,0,6,2
+EMP_112,Data Engineering,Mid-level,balanced,0,4,1
+EMP_113,Client Services,Senior,balanced,0,5,1
+EMP_114,Information Management,Mid-level,broker,0,4,11
+EMP_115,Data Engineering,Mid-level,balanced,0,4,0
+EMP_116,Data Engineering,Junior,balanced,0,5,1
+EMP_117,Analytics & BI,Mid-level,balanced,0,3,3
+EMP_118,Platform Engineering,Mid-level,balanced,0,5,2
+EMP_119,Client Services,Junior,balanced,0,6,0
+EMP_120,Information Management,Mid-level,balanced,0,4,1
+EMP_121,Analytics & BI,Senior,balanced,0,4,4
+EMP_122,Platform Engineering,Junior,island,1,0,4
+EMP_123,Solution Architecture,Junior,balanced,0,5,4
+EMP_124,Analytics & BI,Senior,balanced,0,5,0
+EMP_125,Solution Architecture,Senior,balanced,0,2,4
+EMP_126,Analytics & BI,Senior,hub,0,2,33
+EMP_127,Client Services,Junior,balanced,0,4,0
+EMP_128,Analytics & BI,Mid-level,island,1,0,2
+EMP_129,Data Engineering,Mid-level,balanced,0,5,3
+EMP_130,Solution Architecture,Mid-level,balanced,0,6,5
+EMP_131,Solution Architecture,Mid-level,balanced,0,2,3
+EMP_132,Platform Engineering,Mid-level,balanced,0,2,3
+EMP_133,Analytics & BI,Mid-level,island,1,1,2
+EMP_134,Solution Architecture,Junior,balanced,0,5,6
+EMP_135,Information Management,Junior,island,1,0,0
+EMP_136,Platform Engineering,Mid-level,balanced,0,4,1
+EMP_137,Analytics & BI,Senior,balanced,0,5,2
+EMP_138,Analytics & BI,Mid-level,balanced,0,4,2
+EMP_139,Data Engineering,Mid-level,island,1,0,3
+EMP_140,Data Engineering,Mid-level,island,1,1,1
+EMP_141,Client Services,Mid-level,balanced,0,4,3
+EMP_142,Analytics & BI,Junior,island,1,0,1
+EMP_143,Information Management,Senior,balanced,0,2,1
+EMP_144,Analytics & BI,Mid-level,broker,0,2,10
+EMP_145,Client Services,Senior,balanced,0,4,2
+EMP_146,Analytics & BI,Mid-level,balanced,0,3,3
+EMP_147,Analytics & BI,Junior,balanced,0,4,3
+EMP_148,Solution Architecture,Mid-level,balanced,0,3,1
+EMP_149,Client Services,Senior,balanced,0,4,3
+EMP_150,Analytics & BI,Senior,balanced,0,4,1
+EMP_151,Analytics & BI,Junior,island,1,2,3
+EMP_152,Solution Architecture,Junior,balanced,0,3,2
+EMP_153,Data Engineering,Junior,island,1,1,3
+EMP_154,Information Management,Junior,balanced,0,6,3
+EMP_155,Analytics & BI,Mid-level,balanced,0,5,0
+EMP_156,Platform Engineering,Senior,broker,0,4,6
+EMP_157,Data Engineering,Mid-level,balanced,0,5,1
+EMP_158,Data Engineering,Mid-level,balanced,0,5,1
+EMP_159,Analytics & BI,Senior,hub,0,3,33
+EMP_160,Client Services,Mid-level,balanced,0,6,3
+EMP_161,Client Services,Senior,broker,0,4,8
+EMP_162,Platform Engineering,Mid-level,balanced,0,4,4
+EMP_163,Platform Engineering,Mid-level,balanced,0,5,4
+EMP_164,Solution Architecture,Mid-level,broker,0,4,10
+EMP_165,Information Management,Junior,balanced,0,4,1
+EMP_166,Analytics & BI,Senior,hub,0,3,29
+EMP_167,Analytics & BI,Junior,balanced,0,3,0
+EMP_168,Data Engineering,Senior,balanced,0,4,2
+EMP_169,Client Services,Junior,balanced,0,4,3
+EMP_170,Solution Architecture,Junior,balanced,0,6,1
+EMP_171,Analytics & BI,Mid-level,balanced,0,4,1
+EMP_172,Solution Architecture,Junior,balanced,0,4,3
+EMP_173,Solution Architecture,Mid-level,broker,0,4,6
+EMP_174,Data Engineering,Mid-level,balanced,0,5,3
+EMP_175,Analytics & BI,Mid-level,island,1,0,4
+EMP_176,Client Services,Mid-level,broker,0,3,10
+EMP_177,Solution Architecture,Mid-level,balanced,0,3,2
+EMP_178,Platform Engineering,Mid-level,balanced,0,5,3
+EMP_179,Solution Architecture,Senior,balanced,0,5,1
+EMP_180,Client Services,Junior,balanced,0,2,1
+EMP_181,Platform Engineering,Junior,balanced,0,5,4
+EMP_182,Information Management,Mid-level,balanced,0,6,1
+EMP_183,Platform Engineering,Senior,balanced,0,4,5
+EMP_184,Solution Architecture,Mid-level,balanced,0,4,3
+EMP_185,Platform Engineering,Senior,balanced,0,6,4
+EMP_186,Platform Engineering,Junior,balanced,0,5,3
+EMP_187,Analytics & BI,Mid-level,balanced,0,5,2
+EMP_188,Information Management,Junior,balanced,0,4,1
+EMP_189,Client Services,Mid-level,balanced,0,2,2
+EMP_190,Solution Architecture,Mid-level,balanced,0,2,1
+EMP_191,Information Management,Mid-level,balanced,0,4,4
+EMP_192,Data Engineering,Junior,balanced,0,5,2
+EMP_193,Solution Architecture,Mid-level,balanced,0,4,7
+EMP_194,Solution Architecture,Junior,island,1,1,4
+EMP_195,Solution Architecture,Mid-level,balanced,0,4,0
+EMP_196,Platform Engineering,Mid-level,broker,0,4,11
+EMP_197,Data Engineering,Senior,broker,0,3,11
+EMP_198,Platform Engineering,Senior,hub,0,3,32
+EMP_199,Platform Engineering,Mid-level,balanced,0,3,0
+EMP_200,Analytics & BI,Junior,island,1,1,0
+EMP_201,Platform Engineering,Junior,island,1,0,2
+EMP_202,Analytics & BI,Mid-level,broker,0,3,6
+EMP_203,Data Engineering,Junior,balanced,0,3,7
+EMP_204,Analytics & BI,Junior,island,1,0,4
+EMP_205,Solution Architecture,Mid-level,balanced,0,2,3
+EMP_206,Platform Engineering,Mid-level,balanced,0,4,0
+EMP_207,Information Management,Mid-level,broker,0,4,6
+EMP_208,Solution Architecture,Mid-level,balanced,0,3,1
+EMP_209,Platform Engineering,Mid-level,balanced,0,4,1
+EMP_210,Client Services,Mid-level,broker,0,3,14
+EMP_211,Information Management,Junior,balanced,0,6,7
+EMP_212,Information Management,Mid-level,balanced,0,4,3
+EMP_213,Analytics & BI,Mid-level,island,1,1,2
+EMP_214,Information Management,Mid-level,balanced,0,5,4
+EMP_215,Information Management,Mid-level,balanced,0,4,2
+EMP_216,Analytics & BI,Mid-level,island,1,1,2
+EMP_217,Platform Engineering,Mid-level,balanced,0,2,3
+EMP_218,Client Services,Mid-level,hub,0,2,22
+EMP_219,Information Management,Senior,hub,0,2,20
+EMP_220,Platform Engineering,Junior,balanced,0,4,3
+EMP_221,Analytics & BI,Junior,balanced,0,2,5
+EMP_222,Data Engineering,Mid-level,balanced,0,5,1
+EMP_223,Analytics & BI,Mid-level,balanced,0,6,3
+EMP_224,Information Management,Junior,island,1,0,1
+EMP_225,Information Management,Mid-level,balanced,0,4,2
+EMP_226,Analytics & BI,Mid-level,balanced,0,5,2
+EMP_227,Client Services,Junior,island,1,0,1
+EMP_228,Client Services,Senior,balanced,0,2,0
+EMP_229,Information Management,Mid-level,balanced,0,4,2
+EMP_230,Solution Architecture,Mid-level,broker,0,4,5
+EMP_231,Client Services,Junior,balanced,0,6,3
+EMP_232,Platform Engineering,Senior,broker,0,4,10
+EMP_233,Client Services,Junior,balanced,0,3,1
+EMP_234,Client Services,Mid-level,balanced,0,6,1
+EMP_235,Analytics & BI,Junior,balanced,0,5,1
+EMP_236,Solution Architecture,Junior,balanced,0,3,2
+EMP_237,Platform Engineering,Junior,balanced,0,4,2
+EMP_238,Analytics & BI,Junior,island,1,0,1
+EMP_239,Client Services,Senior,balanced,0,5,2
+EMP_240,Analytics & BI,Mid-level,balanced,0,3,1
+EMP_241,Information Management,Senior,balanced,0,4,5
+EMP_242,Data Engineering,Mid-level,balanced,0,5,2
+EMP_243,Client Services,Junior,balanced,0,4,4
+EMP_244,Client Services,Mid-level,balanced,0,3,1
+EMP_245,Solution Architecture,Mid-level,balanced,0,4,3
+EMP_246,Client Services,Senior,balanced,0,4,1
+EMP_247,Client Services,Senior,hub,0,3,24
+EMP_248,Data Engineering,Senior,balanced,0,3,3
+EMP_249,Platform Engineering,Junior,balanced,0,3,2
+EMP_250,Data Engineering,Senior,balanced,0,5,2
+EMP_251,Solution Architecture,Mid-level,balanced,0,4,3
+EMP_252,Analytics & BI,Mid-level,broker,0,3,6
+EMP_253,Platform Engineering,Junior,balanced,0,2,2
+EMP_254,Data Engineering,Junior,balanced,0,2,1
+EMP_255,Information Management,Mid-level,balanced,0,6,1
+EMP_256,Platform Engineering,Mid-level,balanced,0,5,2
+EMP_257,Client Services,Junior,balanced,0,4,1
+EMP_258,Platform Engineering,Senior,balanced,0,4,0
+EMP_259,Client Services,Mid-level,broker,0,4,8
+EMP_260,Solution Architecture,Senior,balanced,0,6,3
+EMP_261,Analytics & BI,Mid-level,balanced,0,4,3
+EMP_262,Solution Architecture,Senior,balanced,0,3,4
+EMP_263,Information Management,Junior,balanced,0,6,4
+EMP_264,Analytics & BI,Junior,balanced,0,6,2
+EMP_265,Information Management,Mid-level,balanced,0,5,2
+EMP_266,Platform Engineering,Senior,balanced,0,3,2
+EMP_267,Analytics & BI,Mid-level,broker,0,4,9
+EMP_268,Information Management,Senior,balanced,0,4,4
+EMP_269,Platform Engineering,Senior,balanced,0,2,1
+EMP_270,Analytics & BI,Junior,balanced,0,4,2
+EMP_271,Solution Architecture,Junior,island,1,1,3
+EMP_272,Platform Engineering,Mid-level,broker,0,4,5
+EMP_273,Analytics & BI,Mid-level,balanced,0,4,1
+EMP_274,Analytics & BI,Mid-level,balanced,0,3,3
+EMP_275,Information Management,Mid-level,balanced,0,3,2
+EMP_276,Solution Architecture,Junior,balanced,0,2,3
+EMP_277,Data Engineering,Junior,island,1,0,2
+EMP_278,Solution Architecture,Junior,balanced,0,5,4
+EMP_279,Analytics & BI,Mid-level,balanced,0,5,3
+EMP_280,Solution Architecture,Senior,balanced,0,3,2
+EMP_281,Information Management,Senior,balanced,0,5,4
+EMP_282,Platform Engineering,Junior,island,1,1,1
+EMP_283,Data Engineering,Mid-level,island,1,0,1
+EMP_284,Solution Architecture,Mid-level,balanced,0,3,1
+EMP_285,Data Engineering,Junior,balanced,0,5,5
+EMP_286,Information Management,Mid-level,balanced,0,4,1
+EMP_287,Analytics & BI,Junior,island,1,0,4
+EMP_288,Information Management,Senior,broker,0,4,7
+EMP_289,Client Services,Junior,balanced,0,3,2
+EMP_290,Analytics & BI,Mid-level,balanced,0,4,1
+EMP_291,Data Engineering,Mid-level,balanced,0,5,3
+EMP_292,Solution Architecture,Mid-level,broker,0,4,2
+EMP_293,Data Engineering,Junior,balanced,0,2,2
+EMP_294,Data Engineering,Mid-level,island,1,0,1
+EMP_295,Client Services,Junior,balanced,0,4,1
+EMP_296,Analytics & BI,Mid-level,balanced,0,4,3
+EMP_297,Data Engineering,Junior,balanced,0,4,1
+EMP_298,Data Engineering,Senior,broker,0,3,15
+EMP_299,Solution Architecture,Mid-level,balanced,0,5,3
+EMP_300,Analytics & BI,Mid-level,balanced,0,5,1
